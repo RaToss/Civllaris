@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Cultural",
+        "victoryScreenHeader": "Завершите 5 разделов политики",
+        "milestones": ["Complete [5] Policy branches"],
+        "victoryString": "Мы достигли возвышения!",
+        "defeatString": "Нам уже никогда не достич того государства..."
+    },
+    {
+        "name": "Domination",
+        "victoryScreenHeader": "Построить Колосса",
+        "milestones": ["Destroy all players"],
+        "victoryString": "Пусть каждый дрожит от страха! Мы, с нашими технологиями, сможем уничтожить каждого, кто осмелится не встать перед нами на колени!",
+        "defeatString": "Теперь мы вынуждены стоять на коленях..."
+    },
+    {
+        "name": "Time",
+        "hiddenInVictoryScreen": true,
+        "milestones": ["Have highest score after max turns"],
+        "victoryString": "Что-то началось... Кризис! Но как? Как нам удалось его пережить?! Отныне мы одни в этой галактике...",
+        "defeatString": "Что-то началось... Кризис! `Ваша цивилизация исчезает, словно по щелчку пальца. Вы даже не успели понять, что случилось.`"
+    }
+]

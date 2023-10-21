@@ -1,0 +1,17 @@
+[
+	{
+		"name": "Heal Instantly",
+		"uniques": [
+			"Heal this unit by [30] HP",
+			"Doing so will consume this opportunity to choose a Promotion"
+		],
+		"unitTypes": [
+			"Пушка",
+			"Лазер",
+			"Пехота",
+			"Дрон"
+		],
+		"row": 0,
+        "column": 0
+	}
+]

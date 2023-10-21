@@ -1,0 +1,151 @@
+[
+	{
+		"name": "Планета",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Irremovable",
+			"Unbuildable",
+			"Ensures a minimum tile yield of [+2 Food, +1 Production]"
+		],
+		"civilopediaText": [
+			{
+				"text": "Место, где вы способны жить"
+			}
+		]
+	},
+	{
+		"name": "Станция",
+		"replaces": "Планета",
+		"uniqueTo": "Галактический совет",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Irremovable",
+			"Unbuildable",
+			"Ensures a minimum tile yield of [+1 Food, +1 Production]"
+		]
+	},
+	{
+		"name": "Опустошенный мир",
+		"replaces": "Планета",
+		"uniqueTo": "Кристаллы",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Irremovable",
+			"Unbuildable",
+			"Ensures a minimum tile yield of [+1 Production]"
+		]
+	},
+	{
+		"name": "City ruins",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Unbuildable",
+			"Will be replaced by automated workers"
+		]
+	},
+	{
+		"name": "Barbarian encampment",
+		"terrainsCanBeBuiltOn": ["Land"],
+		"uniques": [
+			"Unpillagable",
+			"Unbuildable"
+		]
+	}
+	{
+		"name": "Станция наблюдения",
+		"terrainsCanBeBuiltOn": ["Черная дыра"],
+		"science": 1,
+		"turnsToBuild": 10,
+		"techRequired": "Изучение черных дыр"
+	},
+	{
+		"name": "Добывающая станция",
+		"terrainsCanBeBuiltOn": ["Пояс астеройдов"],
+		"production": 1,
+		"turnsToBuild": 8,
+		"techRequired": "Добывающие стнации"
+	},
+	{
+		"name": "Торговая станция",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"gold": 1,
+		"turnsToBuild": 6,
+		"techRequired": "Торговые станции"
+	},
+	{
+		"name": "Орбитальная станция",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"food": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Астероид",
+		"replaces": "Орбитальная станция",
+		"uniqueTo": "Кристаллы",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда", "Синяя звезда"],
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Кристаллы]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Эксперементальная станция",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"science": 1,
+		"turnsToBuild": 10,
+		"techRequired": "Эксперементы",
+		"uniques": [
+			"Consumes [1] [Учёный]"
+		]
+	},
+	{
+		"name": "Охотничьи станции",
+		"terrainsCanBeBuiltOn": ["Пояс астеройдов"],
+		"turnsToBuild": 9,
+		"food": 1,
+		"techRequired": "Охота на тиянок",
+		"uniques": ["Consumes [1] [Солдат]"]
+	},
+	{
+		"name": "Оборонительная станция",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда", "Синяя звезда"],
+		"turnsToBuild": 10,
+		"techRequired": "Оборонительные станции",
+		"uniques": ["Consumes [1] [Солдат]", "Adjacent enemy units ending their turn take [5] damage"]
+	},
+	{
+		"name": "Маяк",
+		"terrainsCanBeBuiltOn": ["Вакуум"],
+		"culture": 1
+		"turnsToBuild": 8,
+		"techRequired": "Свет вакуума",
+		"uniques": [
+			"[+1 Happiness] from [Вакуум] tiles"
+		]
+	},
+	{
+		"name": "Станция дронов",
+		"techRequired": "Добыча газов",
+		"terrainsCanBeBuiltOn": [
+			"Вакуум"
+		],
+		"turnsToBuild": 10
+	},
+	{
+		"name": "Сфера Дайсона",
+		"terrainsCanBeBuiltOn": [
+			"Черная дыра"
+		],
+		"turnsToBuild": 30,
+		"techRequired": "Сфера Дайсона"
+	}
+]

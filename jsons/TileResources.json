@@ -1,0 +1,87 @@
+[
+	{
+		"name": "Сплавы", 
+		"resourceType": "Strategic"
+	},
+	{
+		"name": "Минералы", 
+		"resourceType": "Strategic"
+		"revealedBy": "Добывающие стнации",
+		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"improvedBy": ["Добывающая станция"],
+		"improvementStats": { "production": 1 },
+		"uniques": [
+			"Generated on every [40] tiles <in [Пояс астеройдов] tiles>"
+		]
+	},
+	{
+		"name": "Артефакты", 
+		"resourceType": "Bonus",
+		"revealedBy": "Поиски артефактов",
+		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"improvedBy": ["Добывающая станция"],
+		"uniques": [
+			"Generated on every [44] tiles <in [Пояс астеройдов] tiles>"
+		]
+	},
+	{
+		"name": "Тиянки", 
+		"resourceType": "Bonus"
+		"revealedBy": "Охота на тиянок",
+		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"improvedBy": ["Охотничьи станции"],
+		"uniques": [
+			"Generated on every [44] tiles <in [Пояс астеройдов] tiles>"
+		]
+	},
+	{
+		"name": "Кристаллы", 
+		"resourceType": "Strategic"
+		"revealedBy": "Добыча кристаллов",
+		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"improvedBy": ["Добывающая станция"],
+		"improvementStats": { "production": 1 },
+		"uniques": [
+			"Generated on every [27] tiles <in [Пояс астеройдов] tiles>"
+		]
+	},
+	{
+		"name": "Темная материя",
+		"revealedBy": "Темная материя",
+		"resourceType": "Strategic",
+		"terrainsCanBeFoundOn": ["Черная дыра"],
+		"improvedBy": ["Сфера Дайсона"],
+		"uniques": [
+			"Generated on every [37] tiles <in [Черная дыра] tiles>"
+		]
+	},
+	{
+		"name": "Газ", 
+		"revealedBy": "Добыча газов",
+		"resourceType": "Strategic"
+		"terrainsCanBeFoundOn": ["Вакуум"],
+		"improvedBy": ["Станция дронов"],
+		"uniques": ["Generated on every [37] tiles <in [Вакуум] tiles>"
+		]
+	},
+	{
+		"name": "Человек", // Переименновать в "Очки Населения"?
+		"resourceType": "Strategic"
+	},
+	{
+		"name": "Учёный", 
+		"resourceType": "Strategic"
+	},
+	{
+		"name": "Конструктор", 
+		"resourceType": "Strategic"
+	},
+	{
+		"name": "Солдат",
+		"resourceType": "Strategic"
+	},
+	{
+		"name": "Очки конструкции", 
+		"resourceType": "Strategic"
+	}
+]

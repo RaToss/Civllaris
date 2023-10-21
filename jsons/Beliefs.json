@@ -1,0 +1,112 @@
+[
+	{
+		"name": "Спиритуализм",
+		"type": "Pantheon",
+		"uniques": ["[-1 Culture, +1 Faith] from every [Поселение]"]
+	},
+	{
+		"name": "Кибернетика",
+		"type": "Pantheon",
+		"uniques": ["[+1 Production] from every [Поселение]"]
+	},
+	{
+		"name": "Дети эволюции",
+		"type": "Pantheon",
+		"uniques": ["[+1 Happiness] from every [Поселение]"]
+	},
+	{
+		"name": "Теория большого взрыва",
+		"type": "Pantheon",
+		"uniques": ["[+1 Science] from every [Поселение]"]
+	},
+	{
+		"name": "Солнце скоро погибнет",
+		"type": "Pantheon",
+		"uniques": [
+			"[-1 Happiness, +1 Science] [in capital]]"
+		]
+	},
+	{
+		"name": "Культ личности",
+		"type": "Pantheon",
+		"uniques": ["[+1 Production, +1 Happiness, -1 Science] from every [Поселение]"]
+	},
+	{
+		"name": "Киберимпланты",
+		"type": "Follower",
+		"uniques": [
+			"[+1 Production] from every [Поселение]"
+		]
+	},
+	{
+		"name": "Смерть за императоа!",
+		"type": "Follower",
+		"uniques": [
+			"[+5]% Strength <for [Military] units> <when defending>"
+		]
+	},
+	{
+		"name": "Проникнуть в покров",
+		"type": "Follower",
+		"uniques": [
+			"[-1 Culture, +1 Faith] from every [Поселение]"
+		]
+	},
+	{
+		"name": "Стремление к безсмертию",
+		"type": "Follower",
+		"uniques": ["[+1 Happiness, +1 Faith] from every [Поселение]"]
+	},
+	{
+		"name": "Велечайшее существо!",
+		"type": "Founder",
+		"uniques": [
+			"[+1 Happiness] from every [Поселение]"
+		]
+	},
+	{
+		"name": "Учения покрова",
+		"type": "Founder",
+		"uniques": ["[+2 Science] from every [Поселение]"]
+	},
+	{
+		"name": "Спасение звезды",
+		"type": "Founder",
+		"uniques": [
+			"[+2 Science, +1 Culture] from every [Поселение]"
+		]
+	},
+	{
+		"name": "Дарвинизм",
+		"type": "Founder",
+		"uniques": [
+			"Earn [75]% of killed [Military] unit's [Strength] as [Culture]"
+		]
+	},
+	{
+		"name": "Кибернетика - бессмертие",
+		"type": "Enhancer",
+		"uniques": [
+			"[+1 Happiness, +1 Production] from every [Поселение]"
+		]
+	},
+	{
+		"name": "Смерть за Бога!",
+		"type": "Enhancer",
+		"uniques": [
+			"[+5]% Strength <for [Military] units> <when attacking>"
+		]
+	},
+	{
+		"name": "Идеальное общество",
+		"type": "Enhancer",
+		"uniques": ["[+1 Culture, +1 Happiness] for every [Поселение]"]
+	},
+	{
+		"name": "Защитники покрова",
+		"type": "Enhancer",
+		"uniques": [
+			"[+10]% Strength <for [Military] units> <when defending>"
+		]
+	}
+]

@@ -1,0 +1,42 @@
+[
+	{
+		"name": "Civilian",
+		"movementType": "Land"
+	},
+	{
+		"name": "Фрегат",
+		"movementType": "Land"
+	},
+	{
+		"name": "Пушка",
+		"movementType": "Land"
+	},
+	{
+		"name": "Лазер",
+		"movementType": "Land"
+	},
+	{
+		"name": "Пехота",
+		"movementType": "Land"
+	},
+	{
+		"name": "Оборона",
+		"movementType": "Air"
+	},
+	{
+		"name": "Civilian Water",
+		"movementType": "Water"
+	},
+	{
+		"name": "Дрон",
+		"movementType": "Water",
+	},
+	{
+		"name": "Энергозаряд",
+		"movementType": "Air",
+		"uniques": [
+			"Aircraft",
+			"Can see over obstacles"
+		]
+	}
+]

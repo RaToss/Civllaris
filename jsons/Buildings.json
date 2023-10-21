@@ -1,0 +1,345 @@
+[
+	{
+		"name": "Планетарная столица",
+		"isNationalWonder": true,
+		"food": 2,
+		"production": 3,
+		"cityStrength": 1,
+		"cityHealth": 30,
+		"science": 3,
+		"gold": 1,
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Indicates the capital city", "Provides [3] [Учёный]", "Provides [3] [Очки конструкции]", "Provides [3] [Солдат]"]
+	},
+	{
+		"name": "Станция",
+		"replaces": "Планетарная столица",
+		"uniqueTo": "Галактический совет",
+		"isNationalWonder": true,
+		"food": 1,
+		"production": 2,
+		"cityStrength": 1,
+		"cityHealth": 20,
+		"science": 4,
+		"gold": 1,
+		"culture": 1,
+		"cost": 1,
+		"uniques": ["Indicates the capital city", "Provides [4] [Учёный]", "Provides [2] [Очки конструкции]", "Provides [2] [Солдат]"]
+	},
+	{
+		"name": "Кристалическая долина",
+		"replaces": "Планетарная столица",
+		"uniqueTo": "Кристаллы",
+		"isNationalWonder": true,
+		"food": 2,
+		"production": 3,
+		"cityStrength": 1,
+		"cityHealth": 30,
+		"science": 3,
+		"gold": 1,
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Indicates the capital city", "Provides [4] [Кристаллы]"]
+	},
+	{
+		"name": "Памятники",
+		"cost": 55,
+		"culture": 2,
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Остатки прошлого",
+		"replaces": "Памятники",
+		"uniqueTo": "Кристаллы",
+		"cost": 55,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Кристаллы]", "[+1 Culture]"],
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Поселение",
+		"cost": 50,
+		"food": 1,
+		"hurryCostModifier": 400,
+		"uniques": ["Provides [3] [Человек]"],
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Лаборатория",
+		"specialistSlots": { "Scientist": 2 }
+		"cost": 155,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Учёный]"],
+		"requiredTech": "Наука"
+	},
+	{
+		"name": "Институт",
+		"cost": 150,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Учёный]", "Consumes [1] [Человек]"],
+		"requiredTech": "Институты"
+	},
+	{
+		"name": "Конструкторский институт",
+		"cost": 150,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Конструктор]", "Consumes [1] [Человек]"],
+		"requiredTech": "Институты"
+	},
+	{
+		"name": "Рынок",
+		"specialistSlots": { "Merchant": 1 }
+		"cost": 75,
+		"gold": 2,
+		"hurryCostModifier": 15,
+		"uniques": [],
+		"requiredTech": "Торговля"
+	},
+	{
+		"name": "Конструкторское бюро",
+		"cost": 75,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Очки конструкции]","Consumes [1] [Конструктор]"],
+		"requiredTech": "Профессионализм"
+	},
+	{
+		"name": "Строительное бюро",
+		"cost": 85,
+		"specialistSlots": { "Engineer": 2 }
+		"hurryCostModifier": 15,
+		"uniques": [],
+		"requiredTech": "Строительство"
+	},
+	{
+		"name": "Шахты",
+		"cost": 105,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Человек]", "Provides [3] [Минералы]"],
+		"requiredTech": "Шахты"
+	},
+	{
+		"name": "Газ-вырабатывающая фабрика",
+		"cost": 105,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Человек]", "Consumes [1] [Минералы]", "Consumes [1] [Кристаллы]", "Provides [1] [Газ]"],
+		"requiredTech": "Выработка газов"
+	},
+	{
+		"name": "Сплавоперерабатывающий завод",
+		"cost": 110,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Человек]", "Consumes [2] [Сплавы]", "Provides [1] [Кристаллы]"],
+		"requiredTech": "Переработка сплавов"
+	},
+	{
+		"name": "Шахта",
+		"replaces": "Поселение",
+		"uniqueTo": "Кристаллы",
+		"cost": 50,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Кристаллы]", "[+1 Culture]"],
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Склад",
+		"cost": 100,
+		"food": 2
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"uniques": [],
+		"requiredTech": "Строительство"
+	},
+	{
+		"name": "Производственный район",
+		"cost": 120,
+		"specialistSlots": { "Engineer": 2 }
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"uniques": [],
+		"requiredTech": "Производственный район"
+	},
+	{
+		"name": "Музей артефактов",
+		"cost": 100,
+		"specialistSlots": { "Артефакт": 2 }
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"uniques": [],
+		"requiredTech": "Музеи"
+	},
+	{
+		"name": "Сплаволитейный завод",
+		"cost": 100,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Человек]", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]"],
+		"requiredTech": "Славолитейные заводы"
+	},
+	{
+		"name": "Плантация",
+		"specialistSlots": { "Фермер": 2 }
+		"cost": 70,
+		"hurryCostModifier": 15,
+		"uniques": [],
+		"requiredTech": "Обустройство"
+	},
+	{
+		"name": "Полигон",
+		"cost": 90,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]"],
+		"requiredTech": "Военная подготовка"
+	},
+	{
+		"name": "Дбыча поглощающих кристалов",
+		"replaces": "Полигон",
+		"uniqueTo": "Кристаллы",
+		"cost": 95,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Кристаллы]", "[+1 Culture]"],
+		"requiredTech": "Военная подготовка"
+	},
+	{
+		"name": "Дуло пушки",
+		"cost": 190,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Сплавы]"],
+		"requiredTech": "Дуло пушки"
+	},
+	{
+		"name": "Ствол пушки",
+		"cost": 250,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [2] [Сплавы]", "Consumes [3] [Газ]"],
+		"requiredTech": "Ствол пушки"
+	},
+	{
+		"name": "Фундамент пушки",
+		"cost": 100,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [3] [Сплавы]", "Consumes [1] [Кристаллы]"],
+		"requiredTech": "Фундамент пушки"
+	},
+	{
+		"name": "Крепость",
+		"cityHealth": 25,
+		"cost": 150,
+		"hurryCostModifier": 15,
+		"requiredTech": "Оборонительные сооружения"
+	},
+	{
+		"name": "Малая Пушка",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]"],
+		"requiredTech": "Малые пушки"
+	},
+	{
+		"name": "Средняя Пушка",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]"],
+		"requiredTech": "Наступательная армия"
+	},
+	{
+		"name": "Большая пушка",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]"],
+		"requiredTech": "Большая пушка"
+	},
+	{
+		"name": "Средний лазер",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]", "Consumes [2] [Кристаллы]"],
+		"requiredTech": "Наступательная армия"
+	},
+	{
+		"name": "Истребляющий лазер",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]", "Consumes [1] [Темная материя]"],
+		"requiredTech": "Истребляющий лазер"
+	},
+	{
+		"name": "Варпдвигатель",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]", "Consumes [1] [Темная материя]"],
+		"requiredTech": "Варпдвигатель"
+	},
+	{
+		"name": "Малый лазер",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]", "Consumes [2] [Кристаллы]"],
+		"requiredTech": "Малые лазеры"
+	},
+	{
+		"name": "Сверх двигатель",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]", "Consumes [2] [Газ]"],
+		"requiredTech": "Сверх двигатели"
+	},
+	{
+		"name": "Сверх пушка",
+		"cost": 200,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [4] [Сплавы]", "Consumes [1] [Газ]"],
+		"requiredTech": "Сверх пушка"
+	},
+	{
+		"name": "Каюта",
+		"cost": 100,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]"],
+		"requiredTech": "Каюта"
+	},
+	{
+		"name": "Броня",
+		"cost": 150,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]"],
+		"requiredTech": "Броня"
+	},
+	{
+		"name": "Обычный двигатель",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]"],
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Артиллерия",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]"],
+		"requiredTech": "Орбитальная артиллерия"
+	},
+	{
+		"name": "Производство дронов",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Очки конструкции]"],
+		"requiredTech": "Боевые дроны"
+	},
+	{
+		"name": "Кристалическая пушка",
+		"uniqueTo": "Кристаллы",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Кристаллы]"],
+		"requiredTech": "Малые пушки"
+	},
+	{
+		"name": "Кристалический ускоритель",
+		"uniqueTo": "Кристаллы",
+		"cost": 1,
+		"hurryCostModifier": 1,
+		"uniques": ["Consumes [1] [Кристаллы]"],
+		"requiredTech": "Изучение космоса"
+	}
+	
+]
