@@ -160,7 +160,8 @@
 		"strength": 155,
 		"cost": 140,
 		"hurryCostModifier": 20,
-	},
+  "requiredTech": "Линкоры"   
+ },
 	{
 		"name": "Древний страж",
 		"uniqueTo": "Barbarians",
