@@ -148,6 +148,7 @@
 		"strength": 55,
 		"cost": 140,
 		"hurryCostModifier": 20,
+		"requiredTech": "Добыча кристалов"
 	},
 	{
 		"name": "Космический дракон",
@@ -160,6 +161,7 @@
 		"strength": 60,
 		"cost": 140,
 		"hurryCostModifier": 20,
+		"requiredTech": "Линкоры"
         },
 	{
 		"name": "Древний страж",
@@ -172,6 +174,7 @@
 		"strength": 55,
 		"cost": 140,
 		"hurryCostModifier": 20,
+		"requiredTech": "Поиски артефактов"
 	},
 	{
 		"name": "Крейсер",
