@@ -40,7 +40,7 @@
 	},
 	{
 		"name": "Смерть за императоа!",
-		"type": "Follower",
+		"type": "Enhancer",
 		"uniques": [
 			"[+5]% Strength <for [Military] units> <when defending>"
 		]
