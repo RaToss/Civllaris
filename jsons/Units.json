@@ -148,7 +148,7 @@
 		"strength": 55,
 		"cost": 140,
 		"hurryCostModifier": 20,
-		"requiredTech": "Добыча кристалов"
+		"requiredTech": "Добыча кристаллов"
 	},
 	{
 		"name": "Космический дракон",
