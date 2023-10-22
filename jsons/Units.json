@@ -160,7 +160,7 @@
 		"strength": 60,
 		"cost": 140,
 		"hurryCostModifier": 20,
- },
+        },
 	{
 		"name": "Древний страж",
 		"uniqueTo": "Barbarians",
