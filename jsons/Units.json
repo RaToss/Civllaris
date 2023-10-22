@@ -154,13 +154,12 @@
 		"uniqueTo": "Barbarians",
 		"replaces": "Линкор",
 		"unitType": "Пушка",
-		"movement": 3,
+		"movement": 1,
 		"range": 1,
-		"rangedStrength": 155,
-		"strength": 155,
+		"rangedStrength": 60,
+		"strength": 60,
 		"cost": 140,
 		"hurryCostModifier": 20,
-  "requiredTech": "Линкоры"
  },
 	{
 		"name": "Древний страж",
