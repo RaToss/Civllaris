@@ -17,6 +17,26 @@ TileSets/Космос/Tiles/City ruins
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
+  index: -1TileSets/Космос/Tiles/River-Bottom
+  rotate: false
+  xy: 44, 4
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Космос/Tiles/River-BottomLeft
+  rotate: false
+  xy: 84, 4
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Космос/Tiles/River-BottomRight
+  rotate: false
+  xy: 124, 4
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
   index: -1
 TileSets/Космос/Tiles/Абсолютный вакуум
   rotate: false
