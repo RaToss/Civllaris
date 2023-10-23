@@ -87,17 +87,6 @@
 		]
 	},
 	{
-		"name": "Астероид",
-		"replaces": "Орбитальная станция",
-		"uniqueTo": "Кристаллы",
-		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда", "Синяя звезда"],
-		"turnsToBuild": 9,
-		"techRequired": "Орбитальные станции",
-		"uniques": [
-			"Provides [1] [Кристаллы]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
-		]
-	},
-	{
 		"name": "Эксперементальная станция",
 		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
 		"science": 1,
