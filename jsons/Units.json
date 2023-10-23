@@ -126,14 +126,14 @@
 		"requiredTech": "Новые корабли"
 	},
 	{
-		"name": "Безумный дрон",
+		"name": "Сломаный дрон",
 		"uniqueTo": "Barbarians",
 		"replaces": "Эсминец",
 		"unitType": "Пушка",
 		"movement": 2,
 		"range": 2,
-		"rangedStrength": 35,
-		"strength": 35,
+		"rangedStrength": 15,
+		"strength": 15,
 		"cost": 140,
 		"hurryCostModifier": 20,
 	},
