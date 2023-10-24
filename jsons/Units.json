@@ -75,7 +75,7 @@
 		"cost": 90,
 		"requiredTech": "Изучение вакуума",
 		"uniques": [
-			"Cannot enter ocean tiles <before discovering [Сверх двигатели]>",
+			"Cannot enter ocean tiles <before discovering [Изучение вакуума]>",
 			"Uncapturable",
 			"May create improvements on water resources",
 			"Automation is a primary action"
