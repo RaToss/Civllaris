@@ -10,7 +10,7 @@
 				"name": "Изучение космоса",
 				"row": 5,
 				"quote": "",
-				"uniques": ["Starting tech"]
+				"uniques": ["Starting tech", "Enables conversion of city production to [Culture]"]
 			}
 		]
 	},
