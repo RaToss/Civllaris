@@ -56,7 +56,7 @@
 			"Domination": 10,
 			"Scientific": 30
 		},
-		"uniques": [],
+		"uniques": ["Only available <before adopting [Общество рабочих]>", "Only available <before adopting [Крестьянское общество]>"],
 		"policies": [
 			{
 				"name": "Роль ученого",
@@ -100,7 +100,7 @@
 			"Domination": 10,
 			"Scientific": 10
 		},
-		"uniques": [],
+		"uniques": ["Only available <before adopting [Научное общество]>", "Only available <before adopting [Крестьянское общество]>"],
 		"policies": [
 			{
 				"name": "Роль рабочего",
@@ -144,7 +144,7 @@
 			"Domination": 10,
 			"Scientific": 10
 		},
-		"uniques": [],
+		"uniques": ["Only available <before adopting [Научное общество]>", "Only available <before adopting [Общество рабочих]>"],
 		"policies": [
 			{
 				"name": "Роль крестьянина",
