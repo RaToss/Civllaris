@@ -10,7 +10,6 @@
 			"Scientific": 15
 		},
 		"uniques": [
-			"Пора готовить экипаж для покарения других миров."
 		],
 		"policies": [
 			{
@@ -42,63 +41,139 @@
 			{
 				"name": "Подготовка Complete",
 				"uniques": [
-					"Мы наконец-то закончили подготовку, пора отправлять колонизаторов!",
 					"Free [Колонизатор] appears"
 				]
 			}
 		]
 	},
 	{
-		"name": "Производство",
-		"era": "Выход в космос",
+		"name": "Научное общество",
+		"era": "Колонизация",
 		"priorities": {
-			"Neutral": 30,
+			"Neutral": 10,
 			"Cultural": 10,
-			"Diplomatic": 30,
-			"Domination": 30,
-			"Scientific": 20
+			"Diplomatic": 10,
+			"Domination": 10,
+			"Scientific": 30
 		},
-		"uniques": ["Мы испытываем некоторые трудности в производстве на планетах, нужно это решить."],
+		"uniques": [],
 		"policies": [
 			{
-				"name": "Добывающие роботы",
+				"name": "Роль ученого",
 				"uniques": [
-					"[+1 Production] from every specialist [in all cities]"
+					"[+1 Science] from every [Учёный]"
 				],
 				"row": 1,
 				"column": 1
 			},
 			{
-    			"name": "Строительные машины",
+    			"name": "Расширить спонсорство",
 				"uniques": [
-					"[+25]% Production when constructing [All] buildings [in all cities]"
+					"[+1 Science] from every specialist [in all cities]", "[-1 Gold] from every specialist [in all cities]"
 				],
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Мотиваторы",
+				"name": "Заинтересованность общества",
 				"uniques": [
-					"[+1 Happiness] from every specialist [in all cities]"
+					"[+1 Happiness] [in all cities]"
 				],
 				"row": 1,
 				"column": 5
 			},
+			
 			{
-				"name": "Упрощенные конструкции",
-			    "requires": ["Строительные машины"]
+				"name": "Научное общество Complete",
 				"uniques": [
-					"[+2 Production] [in all cities]"
+				]
+			}
+		]
+	},
+	{
+		"name": "Общество рабочих",
+		"era": "Колонизация",
+		"priorities": {
+			"Neutral": 10,
+			"Cultural": 10,
+			"Diplomatic": 10,
+			"Domination": 10,
+			"Scientific": 10
+		},
+		"uniques": [],
+		"policies": [
+			{
+				"name": "Роль рабочего",
+				"uniques": [
+					"[+1 Production] from every [Человек]"
 				],
-				"row": 2,
+				"row": 1,
+				"column": 1
+			},
+			{
+    			"name": "Старания и труд",
+				"uniques": [
+					"[+1 Production] from every [Добывающая станция]"
+				],
+				"row": 1,
 				"column": 3
+			},
+			{
+				"name": "Трудящаяся молодежь",
+				"uniques": [
+					"[+2] [Человек]"
+				],
+				"row": 1,
+				"column": 5
 			},
 			
 			{
-				"name": "Производство Complete",
+				"name": "Общество рабочих Complete",
 				"uniques": [
-					"Проблема решена!",
-					"Free [Строительный корабль] appears"
+				]
+			}
+		]
+	},
+	{
+		"name": "Крестьянское общество",
+		"era": "Колонизация",
+		"priorities": {
+			"Neutral": 10,
+			"Cultural": 10,
+			"Diplomatic": 10,
+			"Domination": 10,
+			"Scientific": 10
+		},
+		"uniques": [],
+		"policies": [
+			{
+				"name": "Роль крестьянина",
+				"uniques": [
+					"[+1 Food] from every [Человек]"
+				],
+				"row": 1,
+				"column": 1
+			},
+			{
+    			"name": "Удобрения",
+				"uniques": [
+					"[+2 Food] from every [Плантация]"
+				],
+				"row": 1,
+				"column": 3
+			},
+			{
+				"name": "Качество продукции",
+				"uniques": [
+					"[+1 Happiness] [in all cities]"
+				],
+				"row": 1,
+				"column": 5
+			},
+			
+			{
+				"name": "Крестьянское общество Complete",
+				"uniques": [
 				]
 			}
 		]
@@ -114,7 +189,6 @@
 			"Scientific": 20
 		},
 		"uniques": [
-			"Космос добольно опасное место, мы должны быть готовы дать отпор!",
 			"Notified of new Barbarian encampments"
 		],
 		"policies": [
@@ -175,7 +249,7 @@
 			"Scientific": 10
 		},
 		"uniques": [
-			"Мы все одинаковы и лишние ссоры между нами только приведут к гибели! Что бы не допустить этого, мы должны пропагандировать труд и ксенотерпимость.", "Only available <before adopting [Свобода]>", "Only available <before adopting [Ксенофобия]>"
+			"Only available <before adopting [Свобода]>", "Only available <before adopting [Ксенофобия]>"
 		],
 		"policies": [
 			{
@@ -214,7 +288,7 @@
 			{
 				"name": "Знания = Свобода",
 				"uniques": [
-					"[+1 Science] from every specialist [in all cities]"
+					"[+2]% [Science] [in all cities]"
 				],
 				"requires": ["Защита идеалов", "Плановая экономика"],
 				"row": 2,
@@ -238,13 +312,13 @@
 			"Scientific": 0
 		},
 		"uniques": [
-			"Мы - велечайшее создание природы, мы высшие существа! Все остальные враги, они достойны только смерти...", "Only available <before adopting [Контроль]>"
+			"Only available <before adopting [Контроль]>", "Only available <before adopting [Свобода]>"
 		],
 		"policies": [
 			{
 				"name": "Обьелинение ненавистью",
 				"uniques": [
-					"[+1 Happiness] [in all cities]"
+					"[+1 Culture] [in all cities]"
 				],
 				"row": 1,
 				"column": 3
@@ -268,9 +342,9 @@
 				"column": 3
 			},
 			{
-				"name": "Верность",
+				"name": "Отряды зачистки",
 				"uniques": [
-					"[+1 Culture] [in all cities]"
+					"[+1 Happiness] [in all cities with a garrison]"
 				],
 				"requires": ["Обьелинение ненавистью"],
 				"row": 2,
@@ -294,7 +368,7 @@
 			"Scientific": 10
 		},
 		"uniques": [
-			"Свобода - это то, что ажно для каждого из нас! Наша цель, это вольность мысли!", "Only available <before adopting [Ксенофобия]>", "Only available <before adopting [Контроль]>"
+			"Only available <before adopting [Ксенофобия]>", "Only available <before adopting [Контроль]>"
 		],
 		"policies": [
 			{
@@ -316,7 +390,7 @@
 			{
 				"name": "Поощерение",
 				"uniques": [
-				"[-2 Gold] from every specialist [in all cities]", "[+1 Production] from every specialist [in all cities]"
+				"[-1 Gold] from every specialist [in all cities]", "[+1 Production] from every specialist [in all cities]"
 				],
 				"row": 1,
 				"column": 1

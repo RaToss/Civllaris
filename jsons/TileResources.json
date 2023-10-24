@@ -83,5 +83,9 @@
 	{
 		"name": "Очки конструкции", 
 		"resourceType": "Strategic"
+	},
+	{
+		"name": "Таинственный код",
+		"resourceType": "Bonus"
 	}
 ]

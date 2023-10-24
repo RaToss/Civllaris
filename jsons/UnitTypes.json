@@ -35,7 +35,6 @@
 		"name": "Энергозаряд",
 		"movementType": "Air",
 		"uniques": [
-			"Aircraft",
 			"Can see over obstacles"
 		]
 	}

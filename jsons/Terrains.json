@@ -96,8 +96,6 @@
             "Occurs at temperature between [0.4] and [0.6] and humidity between [0.4] and [0.5]",
             "Occurs at temperature between [0.5] and [0.6] and humidity between [0.5] and [0.7]",
             "Occurs at temperature between [0.7] and [0.8] and humidity between [0.7] and [1]",
-			"A Region can not contain more [Красная звезда] tiles than [Синяя звезда] tiles",
-			"A Region can not contain more [Желтая звезда] tiles than [Синяя звезда] tiles",
 			"A Region is formed with at least [20]% [Синяя звезда] tiles, with priority [1]",
 			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]

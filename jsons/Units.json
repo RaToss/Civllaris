@@ -348,6 +348,17 @@
 		"uniques": ["Only available <in cities with a [Дуло пушки]>", "Only available <in cities with a [Ствол пушки]>", "Only available <in cities with a [Фундамент пушки]>"]
 	},
 	{
+		"name": "ПКО",
+		"unitType": "Оборона",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 1,
+		"cost": 70,
+		"requiredTech": "Военная подготовка",
+		"uniques": ["Consumes [1] [Сплавы]"]
+	},
+	{
 		"name": "Винтовка пехота",
 		"unitType": "Оборона",
 		"movement": 1,
@@ -367,7 +378,7 @@
 		"range": 2,
 		"cost": 155,
 		"requiredTech": "Орбитальная артиллерия",
-		"uniques": ["Consumes [1] [Солдат]", "Consumes [1] [Кристаллы]", "Consumes [1] [Сплавы]", "Only available <in cities with a [Полигон]>"]
+		"uniques": ["Consumes [1] [Кристаллы]", "Consumes [1] [Сплавы]"]
 	},
 	{
 		"name": "Малый дрон",

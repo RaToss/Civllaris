@@ -77,13 +77,80 @@
 		"techRequired": "Торговые станции"
 	},
 	{
-		"name": "Орбитальная станция",
+		"name": " Доп. станция",
+		"uniqueTo": "Галактический совет",
 		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
 		"food": 1,
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
 			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Станция землян",
+		"uniqueTo": "Государство `Земля`",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"food": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Станция Хроз",
+		"uniqueTo": "Империя Хроз",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"food": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Орбитальная станция",
+		"uniqueTo": "Союз рабочих",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"food": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Станция Республики",
+		"uniqueTo": "Республика лиц",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"food": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "Астероид",
+		"uniqueTo": "Кристаллы",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда", "Синяя звезда"],
+		"Production": 1
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Provides [1] [Кристаллы]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+		]
+	},
+	{
+		"name": "--- .-. -... .. - .- .-.. -..- -. .- .-.-  ... - .- -. -.-. .. .-.-",
+		"uniqueTo": "Железная звезда",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"food": 1,
+		"turnsToBuild": 9,
+		"techRequired": "Орбитальные станции",
+		"uniques": [
+			"Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{

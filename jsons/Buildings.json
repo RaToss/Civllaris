@@ -81,6 +81,13 @@
 		"requiredTech": "Институты"
 	},
 	{
+		"name": "Военный институт",
+		"cost": 150,
+		"hurryCostModifier": 15,
+		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]"],
+		"requiredTech": "Институты"
+	},
+	{
 		"name": "Конструкторский институт",
 		"cost": 150,
 		"hurryCostModifier": 15,

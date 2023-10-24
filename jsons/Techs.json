@@ -383,6 +383,7 @@
 				"name": "Эксперементы",
 				"row": 7,
 				"prerequisites": ["Новая наука"],
+				"uniques": ["Enables conversion of city production to [Science]"],
 				"quote": ""
 			},
 			{
@@ -457,7 +458,7 @@
 				"name": "Клонирование",
 				"row": 9,
 				"prerequisites": ["Переработка сплавов"],
-				"uniques": ["[+1] [Человек] from every [Орбитальная станция]"],
+				"uniques": ["Double quantity of [Человек] produced"],
 				"quote": ""
 			},
 			{

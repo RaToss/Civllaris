@@ -32,7 +32,7 @@
 
 		"outerColor": [162,162,162],
 		"innerColor": [194,213,210],
-		"uniques": ["Наши исследования стали приносить свои плоды!", "[+5]% [Science] [in all cities]"],
+		"uniques": ["[+5]% [Science] [in all cities]"],
 		"cities": ["Станция"]
 	},
 	{
@@ -64,7 +64,7 @@
 
 		"outerColor": [49,151,130],
 		"innerColor": [71,209,181],
-		"uniques": ["Пускай мы и вышли в космос, мы попрежнему глупые люди...", "[-1 Science]"],
+		"uniques": ["[-1 Science]"],
 		"cities": ["Земля"]
 	},
 	{
@@ -96,7 +96,7 @@
 
 		"outerColor": [90,87,82],
 		"innerColor": [117,114,109],
-		"uniques": ["Культура войны - наше всё! Каждый, кто не готов умереть за императора, станет изменником!", "[+5]% Production when constructing [Military] units [in all cities]"],
+		"uniques": ["[+5]% Production when constructing [Military] units [in all cities]"],
 		"cities": ["Планета Хроз"]
 	},
 	{
@@ -128,7 +128,7 @@
 
 		"outerColor": [176,124,45],
 		"innerColor": [252,252,255],
-		"uniques": ["Наш народ очень трудолюбив", "[+2]% [Production] [in all cities]"],
+		"uniques": ["[+2]% [Production] [in all cities]"],
 		"cities": ["Производственный комплекс"]
 	},
 	{
@@ -160,7 +160,7 @@
 
 		"outerColor": [51,154,75],
 		"innerColor": [49,209,65],
-		"uniques": ["Наша планета слишком мала и прокормить нас уже не способна, а нас много...", "[-2 Food] [in capital]"],
+		"uniques": ["[-2 Food] [in capital]"],
 		"cities": ["Планета"]
 	},
 	{
@@ -192,7 +192,7 @@
 
 		"outerColor": [255,177,60],
 		"innerColor": [202,153,81],
-		"uniques": ["[-1] [Человек] from every [Орбитальная станция]", "[+1] [Кристаллы] from every [Орбитальная станция]"],
+		"uniques": [],
 		"cities": ["Камень"]
 	},
 	{
