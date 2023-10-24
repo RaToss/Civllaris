@@ -53,7 +53,7 @@
 		"unitType": "Civilian",
 		"movement": 1,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build [Land] improvements on tiles"],
+		"uniques": ["Can build [Land] improvements on tiles", "Cannot enter ocean tiles <before discovering [Изучение вакуума]>", "May create improvements on water resources"],
 		"cost": 75
 		"requiredTech": "Строительные корабли"
 	},
