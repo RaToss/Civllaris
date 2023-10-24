@@ -39,7 +39,7 @@ TileSets/Space/Tiles/River-BottomRight
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/Space/Tiles/Абсолютный вакуум
+TileSets/Space/Tiles/Ocean
   rotate: false
   xy: 164, 4
   size: 32, 28
@@ -53,7 +53,7 @@ TileSets/Space/Tiles/Белая звезда
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/Space/Tiles/Вакуум
+TileSets/Space/Tiles/Coast
   rotate: false
   xy: 244, 4
   size: 32, 28

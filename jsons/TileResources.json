@@ -59,9 +59,9 @@
 		"name": "Газ", 
 		"revealedBy": "Добыча газов",
 		"resourceType": "Strategic"
-		"terrainsCanBeFoundOn": ["Вакуум"],
+		"terrainsCanBeFoundOn": ["Coast"],
 		"improvedBy": ["Станция дронов"],
-		"uniques": ["Generated on every [37] tiles <in [Вакуум] tiles>"
+		"uniques": ["Generated on every [37] tiles <in [Coast] tiles>"
 		]
 	},
 	{

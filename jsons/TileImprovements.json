@@ -113,19 +113,19 @@
 	},
 	{
 		"name": "Маяк",
-		"terrainsCanBeBuiltOn": ["Вакуум"],
+		"terrainsCanBeBuiltOn": ["Coast"],
 		"culture": 1
 		"turnsToBuild": 8,
 		"techRequired": "Свет вакуума",
 		"uniques": [
-			"[+1 Happiness] from [Вакуум] tiles"
+			"[+1 Happiness] from [Coast] tiles"
 		]
 	},
 	{
 		"name": "Станция дронов",
 		"techRequired": "Добыча газов",
 		"terrainsCanBeBuiltOn": [
-			"Вакуум"
+			"Coast"
 		],
 		"turnsToBuild": 10
 	},
