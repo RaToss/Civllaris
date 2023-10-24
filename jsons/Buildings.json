@@ -46,6 +46,7 @@
 		"name": "Памятники",
 		"cost": 55,
 		"culture": 2,
+		"uniques": ["Destroyed when the city is captured"]
 		"requiredTech": "Изучение космоса"
 	},
 	{
@@ -62,7 +63,7 @@
 		"cost": 50,
 		"food": 1,
 		"hurryCostModifier": 400,
-		"uniques": ["Provides [3] [Человек]"],
+		"uniques": ["Provides [3] [Человек]", "Destroyed when the city is captured"],
 		"requiredTech": "Изучение космоса"
 	},
 	{
@@ -70,28 +71,28 @@
 		"specialistSlots": { "Scientist": 2 }
 		"cost": 155,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Учёный]"],
+		"uniques": ["Consumes [1] [Учёный]", "Destroyed when the city is captured"],
 		"requiredTech": "Наука"
 	},
 	{
 		"name": "Институт",
 		"cost": 150,
 		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Учёный]", "Consumes [1] [Человек]"],
+		"uniques": ["Provides [1] [Учёный]", "Consumes [1] [Человек]", "Destroyed when the city is captured"],
 		"requiredTech": "Институты"
 	},
 	{
 		"name": "Военный институт",
 		"cost": 150,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]"],
+		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]", "Destroyed when the city is captured"],
 		"requiredTech": "Институты"
 	},
 	{
 		"name": "Конструкторский институт",
 		"cost": 150,
 		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Конструктор]", "Consumes [1] [Человек]"],
+		"uniques": ["Provides [1] [Конструктор]", "Consumes [1] [Человек]", "Destroyed when the city is captured"],
 		"requiredTech": "Институты"
 	},
 	{
@@ -100,14 +101,14 @@
 		"cost": 75,
 		"gold": 2,
 		"hurryCostModifier": 15,
-		"uniques": [],
+		"uniques": ["Destroyed when the city is captured"],
 		"requiredTech": "Торговля"
 	},
 	{
 		"name": "Конструкторское бюро",
 		"cost": 75,
 		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Очки конструкции]","Consumes [1] [Конструктор]"],
+		"uniques": ["Provides [1] [Очки конструкции]","Consumes [1] [Конструктор]", "Destroyed when the city is captured"],
 		"requiredTech": "Профессионализм"
 	},
 	{
@@ -115,28 +116,28 @@
 		"cost": 85,
 		"specialistSlots": { "Engineer": 2 }
 		"hurryCostModifier": 15,
-		"uniques": [],
+		"uniques": ["Destroyed when the city is captured"],
 		"requiredTech": "Строительство"
 	},
 	{
 		"name": "Шахты",
 		"cost": 105,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Provides [3] [Минералы]"],
+		"uniques": ["Consumes [1] [Человек]", "Provides [3] [Минералы]", "Destroyed when the city is captured"],
 		"requiredTech": "Шахты"
 	},
 	{
 		"name": "Газ-вырабатывающая фабрика",
 		"cost": 105,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Consumes [1] [Минералы]", "Consumes [1] [Кристаллы]", "Provides [1] [Газ]"],
+		"uniques": ["Consumes [1] [Человек]", "Consumes [1] [Минералы]", "Consumes [1] [Кристаллы]", "Provides [1] [Газ]", "Destroyed when the city is captured"],
 		"requiredTech": "Выработка газов"
 	},
 	{
 		"name": "Сплавоперерабатывающий завод",
 		"cost": 110,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Consumes [2] [Сплавы]", "Provides [1] [Кристаллы]"],
+		"uniques": ["Consumes [1] [Человек]", "Consumes [2] [Сплавы]", "Provides [1] [Кристаллы]", "Destroyed when the city is captured"],
 		"requiredTech": "Переработка сплавов"
 	},
 	{
@@ -154,8 +155,20 @@
 		"food": 2
 		"maintenance": 1,
 		"hurryCostModifier": 15,
-		"uniques": [],
+		"uniques": ["Destroyed when the city is captured"],
 		"requiredTech": "Строительство"
+	},
+	{
+		"name": "Тюрьма",
+		"maintenance": 1,
+		"cost": 120,
+		"uniques": [
+			"Remove extra unhappiness from annexed cities",
+			"Can only be built [in annexed cities]",
+			"Destroyed when the city is captured"
+		],
+		"requiredTech": "Военная подготовка",
+		"hurryCostModifier": 20
 	},
 	{
 		"name": "Производственный район",
@@ -163,7 +176,7 @@
 		"specialistSlots": { "Engineer": 2 }
 		"maintenance": 1,
 		"hurryCostModifier": 15,
-		"uniques": [],
+		"uniques": ["Destroyed when the city is captured"],
 		"requiredTech": "Производственный район"
 	},
 	{
@@ -172,14 +185,14 @@
 		"specialistSlots": { "Артефакт": 2 }
 		"maintenance": 1,
 		"hurryCostModifier": 15,
-		"uniques": [],
+		"uniques": ["Destroyed when the city is captured"],
 		"requiredTech": "Музеи"
 	},
 	{
 		"name": "Сплаволитейный завод",
 		"cost": 100,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]"],
+		"uniques": ["Consumes [1] [Человек]", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]", "Destroyed when the city is captured"],
 		"requiredTech": "Славолитейные заводы"
 	},
 	{
@@ -194,7 +207,7 @@
 		"name": "Полигон",
 		"cost": 90,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]"],
+		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]", "Destroyed when the city is captured"],
 		"requiredTech": "Военная подготовка"
 	},
 	{
@@ -210,21 +223,21 @@
 		"name": "Дуло пушки",
 		"cost": 190,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Сплавы]"],
+		"uniques": ["Consumes [1] [Сплавы]", "Destroyed when the city is captured"],
 		"requiredTech": "Дуло пушки"
 	},
 	{
 		"name": "Ствол пушки",
 		"cost": 250,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [2] [Сплавы]", "Consumes [3] [Газ]"],
+		"uniques": ["Consumes [2] [Сплавы]", "Consumes [3] [Газ]", "Destroyed when the city is captured"],
 		"requiredTech": "Ствол пушки"
 	},
 	{
 		"name": "Фундамент пушки",
 		"cost": 100,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [3] [Сплавы]", "Consumes [1] [Кристаллы]"],
+		"uniques": ["Consumes [3] [Сплавы]", "Consumes [1] [Кристаллы]", "Destroyed when the city is captured"],
 		"requiredTech": "Фундамент пушки"
 	},
 	{
@@ -232,6 +245,7 @@
 		"cityHealth": 25,
 		"cost": 150,
 		"hurryCostModifier": 15,
+		"uniques": ["Destroyed when the city is captured"]
 		"requiredTech": "Оборонительные сооружения"
 	},
 	{
