@@ -180,7 +180,7 @@
 	},
 	{
 		"name": "Маяк",
-		"terrainsCanBeBuiltOn": ["Coast"],
+		"terrainsCanBeBuiltOn": ["Ocean"],
 		"culture": 1
 		"turnsToBuild": 8,
 		"techRequired": "Свет вакуума",
