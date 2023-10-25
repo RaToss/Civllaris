@@ -61,7 +61,7 @@
 			{
 				"name": "Роль ученого",
 				"uniques": [
-					"[+1 Science] per [1] population [in all cities]"
+					"[+3]% [Science] per [1] population [in all cities]"
 				],
 				"row": 1,
 				"column": 1
