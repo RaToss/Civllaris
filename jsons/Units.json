@@ -370,6 +370,17 @@
 		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
 	},
 	{
+		"name": "Лазерная винтовка пехота",
+		"unitType": "Оборона",
+		"movement": 1,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 1,
+		"cost": 50,
+		"requiredTech": "Оборонительная армия",
+		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
+	},
+	{
 		"name": "Орбитальная Артиллерия",
 		"unitType": "Оборона",
 		"movement": 1,
