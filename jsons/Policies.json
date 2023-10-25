@@ -69,7 +69,7 @@
 			{
     			"name": "Расширить спонсорство",
 				"uniques": [
-					"[+2 Science] from every specialist [in all cities]", "[-1 Gold] from every specialist [in all cities]"
+					"[+1 Science] from every specialist [in all cities]", "[-1 Gold] from every specialist [in all cities]"
 				],
 				"row": 1,
 				"column": 3
