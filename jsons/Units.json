@@ -77,8 +77,7 @@
 		"uniques": [
 			"Cannot enter ocean tiles <before discovering [Изучение вакуума]>",
 			"Uncapturable",
-			"Can build [Water] improvements on tiles"
-			"May create improvements on water resources",
+			"Can build [Water] improvements on tiles",
 			"Automation is a primary action"
 		],
 		"hurryCostModifier": 20
