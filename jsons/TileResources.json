@@ -16,20 +16,22 @@
 	},
 	{
 		"name": "Артефакты", 
-		"resourceType": "Bonus",
+		"resourceType": "Luxury",
 		"revealedBy": "Поиски артефактов",
 		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
 		"improvedBy": ["Добывающая станция"],
+		"improvementStats": { "culture": 1 },
 		"uniques": [
 			"Generated on every [44] tiles <in [Пояс астеройдов] tiles>"
 		]
 	},
 	{
 		"name": "Тиянки", 
-		"resourceType": "Bonus"
+		"resourceType": "Luxury"
 		"revealedBy": "Охота на тиянок",
 		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
 		"improvedBy": ["Охотничьи станции"],
+		"improvementStats": { "food": 1 },
 		"uniques": [
 			"Generated on every [44] tiles <in [Пояс астеройдов] tiles>"
 		]
@@ -65,7 +67,7 @@
 		]
 	},
 	{
-		"name": "Человек", // Переименновать в "Очки Населения"?
+		"name": "Человек", // Переименновать в `Очки Населения`?
 		"resourceType": "Strategic"
 	},
 	{
