@@ -1,96 +1,152 @@
 
 game.png
-size: 512, 64
+size: 1024, 128
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
-TileSets/Space/Tiles/Barbarian encampment
+ResourceIcons/Конструктор
   rotate: false
   xy: 4, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Очки конструкции
+  rotate: false
+  xy: 112, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Солдат
+  rotate: false
+  xy: 220, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Сплавы
+  rotate: false
+  xy: 328, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Учёный
+  rotate: false
+  xy: 436, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+ResourceIcons/Человек
+  rotate: false
+  xy: 544, 4
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/Barbarian encampment
+  rotate: false
+  xy: 652, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/City ruins
   rotate: false
-  xy: 4, 4
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/Space/Tiles/River-Bottom
-  rotate: false
-  xy: 44, 4
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/Space/Tiles/River-BottomLeft
-  rotate: false
-  xy: 84, 4
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/Space/Tiles/River-BottomRight
-  rotate: false
-  xy: 124, 4
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/Space/Tiles/Ocean
-  rotate: false
-  xy: 164, 4
-  size: 32, 28
-  orig: 32, 28
-  offset: 0, 0
-  index: -1
-TileSets/Space/Tiles/Белая звезда
-  rotate: false
-  xy: 204, 4
+  xy: 652, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Coast
   rotate: false
-  xy: 244, 4
+  xy: 652, 40
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/Вакуум
+  rotate: false
+  xy: 652, 40
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/Ocean
+  rotate: false
+  xy: 692, 76
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/Абсолютный вакуум
+  rotate: false
+  xy: 692, 76
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/River-Bottom
+  rotate: false
+  xy: 652, 4
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/River-BottomLeft
+  rotate: false
+  xy: 692, 40
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/River-BottomRight
+  rotate: false
+  xy: 732, 76
+  size: 32, 28
+  orig: 32, 28
+  offset: 0, 0
+  index: -1
+TileSets/Space/Tiles/Белая звезда
+  rotate: false
+  xy: 692, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Желтая звезда
   rotate: false
-  xy: 284, 4
+  xy: 732, 40
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Красная звезда
   rotate: false
-  xy: 324, 4
+  xy: 772, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Пояс астеройдов
   rotate: false
-  xy: 364, 4
+  xy: 732, 4
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Синяя звезда
   rotate: false
-  xy: 404, 4
+  xy: 772, 40
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Черная дыра
   rotate: false
-  xy: 444, 4
+  xy: 812, 76
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
