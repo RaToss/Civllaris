@@ -62,7 +62,7 @@
 		"afterPeace": "Настало время помириться!",
 		"tradeRequest": "Это стоющее предложение!",
 
-		"outerColor": [71,209,181],
+		"outerColor": [9,84,84],
 		"innerColor": [0,222,222],
 		"uniques": ["[-1 Science]"],
 		"cities": ["Земля"]
@@ -127,7 +127,7 @@
 		"tradeRequest": "Хорошое предложение!",
 
 		"outerColor": [218,0,0],
-		"innerColor": [176,124,45],
+		"innerColor": [228,228,228],
 		"uniques": ["[+2]% [Production] [in all cities]"],
 		"cities": ["Производственный комплекс"]
 	},
