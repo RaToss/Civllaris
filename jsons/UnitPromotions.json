@@ -1,17 +1,114 @@
 [
 	{
-		"name": "Heal Instantly",
+		"name": "Ремонтный набор",
 		"uniques": [
-			"Heal this unit by [30] HP",
+			"Heal this unit by [50] HP",
 			"Doing so will consume this opportunity to choose a Promotion"
 		],
 		"unitTypes": [
 			"Пушка",
 			"Лазер",
+			"Фрегат",
 			"Пехота",
 			"Дрон"
 		],
 		"row": 0,
+        "column": 0
+	},
+	{
+		"name": "Исследовательские телескопы",
+		"uniques": [
+			"[+1] Sight"
+		],
+		"unitTypes": [
+			"Пушка",
+			"Лазер",
+			"Фрегат",
+			"Пехота",
+			"Дрон"
+		],
+		"row": 2,
+        "column": 0
+	},
+	{
+		"name": "Улучшить двмгатель",
+		"uniques": [
+			"[+1] Movement"
+		],
+		"unitTypes": [
+			"Фрегат"
+		],
+		"row": 3,
+        "column": 0
+	},
+	{
+		"name": "Увороты",
+		"uniques": [
+			"[+10]% Strength <when defending>"
+		],
+		"unitTypes": [
+			"Пушка",
+			"Лазер",
+			"Фрегат",
+			"Пехота",
+			"Дрон"
+		],
+		"row": 4,
+        "column": 0
+	},
+	{
+		"name": "Мастера штурма",
+		"uniques": [
+			"[+10]% Strength <vs cities> <when attacking>"
+		],
+		"unitTypes": [
+			"Пехота"
+		],
+		"row": 5,
+        "column": 0
+	},
+	{
+		"name": "Снарядить пушками",
+		"uniques": [
+			"[+990]% Strength <vs [Пушка] units>", "[+990]% Strength <vs [Лазер] units>"
+		],
+		"unitTypes": [
+			"Пехота"
+		],
+		"row": 6,
+        "column": 0
+	},
+	{
+		"name": "Улучшение ракет",
+		"uniques": [
+			"[+1] Range"
+		],
+		"unitTypes": [
+			"Противо космическая оборона"
+		],
+		"row": 3,
+        "column": 0
+	},
+	{
+		"name": "Новые снаряды",
+		"uniques": [
+			"[+10]% Strength <when attacking> "
+		],
+		"unitTypes": [
+			"Противо космическая оборона"
+		],
+		"row": 4,
+        "column": 0
+	},
+	{
+		"name": "Укрепленность",
+		"uniques": [
+			"[+10]% Strength <when attacking>"
+		],
+		"unitTypes": [
+			"Оборона"
+		],
+		"row": 3,
         "column": 0
 	}
 ]
