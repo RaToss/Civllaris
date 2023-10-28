@@ -375,7 +375,7 @@
 	},
 	{
 		"name": "ПКО",
-		"unitType": "Оборона",
+		"unitType": "Противо космическая оборона",
 		"movement": 1,
 		"strength": 20,
 		"rangedStrength": 20,
