@@ -24,6 +24,10 @@
 		"movementType": "Air"
 	},
 	{
+		"name": "Противо космическая оборона",
+		"movementType": "Air"
+	},
+	{
 		"name": "Civilian Water",
 		"movementType": "Water"
 	},
