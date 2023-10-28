@@ -1,202 +1,440 @@
 
 game.png
-size: 2048, 128
+size: 2048, 1024
 format: RGBA8888
 filter: MipMapLinearLinear, MipMapLinearLinear
 repeat: none
+CityStateIcons/Угасшая империя
+  rotate: false
+  xy: 844, 168
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Barbarians
+  rotate: false
+  xy: 628, 140
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Галактический совет
+  rotate: false
+  xy: 872, 276
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Государство `Земля`
+  rotate: false
+  xy: 980, 276
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+CityStateIcons/Премитивная цивилизация
+  rotate: false
+  xy: 980, 276
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Империя Хроз
+  rotate: false
+  xy: 1088, 276
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Кристаллы
+  rotate: false
+  xy: 1304, 276
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Республика Лиц
+  rotate: false
+  xy: 1804, 376
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+NationIcons/Союз рабочих
+  rotate: false
+  xy: 1912, 376
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 ResourceIcons/Артефакты
   rotate: false
-  xy: 4, 4
+  xy: 764, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Газ
   rotate: false
-  xy: 112, 4
+  xy: 1804, 484
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Конструктор
   rotate: false
-  xy: 220, 4
+  xy: 1196, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Кристаллы
   rotate: false
-  xy: 328, 4
+  xy: 1412, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Минералы
   rotate: false
-  xy: 436, 4
+  xy: 1520, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Очки конструкции
   rotate: false
-  xy: 544, 4
+  xy: 1628, 276
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Солдат
   rotate: false
-  xy: 652, 4
+  xy: 1912, 484
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Сплавы
   rotate: false
-  xy: 760, 4
+  xy: 1736, 268
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Таинственный код
   rotate: false
-  xy: 868, 4
+  xy: 1844, 268
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Темная материя
   rotate: false
-  xy: 976, 4
+  xy: 736, 140
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Тиянки
   rotate: false
-  xy: 1084, 4
+  xy: 736, 32
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Учёный
   rotate: false
-  xy: 1192, 4
+  xy: 844, 60
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 ResourceIcons/Человек
   rotate: false
-  xy: 1300, 4
+  xy: 952, 168
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Barbarian encampment
   rotate: false
-  xy: 1408, 76
+  xy: 2012, 972
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/City ruins
   rotate: false
-  xy: 1408, 76
+  xy: 2012, 972
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Coast
   rotate: false
-  xy: 1408, 40
+  xy: 2012, 936
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Вакуум
   rotate: false
-  xy: 1408, 40
+  xy: 2012, 936
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Ocean
   rotate: false
-  xy: 1448, 76
+  xy: 2012, 900
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Абсолютный вакуум
   rotate: false
-  xy: 1448, 76
+  xy: 2012, 900
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/River-Bottom
   rotate: false
-  xy: 1408, 4
+  xy: 2012, 864
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/River-BottomLeft
   rotate: false
-  xy: 1448, 40
+  xy: 2012, 828
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/River-BottomRight
   rotate: false
-  xy: 1488, 76
+  xy: 2012, 792
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Белая звезда
   rotate: false
-  xy: 1448, 4
+  xy: 2012, 756
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Желтая звезда
   rotate: false
-  xy: 1488, 40
+  xy: 2012, 720
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Красная звезда
   rotate: false
-  xy: 1528, 76
+  xy: 2012, 684
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Пояс астеройдов
   rotate: false
-  xy: 1488, 4
+  xy: 2012, 648
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Синяя звезда
   rotate: false
-  xy: 1528, 40
+  xy: 2012, 612
   size: 32, 28
   orig: 32, 28
   offset: 0, 0
   index: -1
 TileSets/Space/Tiles/Черная дыра
   rotate: false
-  xy: 1568, 76
+  xy: 4, 4
   size: 32, 28
   orig: 32, 28
+  offset: 0, 0
+  index: -1
+UnitIcons/Автомат
+  rotate: false
+  xy: 4, 40
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Автомат пехота
+  rotate: false
+  xy: 4, 40
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Боевой дрон
+  rotate: false
+  xy: 764, 800
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Винтовка
+  rotate: false
+  xy: 212, 40
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Винтовка пехота
+  rotate: false
+  xy: 212, 40
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Зонд
+  rotate: false
+  xy: 764, 592
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Исследовательский корабль
+  rotate: false
+  xy: 972, 800
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Колонизатор
+  rotate: false
+  xy: 4, 248
+  size: 752, 752
+  orig: 752, 752
+  offset: 0, 0
+  index: -1
+UnitIcons/Космическая амеба
+  rotate: false
+  xy: 420, 40
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Крейсер
+  rotate: false
+  xy: 764, 384
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Лазерная винтовка
+  rotate: false
+  xy: 972, 592
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Лазерная винтовка пехота
+  rotate: false
+  xy: 972, 592
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Лазерный крейсер
+  rotate: false
+  xy: 1180, 800
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Лазерный линкор
+  rotate: false
+  xy: 972, 384
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Лазерный фрегат
+  rotate: false
+  xy: 1180, 592
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Лазерный эсминец
+  rotate: false
+  xy: 1388, 800
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Линкор
+  rotate: false
+  xy: 1180, 384
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Орбитальная Артиллерия
+  rotate: false
+  xy: 1388, 592
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/ПКО
+  rotate: false
+  xy: 628, 32
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+UnitIcons/Пиратское судно
+  rotate: false
+  xy: 1596, 800
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Строительный дрон
+  rotate: false
+  xy: 1388, 384
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Строительный корабль
+  rotate: false
+  xy: 1596, 592
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Фрегат
+  rotate: false
+  xy: 1804, 800
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Энергозаряд
+  rotate: false
+  xy: 1596, 384
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+UnitIcons/Эсминец
+  rotate: false
+  xy: 1804, 592
+  size: 200, 200
+  orig: 200, 200
   offset: 0, 0
   index: -1
