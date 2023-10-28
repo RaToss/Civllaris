@@ -31,7 +31,7 @@
 		"tradeRequest": "Да, это звучит неплохо",
 
 		"outerColor": [162,162,162],
-		"innerColor": [194,213,210],
+		"innerColor": [50,70,80],
 		"uniques": ["[+5]% [Science] [in all cities]"],
 		"cities": ["Станция"]
 	},
@@ -62,7 +62,7 @@
 		"afterPeace": "Настало время помириться!",
 		"tradeRequest": "Это стоющее предложение!",
 
-		"outerColor": [49,151,130],
+		"outerColor": [0,222,222],
 		"innerColor": [71,209,181],
 		"uniques": ["[-1 Science]"],
 		"cities": ["Земля"]
@@ -94,8 +94,8 @@
 		"afterPeace": "Похоже, вы больше не в силах с нами сражатся. Хорошо, мы отступим.",
 		"tradeRequest": "Звучит интересно.",
 
-		"outerColor": [90,87,82],
-		"innerColor": [117,114,109],
+		"outerColor": [148,148,148],
+		"innerColor": [20,19,19],
 		"uniques": ["[+5]% Production when constructing [Military] units [in all cities]"],
 		"cities": ["Планета Хроз"]
 	},
@@ -127,7 +127,7 @@
 		"tradeRequest": "Хорошое предложение!",
 
 		"outerColor": [176,124,45],
-		"innerColor": [252,252,255],
+		"innerColor": [218,0,0],
 		"uniques": ["[+2]% [Production] [in all cities]"],
 		"cities": ["Производственный комплекс"]
 	},
@@ -158,13 +158,13 @@
 		"afterPeace": "Мы оба были истощенны от этой войны...",
 		"tradeRequest": "Выгодная сделка!",
 
-		"outerColor": [51,154,75],
+		"outerColor": [34,255,0],
 		"innerColor": [49,209,65],
 		"uniques": ["[-2 Food] [in capital]"],
 		"cities": ["Планета"]
 	},
 	{
-		"name": "Кристаллы",
+		"name": "Кристальная планета",
 		"leaderName": "Живой кристал 1",
 		"adjective": ["Кристаллы"],
 		"preferredVictoryType": "Cultural",
@@ -190,7 +190,7 @@
 		"afterPeace": "",
 		"tradeRequest": "",
 
-		"outerColor": [255,177,60],
+		"outerColor": [144,67,0],
 		"innerColor": [202,153,81],
 		"uniques": [],
 		"cities": ["Камень"]
