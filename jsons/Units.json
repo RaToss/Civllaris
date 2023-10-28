@@ -285,6 +285,32 @@
 		"requiredTech": "Военная подготовка"
 	},
 	{
+		"name": "Автомат",
+		"uniqueTo": "Государство `Земля`",
+		"replaces": "Винтовка",
+		"unitType": "Пехота",
+		"movement": 1,
+		"strength": 50,
+		"cost": 120,
+		"hurryCostModifier": 20,
+		"uniques": ["Only available <in cities with a [Полигон]>", "[+5]% Strength <vs cities>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
+		"requiredTech": "Военная подготовка"
+	},
+	{
+		"name": "Автомат пехота",
+		"uniqueTo": "Государство `Земля`",
+		"replaces": "Винтовка пехота",
+		"unitType": "Оборона",
+		"movement": 1,
+		"rangedStrength": 50,
+		"range": 1,
+		"strength": 50,
+		"cost": 45,
+		"hurryCostModifier": 20,
+		"uniques": ["Only available <in cities with a [Полигон]>", "[+5]% Strength <vs [Пехота] units>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
+		"requiredTech": "Оборонительная армия"
+	},
+	{
 		"name": "Боевой дрон",
 		"unitType": "Пехота",
 		"movement": 2,
