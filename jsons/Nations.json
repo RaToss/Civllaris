@@ -158,7 +158,7 @@
 		"afterPeace": "Мы оба были истощенны от этой войны...",
 		"tradeRequest": "Выгодная сделка!",
 
-		"outerColor": [49,209,65],
+		"outerColor": [15,110,0],
 		"innerColor": [34,255,0],
 		"uniques": ["[-2 Food] [in capital]"],
 		"cities": ["Планета"]
