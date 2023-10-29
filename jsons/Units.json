@@ -312,7 +312,7 @@
 	},
 	{
 		"name": "Боевой дрон",
-		"unitType": "Пехота",
+		"unitType": "БД",
 		"movement": 2,
 		"strength": 55,
 		"cost": 125,
