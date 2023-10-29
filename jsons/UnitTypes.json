@@ -20,6 +20,10 @@
 		"movementType": "Land"
 	},
 	{
+		"name": "БД",
+		"movementType": "Land"
+	},
+	{
 		"name": "Оборона",
 		"movementType": "Air"
 	},
