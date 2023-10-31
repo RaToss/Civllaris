@@ -130,7 +130,7 @@
 		"uniqueTo": "Barbarians",
 		"replaces": "Эсминец",
 		"unitType": "Пушка",
-		"movement": 2,
+		"movement": 1,
 		"range": 2,
 		"rangedStrength": 15,
 		"strength": 20,
