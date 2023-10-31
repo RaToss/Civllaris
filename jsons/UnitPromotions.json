@@ -2,7 +2,7 @@
 	{
 		"name": "Ремонтный набор",
 		"uniques": [
-			"Heal this unit by [50] HP",
+			"Heal this unit by [30] HP",
 			"Doing so will consume this opportunity to choose a Promotion"
 		],
 		"unitTypes": [
