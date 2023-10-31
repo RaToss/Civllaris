@@ -259,7 +259,7 @@
 		"strength": 10,
 		"cost": 120,
 		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Кристалическая пушка]>", "Only available <in cities with a [Кристалический ускоритель]>", "Consumes [1] [Кристаллы]"]
+		"uniques": ["Only available <in cities with a [Кристаллическая пушка]>", "Only available <in cities with a [Кристаллический ускоритель]>", "Consumes [1] [Кристаллы]"]
 		"requiredTech": "Кораблестроение"
 	},
 	{
