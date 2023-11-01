@@ -23,7 +23,7 @@
 			{
 				"name": "Улучшить двигатели",
 				"uniques": [
-					"[+1] Movement <for [All] units>"
+					"[+1] Movement <for [Civilian] units>"
 				],
 				"row": 1,
 				"column": 4
