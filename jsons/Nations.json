@@ -225,7 +225,7 @@
 	{
 		"name": "Ялмез",
 		"adjective": ["Ялмезы"],
-		"cityStateType": "Премитивная цивилизация",
+		"cityStateType": "Примитивная цивилизация",
 		"style": "",
 		"uniques": [
 			"Cannot build [Пушка] units",
