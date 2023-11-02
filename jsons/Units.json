@@ -33,7 +33,7 @@
 		"cost": 25,
 		"hurryCostModifier": 20,
 		"uniques": [
-			"Unable to capture cities", "Uncapturable", "[-2] Sight"
+			"Unable to capture cities", "Uncapturable", "[-3] Sight"
 		]
 	},
 	{
