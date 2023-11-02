@@ -33,7 +33,7 @@
 		"cost": 25,
 		"hurryCostModifier": 20,
 		"uniques": [
-			"Unable to capture cities", "Uncapturable"
+			"Unable to capture cities", "Uncapturable", "[-2] Sight"
 		]
 	},
 	{
@@ -45,7 +45,7 @@
 		"cost": 5,
 		"hurryCostModifier": 20,
 		"uniques": [
-			"Unable to capture cities", "[+1] Sight", "Uncapturable"
+			"Unable to capture cities", "Uncapturable"
 		]
 	},
 	{
@@ -88,7 +88,6 @@
 		"movement": 1,
 		"hurryCostModifier": 20,
 		"cost": 75
-		"uniques": ["[+1] Sight"]
 		"requiredTech": "Исследовательские судна"
 	},
 	{
