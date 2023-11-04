@@ -2,10 +2,9 @@
     {
         "name": "Угасшая империя",
         "friendBonusUniques": [
-            "[+1] [Таинственный код] <starting from the [Выход в космос]> <before the [Контакт II]>",
-            "[+2] [Таинственный код] <starting from the [Контакт II]>"
+           "Provides a unique luxury"
         ],
-        "allyBonusUniques": ["[+3] [Таинственный код] <starting from the [Контакт II]>"],
+        "allyBonusUniques": ["Provides a unique luxury"],
         "color": [7, 7, 7]
     },
 	{
@@ -13,7 +12,7 @@
         "friendBonusUniques": [
             "[+2 Food] <starting from the [Выход в космос]>"
         ],
-        "allyBonusUniques": [ "[+1] [Человек] <starting from the [Контакт II]>", "[+3 Food] <starting from the [Контакт II]>"],
+        "allyBonusUniques": ["[+3 Food] <starting from the [Контакт II]>"],
         "color": [85, 141, 0]
     }
 ]
