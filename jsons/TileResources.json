@@ -7,44 +7,44 @@
 		"name": "Минералы", 
 		"resourceType": "Strategic"
 		"revealedBy": "Добывающие стнации",
-		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
 		"improvedBy": ["Добывающая станция"],
 		"improvementStats": { "production": 1 },
 		"uniques": [
-			"Generated on every [40] tiles <in [Пояс астеройдов] tiles>"
+			"Generated on every [40] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
 		"name": "Артефакты", 
 		"resourceType": "Luxury",
 		"revealedBy": "Поиски артефактов",
-		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
 		"improvedBy": ["Добывающая станция"],
 		"improvementStats": { "culture": 1 },
 		"uniques": [
-			"Generated on every [44] tiles <in [Пояс астеройдов] tiles>"
+			"Generated on every [44] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
 		"name": "Тиянки", 
 		"resourceType": "Luxury"
 		"revealedBy": "Охота на тиянок",
-		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"terrainsCanBeFoundOn": ["Land"],
 		"improvedBy": ["Охотничьи станции"],
 		"improvementStats": { "food": 1 },
 		"uniques": [
-			"Generated on every [44] tiles <in [Пояс астеройдов] tiles>"
+			"Generated on every [44] tiles <in [Land] tiles>"
 		]
 	},
 	{
 		"name": "Кристаллы", 
 		"resourceType": "Strategic"
 		"revealedBy": "Добыча кристаллов",
-		"terrainsCanBeFoundOn": ["Пояс астеройдов"],
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
 		"improvedBy": ["Добывающая станция"],
 		"improvementStats": { "production": 1 },
 		"uniques": [
-			"Generated on every [27] tiles <in [Пояс астеройдов] tiles>"
+			"Generated on every [27] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
