@@ -662,7 +662,7 @@ TileSets/Space/Tiles/Красная звезда
   orig: 32, 28
   offset: 0, 0
   index: -1
-TileSets/Space/Tiles/Пояс астеройдов
+TileSets/Space/Tiles/Пояс астероидов
   rotate: false
   xy: 2012, 1676
   size: 32, 28
