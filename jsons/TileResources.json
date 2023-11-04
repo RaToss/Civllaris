@@ -29,11 +29,11 @@
 		"name": "Тиянки", 
 		"resourceType": "Luxury"
 		"revealedBy": "Охота на тиянок",
-		"terrainsCanBeFoundOn": ["Land"],
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
 		"improvedBy": ["Охотничьи станции"],
 		"improvementStats": { "food": 1 },
 		"uniques": [
-			"Generated on every [44] tiles <in [Land] tiles>"
+			"Generated on every [44] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
