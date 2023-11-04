@@ -89,5 +89,6 @@
 	{
 		"name": "Таинственный код",
 		"resourceType": "Luxury"
+		"uniques": ["Can only be created by Mercantile City-States"]
 	}
 ]
