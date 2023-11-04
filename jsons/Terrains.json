@@ -120,7 +120,7 @@
 		]
 	},
 	{
-		"name": "Пояс астеройдов",
+		"name": "Пояс астероидов",
 		"type": "TerrainFeature",
 		"production": 1,
 		"movementCost": 1,
