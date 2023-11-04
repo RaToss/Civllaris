@@ -586,7 +586,7 @@
 			{
 				"name": "Трудящаяся молодежь",
 				"uniques": [
-					"[+2] [Человек]"
+					"[+15]% Production when constructing [Civilian] units [in all cities]"
 				],
 				"row": 1,
 				"column": 5
