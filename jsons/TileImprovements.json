@@ -165,6 +165,7 @@
 	},
 	{
 		"name": "Охотничьи станции",
+		"terrainsCanBeBuiltOn": ["Тиянки"],
 		"turnsToBuild": 9,
 		"food": 1,
 		"techRequired": "Охота на тиянок",
