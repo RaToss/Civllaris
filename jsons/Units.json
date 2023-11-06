@@ -53,7 +53,7 @@
 		"unitType": "Civilian",
 		"movement": 1,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build [Land] improvements on tiles"],
+		"uniques": ["Can build [Основное] improvements on tiles", "Can build [Remove] improvements on tiles"],
 		"cost": 75
 		"requiredTech": "Строительные корабли"
 	},
@@ -64,7 +64,7 @@
 		"unitType": "Civilian",
 		"movement": 2,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build [Land] improvements on tiles"]
+		"uniques": ["Can build [Основное] improvements on tiles", "Can build [Remove] improvements on tiles"]
 		"cost": 65,
 		"requiredTech": "Строительные корабли"
 	},
@@ -88,7 +88,8 @@
 		"movement": 1,
 		"hurryCostModifier": 20,
 		"cost": 75
-		"requiredTech": "Исследовательские судна"
+		"requiredTech": "Исследовательские судна",
+		"uniques": ["Can build [Особенное] improvements on tiles"]
 	},
 	{
 		"name": "Кристал исследователь",
@@ -98,7 +99,8 @@
 		"movement": 2,
 		"hurryCostModifier": 20,
 		"cost": 65,
-		"requiredTech": "Исследовательские судна"
+		"requiredTech": "Исследовательские судна",
+		"uniques": ["Can build [Особенное] improvements on tiles"]
 	},
 	{
 		"name": "Фрегат",

@@ -58,9 +58,20 @@
 	{
 		"name": "Станция наблюдения",
 		"terrainsCanBeBuiltOn": ["Черная дыра"],
-		"science": 1,
+		"science": 2,
 		"turnsToBuild": 10,
 		"techRequired": "Изучение черных дыр"
+		"uniques": [
+			"Основное"
+		]
+	},
+	{
+		"name": "Научная станцыя",
+		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда"],
+		"science": 1,
+		"uniques": [
+			"Особенное"
+		]
 	},
 	{
 		"name": "Добывающая станция",
@@ -68,6 +79,9 @@
 		"production": 1,
 		"turnsToBuild": 8,
 		"techRequired": "Добывающие стнации"
+		"uniques": [
+			"Основное"
+		]
 	},
 	{
 		"name": "Торговая станция",
@@ -75,6 +89,9 @@
 		"gold": 1,
 		"turnsToBuild": 6,
 		"techRequired": "Торговые станции"
+		"uniques": [
+			"Основное"
+		]
 	},
 	{
 		"name": "Доп. станция",
@@ -84,7 +101,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -95,7 +112,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -106,7 +123,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -117,7 +134,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -128,7 +145,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Provides [1] [Человек]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -139,7 +156,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Provides [1] [Кристаллы]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Provides [1] [Кристаллы]", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -150,7 +167,7 @@
 		"turnsToBuild": 9,
 		"techRequired": "Орбитальные станции",
 		"uniques": [
-			"Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
+			"Основное", "Constructing it will take over the tiles around it and assign them to your closest city", "Can be built just outside your borders"
 		]
 	},
 	{
@@ -160,7 +177,7 @@
 		"turnsToBuild": 10,
 		"techRequired": "Эксперементы",
 		"uniques": [
-			"Consumes [1] [Учёный]"
+			"Особенное", "Consumes [1] [Учёный]"
 		]
 	},
 	{
@@ -169,23 +186,24 @@
 		"turnsToBuild": 9,
 		"food": 1,
 		"techRequired": "Охота на тиянок",
+		"uniques": [
+			"Основное"
+		]
 	},
 	{
 		"name": "Оборонительная станция",
 		"terrainsCanBeBuiltOn": ["Желтая звезда", "Красная звезда", "Белая звезда", "Синяя звезда", "Пояс астероидов"],
 		"turnsToBuild": 10,
 		"techRequired": "Оборонительные станции",
-		"uniques": ["Consumes [1] [Солдат]", "Adjacent enemy units ending their turn take [5] damage"]
+		"uniques": ["Основное", "Consumes [1] [Солдат]", "Adjacent enemy units ending their turn take [5] damage"]
 	},
 	{
 		"name": "Маяк",
 		"terrainsCanBeBuiltOn": ["Coast"],
 		"culture": 1
+		"happiness": 1
 		"turnsToBuild": 8,
-		"techRequired": "Свет вакуума",
-		"uniques": [
-			"[+1 Happiness] from [Coast] tiles"
-		]
+		"techRequired": "Свет вакуума"
 	},
 	{
 		"name": "Станция дронов",
@@ -202,5 +220,6 @@
 		],
 		"turnsToBuild": 30,
 		"techRequired": "Сфера Дайсона"
+		"uniques": ["Особенное"]
 	}
 ]
