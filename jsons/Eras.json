@@ -1,6 +1,6 @@
 [
 	{
-		"name": "Выход в космос",
+		"name": "Смотрим на звезды",
 		"researchAgreementCost": 150,
 		"startingSettlerCount": 0, 
 		"startingWorkerCount": 0,
@@ -13,8 +13,8 @@
 		"iconRGB": [255, 87, 35]
 	},
 	{
-		"name": "Колонизация",
-		"researchAgreementCost": 155,
+		"name": "Выход в космос",
+		"researchAgreementCost": 150,
 		"startingSettlerCount": 0, 
 		"startingWorkerCount": 0,
 		"startingMilitaryUnitCount": 0,
@@ -22,12 +22,12 @@
 		"settlerPopulation": 1,
 		"startPercent": 0,
 		"citySound": "",
-		"embarkDefense": 0,
+		"embarkDefense": 2,
 		"iconRGB": [255, 87, 35]
 	},
 	{
 		"name": "Контакт",
-		"researchAgreementCost": 160,
+		"researchAgreementCost": 150,
 		"startingSettlerCount": 0, 
 		"startingWorkerCount": 0,
 		"startingMilitaryUnitCount": 0,
@@ -35,12 +35,12 @@
 		"settlerPopulation": 1,
 		"startPercent": 0,
 		"citySound": "",
-		"embarkDefense": 0,
+		"embarkDefense": 2,
 		"iconRGB": [255, 87, 35]
 	},
 	{
-		"name": "Мегасооружения",
-		"researchAgreementCost": 170,
+		"name": "Возвышение",
+		"researchAgreementCost": 150,
 		"startingSettlerCount": 0, 
 		"startingWorkerCount": 0,
 		"startingMilitaryUnitCount": 0,
@@ -50,31 +50,5 @@
 		"citySound": "",
 		"embarkDefense": 0,
 		"iconRGB": [255, 87, 35]
-	},
-	{
-		"name": "Контакт II",
-		"researchAgreementCost": 170,
-		"startingSettlerCount": 0, 
-		"startingWorkerCount": 0,
-		"startingMilitaryUnitCount": 0,
-		"startingMilitaryUnit": "Зонд",
-		"settlerPopulation": 1,
-		"startPercent": 0,
-		"citySound": "",
-		"embarkDefense": 0,
-		"iconRGB": [255, 87, 35]
-	},
-	{
-		"name": "Колосс",
-		"researchAgreementCost": 170,
-		"startingSettlerCount": 0, 
-		"startingWorkerCount": 0,
-		"startingMilitaryUnitCount": 0,
-		"startingMilitaryUnit": "Зонд",
-		"settlerPopulation": 1,
-		"startPercent": 0,
-		"citySound": "",
-		"embarkDefense": 0,
-		"iconRGB": [255, 87, 35]
-	},
+	}
 ]

@@ -1,514 +1,500 @@
 [
 	{
 		"columnNumber": 0,
-		"era": "Выход в космос",
-		"techCost": 50,
+		"era": "Смотрим на звезды",
+		"techCost": 40,
 		"buildingCost": 40,
 		"wonderCost": 100,
 		"techs": [
 			{
 				"name": "Изучение космоса",
 				"row": 5,
-				"quote": "",
+				"quote": "Звезды так и манят нас... Как же всё таки была создана вселенная? Только выйдя в космос мы сможем узнать ответ!",
+				"uniques": ["Starting tech"]
+			},
+			{
+				"name": "Культура",
+				"row": 10,
+				"quote": "Наше культура зародилась на нашей родной планете, и это мы должны помнить.",
 				"uniques": ["Starting tech", "Enables conversion of city production to [Culture]"]
+			},
+			{
+				"name": "Строительство",
+				"row": 14,
+				"quote": "Застроим всю планету!",
+				"uniques": ["Starting tech"]
+			},
+			{
+				"name": "Торговля",
+				"row": 18,
+				"quote": "Торговля была всегда, она есть и сейчас, и она никогда не менялась...",
+				"uniques": ["Starting tech"]
 			}
 		]
 	},
 	{
 		"columnNumber": 1,
-		"era": "Выход в космос",
-		"techCost": 74,
-		"buildingCost": 50,
-		"wonderCost": 100,
+		"era": "Смотрим на звезды",
+		"techCost": 55,
+		"buildingCost": 45,
+		"wonderCost": 105,
 		"techs": [
 			{
-				"name": "Кораблестроение",
-				"row": 3,
-				"prerequisites": ["Изучение космоса"],
-				"quote": ""
+				"name": "Зонды",
+				"row": 4,
+				"quote": "Эти приборы помогут нам изучать космос более эффективно!",
+				"prerequisites": ["Изучение космоса"]
 			},
 			{
-				"name": "Наука",
+				"name": "Телескопы",
 				"row": 5,
-				"prerequisites": ["Изучение космоса"],
-				"quote": ""
+				"quote": "Смотреть в бесконечную пустоту космоса гораздо удобние с помощью телескопов.",
+				"prerequisites": ["Изучение космоса"]
 			},
 			{
-				"name": "Строительство",
-				"row": 7,
-				"prerequisites": ["Изучение космоса"],
-				"quote": ""
+				"name": "Радиосигналы",
+				"row": 6,
+				"quote": "Мы уверены, что где-то там есть жизнь! Мы не можем быть тут одни! Давайте посылать сигналы.",
+				"prerequisites": ["Изучение космоса"]
+			},
+			{
+				"name": "История",
+				"row": 10,
+				"quote": "Это наша история, нашь путь развития и обьединения. Тут нечем гордиться, тут нечего стыдится.",
+				"prerequisites": ["Культура"]
+			},
+			{
+				"name": "Конструкторы",
+				"row": 13,
+				"quote": "Нам нужны великие конструкторы, которые смогут создать корабли для путишествия в межзвездном.",
+				"prerequisites": ["Строительство"]
+			},
+			{
+				"name": "Добча ресурсов",
+				"row": 14,
+				"quote": "Добывая ресурсы мы делаем себя сильнее.",
+				"prerequisites": ["Строительство"]
 			}
 		]
 	},
+	
 	{
 		"columnNumber": 2,
 		"era": "Выход в космос",
-		"techCost": 90,
-		"buildingCost": 65,
-		"wonderCost": 110,
+		"techCost": 115,
+		"buildingCost": 50,
+		"wonderCost": 115,
 		"techs": [
 			{
-				"name": "Институты",
-				"row": 5,
-				"prerequisites": ["Наука"],
-				"quote": ""
+				"name": "Исследовательские судна",
+				"row": 4,
+				"quote": "Первые космические корабли для путешестве в межзвездном пространстве с местом для экипажа.",
+				"prerequisites": ["Зонды", "Телескопы", "Радиосигналы", "Конструкторы"]
 			},
 			{
-				"name": "Шахты",
-				"row": 7,
-				"prerequisites": ["Строительство"],
-				"quote": ""
+				"name": "Строительные судна",
+				"row": 6,
+				"quote": "Корабли, оснащенные всеми необходимыми приборами для постройки улучшений.",
+				"prerequisites": ["Зонды", "Телескопы", "Радиосигналы", "Конструкторы"]
 			},
 			{
-				"name": "Торговля",
-				"row": 8,
-				"prerequisites": ["Строительство"],
-				"quote": ""
+				"name": "Управление",
+				"row": 10,
+				"quote": "Раз уж мы собрались становится галактической державой, надо задуматься о управлении.",
+				"prerequisites": ["История"]
+			},
+			{
+				"name": "Обработка",
+				"row": 14,
+				"quote": "",
+				"prerequisites": ["Добча ресурсов"]
 			}
 		]
 	},
 	{
 		"columnNumber": 3,
-		"era": "Колонизация",
-		"techCost": 95,
-		"buildingCost": 70,
-		"wonderCost": 115,
+		"era": "Выход в космос",
+		"techCost": 155,
+		"buildingCost": 55,
+		"wonderCost": 120,
 		"techs": [
 			{
-				"name": "Малые пушки",
-				"row": 2,
-				"prerequisites": ["Кораблестроение"],
-				"quote": ""
-			},
-			{
-				"name": "Строительные корабли",
+				"name": "Корветы",
 				"row": 3,
-				"prerequisites": ["Кораблестроение"],
-				"quote": ""
+				"quote": "Оказалось, что космос довольно опасное место, нам срочно нужны боевые корабли!",
+				"prerequisites": ["Исследовательские судна"]
 			},
 			{
-				"name": "Исследовательские судна",
-				"row": 4,
-				"prerequisites": ["Кораблестроение", "Институты"],
-				"quote": ""
-			},
-			{
-				"name": "Профессионализм",
+				"name": "Орбитальные станции",
 				"row": 6,
-				"prerequisites": ["Шахты", "Институты"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Исследовательские судна", "Строительные судна"]
 			},
 			{
-				"name": "Славолитейные заводы",
-				"row": 7,
-				"prerequisites": ["Шахты"],
-				"quote": ""
+				"name": "Добывающие станции",
+				"row": 9,
+				"quote": "",
+				"prerequisites": ["Строительные судна"]
+			},
+			{
+				"name": "Научные станции",
+				"row": 8,
+				"quote": "Космос - удивительное место!",
+				"prerequisites": ["Исследовательские судна", "Строительные судна"]
+			},
+			{
+				"name": "Политика",
+				"row": 10,
+				"quote": "",
+				"prerequisites": ["Управление"]
+			},
+			{
+				"name": "Институты",
+				"row": 14,
+				"quote": "",
+				"prerequisites": ["Обработка"]
+			},
+			{
+				"name": "Добыча пылинок",
+				"row": 18,
+				"quote": "",
+				"prerequisites": ["Исследовательские судна", "Строительные судна", "Торговля"]
 			}
 		]
 	},
 	{
 		"columnNumber": 4,
-		"era": "Колонизация",
-		"techCost": 110,
-		"buildingCost": 90,
-		"wonderCost": 125,
+		"era": "Выход в космос",
+		"techCost": 190,
+		"buildingCost": 60,
+		"wonderCost": 130,
 		"techs": [
 			{
-				"name": "Добывающие стнации",
+				"name": "Фрегаты",
+				"row": 5,
+				"quote": "",
+				"prerequisites": ["Корветы"]
+			},
+			{
+				"name": "Десант",
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Корветы"]
+			},
+			{
+				"name": "Оборонительные сооружения",
 				"row": 3,
-				"prerequisites": ["Строительные корабли"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Корветы"]
+			},
+			{
+				"name": "Оборонительные станции",
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Корветы"]
 			},
 			{
 				"name": "Колонизаторы",
-				"row": 4,
-				"prerequisites": ["Исследовательские судна"],
-				"quote": ""
+				"row": 6,
+				"quote": "",
+				"prerequisites": ["Орбитальные станции"]
 			},
 			{
-				"name": "Орбитальные станции",
-				"row": 5,
-				"prerequisites": ["Исследовательские судна", "Строительные корабли", "Профессионализм"],
-				"quote": ""
+				"name": "Исследовательские дроны",
+				"row": 8,
+				"quote": "",
+				"prerequisites": ["Научные станции"]
+			},
+			{
+				"name": "Пропаганда",
+				"row": 10,
+				"quote": "",
+				"prerequisites": ["Политика"]
+			},
+			{
+				"name": "Терраформирование",
+				"row": 13,
+				"quote": "",
+				"prerequisites": ["Институты"]
+			},
+			{
+				"name": "Производство роботов",
+				"row": 14,
+				"quote": "",
+				"prerequisites": ["Институты"]
+			},
+			{
+				"name": "Удобрения",
+				"row": 15,
+				"quote": "",
+				"prerequisites": ["Институты", "Добыча пылинок"]
+			},
+			{
+				"name": "Ценные металлы",
+				"row": 18,
+				"quote": "",
+				"prerequisites": ["Добыча пылинок"]
 			}
 		]
 	},
 	{
 		"columnNumber": 5,
-		"era": "Колонизация",
-		"techCost": 120,
-		"buildingCost": 100,
+		"era": "Контакт",
+		"techCost": 235,
+		"buildingCost": 65,
 		"wonderCost": 135,
+		"color": [160, 60, 35]
 		"techs": [
 			{
-				"name": "Обустройство",
-				"row": 5,
-				"prerequisites": ["Колонизаторы", "Орбитальные станции"],
-				"quote": ""
+				"name": "Экзоскелет",
+				"row": 2,
+				"quote": "",
+				"prerequisites": ["Десант"],
+				"uniques": ["[+30]% Strength <for [Десантник] units> <vs cities>"]
+			},
+			{
+				"name": "Эсминцы",
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Оборонительные сооружения", "Оборонительные станции"]
+			},
+			{
+				"name": "Противокосмическая оборона",
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Оборонительные сооружения", "Оборонительные станции"]
+			},
+			{
+				"name": "Строительные дроны",
+				"row": 7,
+				"quote": "",
+				"prerequisites": ["Исследовательские дроны"]
+			},
+			{
+				"name": "Эксперементальные станции",
+				"row": 8,
+				"quote": "",
+				"prerequisites": ["Исследовательские дроны"]
+			},
+			{
+				"name": "Научные проекты",
+				"row": 9,
+				"quote": "",
+				"prerequisites": ["Исследовательские дроны"]
+			},
+			{
+				"name": "Космические экскурсии",
+				"row": 10,
+				"quote": "",
+				"prerequisites": ["Пропаганда"]
+			},
+			{
+				"name": "Свет вакуума",
+				"row": 11,
+				"quote": "",
+				"prerequisites": ["Пропаганда"]
+			},
+			{
+				"name": "Экзотический газ",
+				"row": 13,
+				"quote": "",
+				"prerequisites": ["Исследовательские дроны", "Производство роботов"]
+			},
+			{
+				"name": "Пылинки в медицине",
+				"row": 14,
+				"quote": "",
+				"prerequisites": ["Производство роботов"]
+			},
+			{
+				"name": "Вопрос о тиянках",
+				"row": 16,
+				"quote": "Тиянки - существа, которые смогли приспособиться к жизни в вакууме. Питаются они газами с газовых гигантов. Они могут приносить пользу, но какую?",
+				"prerequisites": ["Ценные металлы", "Производство роботов"]
+			},
+			{
+				"name": "Галактическая валюта",
+				"row": 18,
+				"quote": "",
+				"prerequisites": ["Ценные металлы"],
+				"uniques": ["Enables conversion of city production to [Gold]"]
+			},
+			{
+				"name": "Торговые станции",
+				"row": 19,
+				"quote": "",
+				"prerequisites": ["Ценные металлы"]
 			}
 		]
 	},
 	{
 		"columnNumber": 6,
 		"era": "Контакт",
-		"techCost": 150,
-		"buildingCost": 105,
+		"techCost": 355,
+		"buildingCost": 65,
 		"wonderCost": 140,
 		"techs": [
 			{
-				"name": "Военная подготовка",
+				"name": "Боевые дроны",
 				"row": 2,
-				"prerequisites": ["Обустройство", "Малые пушки"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Экзоскелет"]
+				"uniques": ["[+30]% Strength <for [Десантник] units> <vs cities>"]
 			},
 			{
-				"name": "Добыча кристаллов",
+				"name": "Современное вооружение",
 				"row": 3,
-				"prerequisites": ["Обустройство", "Добывающие стнации"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Эсминцы"]
 			},
 			{
-				"name": "Изучение черных дыр",
-				"row": 6,
-				"prerequisites": ["Обустройство"],
-				"quote": ""
+				"name": "Истребители",
+				"row": 4,
+				"quote": "",
+				"prerequisites": ["Противокосмическая оборона"]
 			},
 			{
-				"name": "Изучение вакуума",
-				"row": 5,
-				"prerequisites": ["Обустройство"],
-				"quote": ""
+				"name": "Добыча артифактов",
+				"row": 7,
+				"quote": "",
+				"prerequisites": ["Строительные дроны"]
 			},
 			{
-				"name": "Производственный район",
+				"name": "Лазеры",
 				"row": 8,
-				"prerequisites": ["Обустройство", "Славолитейные заводы"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Строительные дроны"]
 			},
 			{
-				"name": "Торговые станции",
-				"row": 9,
-				"prerequisites": ["Обустройство", "Торговля"],
-				"uniques": ["Enables Open Borders agreements"],
-				"quote": ""
+				"name": "Военная доктрина",
+				"row": 10,
+				"quote": "",
+				"prerequisites": ["Космические экскурсии"]
 			},
+			{
+				"name": "Сверх двигатели",
+				"row": 12,
+				"quote": "",
+				"prerequisites": ["Экзотический газ"]
+			},
+			{
+				"name": "Производство кристаллов",
+				"row": 13,
+				"quote": "",
+				"prerequisites": ["Пылинки в медицине"]
+			},
+			{
+				"name": "Клонирование",
+				"row": 14,
+				"quote": "",
+				"prerequisites": ["Пылинки в медицине"],
+				"uniques": ["Double quantity of [Человек] produced"]
+			},
+			{
+				"name": "Планетарная пушка",
+				"row": 15,
+				"quote": "",
+				"prerequisites": ["Пылинки в медицине"]
+			}
 		]
 	},
 	{
 		"columnNumber": 7,
-		"era": "Контакт",
-		"techCost": 155,
-		"buildingCost": 115,
-		"wonderCost": 145,
+		"era": "Возвышение",
+		"techCost": 415,
+		"buildingCost": 75,
+		"wonderCost": 140,
 		"techs": [
 			{
-				"name": "Сверх двигатели",
-				"row": 2,
-				"prerequisites": ["Военная подготовка"],
-				"quote": ""
-			},
-			{
-				"name": "Малые лазеры",
+				"name": "Крейсеры",
 				"row": 3,
-				"prerequisites": ["Военная подготовка", "Добыча кристаллов"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Современное вооружение"]
 			},
 			{
-				"name": "Добыча газов",
-				"row": 4,
-				"prerequisites": ["Добыча кристаллов", "Изучение вакуума"],
-				"quote": ""
-			},
-			{
-				"name": "Свет вакуума",
-				"row": 5,
-				"prerequisites": ["Изучение вакуума"],
-				"quote": ""
-			},
-			{
-				"name": "Поиски артефактов",
+				"name": "Изучение черных дыр",
 				"row": 7,
-				"prerequisites": ["Изучение черных дыр", "Производственный район"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Лазеры"]
 			},
 			{
-				"name": "Охота на тиянок",
-				"row": 9,
-				"prerequisites": ["Торговые станции"],
-				"quote": ""
+				"name": "Новая наука",
+				"row": 8,
+				"quote": "",
+				"prerequisites": ["Лазеры", "Добыча артифактов"],
+				"uniques": ["Enables conversion of city production to [Science]"]
 			},
 			{
-				"name": "Галактическая валюта",
+				"name": "Музеи артефактов",
 				"row": 10,
-				"prerequisites": ["Торговые станции"],
-				"uniques": ["Enables conversion of city production to [Gold]", "[+1 Gold] from every [Торговая станция]"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Добыча артифактов", "Военная доктрина"]
 			}
 		]
 	},
 	{
 		"columnNumber": 8,
-		"era": "Контакт",
-		"techCost": 170,
-		"buildingCost": 135,
-		"wonderCost": 165,
+		"era": "Возвышение",
+		"techCost": 455,
+		"buildingCost": 90,
+		"wonderCost": 170,
 		"techs": [
 			{
-				"name": "Новые корабли",
-				"row": 2,
-				"prerequisites": ["Сверх двигатели", "Малые лазеры"],
-				"quote": ""
-			},
-			{
-				"name": "Лазерные винтовки",
+				"name": "Линкоры",
 				"row": 3,
-				"prerequisites": ["Малые лазеры"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Крейсеры"]
 			},
 			{
-				"name": "Добыча лазерами",
-				"row": 4,
-				"prerequisites": ["Малые лазеры"],
-				"uniques": ["[+1 Production] from every [Добывающая станция]"]
-				"quote": ""
+				"name": "Добыча темной материи",
+				"row": 7,
+				"quote": "",
+				"prerequisites": ["Изучение черных дыр", "Новая наука"]
 			},
 			{
-				"name": "Выработка энергии",
+				"name": "Изучение артифактов",
 				"row": 8,
-				"prerequisites": ["Производственный район", "Добыча газов"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Новая наука"]
+				"uniques": ["[+1 Science] from every [Музей артефактов]"]
 			}
 		]
 	},
 	{
 		"columnNumber": 9,
-		"era": "Мегасооружения",
-		"techCost": 600,
-		"buildingCost": 145,
-		"wonderCost": 170,
+		"era": "Возвышение",
+		"techCost": 490,
+		"buildingCost": 100,
+		"wonderCost": 180,
 		"techs": [
 			{
-				"name": "Сфера Дайсона",
-				"row": 6,
-				"prerequisites": ["Изучение черных дыр"],
-				"quote": "Мы думали возводить такие крупные строения во круг звезд, но так вышло, что мы должны разработать проэкт по созданию сверы во круг черной дыры."
+				"name": "Постройка колосса",
+				"row": 3,
+				"quote": "",
+				"prerequisites": ["Линкоры"]
 			},
 			{
-				"name": "Дуло пушки",
-				"row": 8,
-				"prerequisites": ["Выработка энергии"],
-				"quote": ""
-			},
-			{
-				"name": "Ствол пушки",
-				"row": 9,
-				"prerequisites": ["Выработка энергии"],
-				"quote": ""
-			},
-			{
-				"name": "Фундамент пушки",
-				"row": 10,
-				"prerequisites": ["Выработка энергии"],
-				"quote": ""
-			},
+				"name": "Варп двигатель",
+				"row": 7,
+				"quote": "",
+				"prerequisites": ["Добыча темной материи", "Изучение артифактов"],
+				"uniques": [
+				"Enables embarkation for land units", "Enables [Embarked] units to enter ocean tiles"]
+			}
 		]
 	},
 	{
 		"columnNumber": 10,
-		"era": "Контакт II",
-		"techCost": 210,
-		"buildingCost": 150,
-		"wonderCost": 180,
+		"era": "Возвышение",
+		"techCost": 515,
+		"buildingCost": 110,
+		"wonderCost": 190,
 		"techs": [
 			{
-				"name": "Оборонительная армия",
-				"row": 3,
-				"prerequisites": ["Лазерные винтовки"],
-				"quote": ""
-			},
-			{
-				"name": "Оборонительные сооружения",
-				"row": 4,
-				"prerequisites": ["Лазерные винтовки"],
-				"quote": ""
-			},
-			{
-				"name": "Оборонительные станции",
-				"row": 5,
-				"prerequisites": ["Лазерные винтовки"],
-				"quote": ""
-			},
-			{
-				"name": "Новая наука",
-				"row": 6,
-				"prerequisites": ["Сфера Дайсона"],
-				"uniques": ["[+1 Science] from every [Станция наблюдения]"],
-				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 11,
-		"era": "Контакт II",
-		"techCost": 230,
-		"buildingCost": 170,
-		"wonderCost": 195,
-		"techs": [
-			{
-				"name": "Наступательная армия",
-				"row": 2,
-				"prerequisites": ["Оборонительная армия", "Новые корабли"],
-				"quote": ""
-			},
-			{
-				"name": "Орбитальная артиллерия",
-				"row": 3,
-				"prerequisites": ["Оборонительная армия", "Оборонительные сооружения"],
-				"quote": ""
-			},
-			{
-				"name": "Боевые дроны",
-				"row": 5,
-				"prerequisites": ["Оборонительная армия", "Оборонительные станции"],
-				"quote": ""
-			},
-			{
-				"name": "Выработка газов",
-				"row": 10,
-				"prerequisites": ["Новая наука"],
-				"quote": ""
-			},
-			{
-				"name": "Эксперементы",
+				"name": "За приделы галактики",
 				"row": 7,
-				"prerequisites": ["Новая наука"],
-				"uniques": ["Enables conversion of city production to [Science]"],
-				"quote": ""
-			},
-			{
-				"name": "Философия",
-				"row": 8,
-				"prerequisites": ["Новая наука"],
-				"uniques": ["[+1 Culture] [in all cities]"]
- 				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 12,
-		"era": "Контакт II",
-		"techCost": 240,
-		"buildingCost": 175,
-		"wonderCost": 200,
-		"techs": [
-			{
-				"name": "Переработка сплавов",
-				"row": 10,
-				"prerequisites": ["Выработка газов"],
-				"quote": ""
-			},
-			{
-				"name": "Музеи",
-				"row": 8,
-				"prerequisites": ["Философия", "Эксперементы"],
-				"quote": ""
-			},
-			{
-				"name": "Большая пушка",
-				"row": 2,
-				"prerequisites": ["Наступательная армия"],
-				"quote": ""
-			},
-			{
-				"name": "Темная материя",
-				"row": 7,
-				"prerequisites": ["Эксперементы"],
-				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 13,
-		"era": "Контакт II",
-		"techCost": 250,
-		"buildingCost": 185,
-		"wonderCost": 205,
-		"techs": [
-			{
-				"name": "Варпдвигатель",
-				"row": 5,
-				"prerequisites": ["Темная материя"],
-				"uniques": ["Enables embarkation for land units", "Enables [Embarked] units to enter ocean tiles"],
-				"quote": ""
-			},
-			{
-				"name": "Линкоры",
-				"row": 2,
-				"prerequisites": ["Большая пушка"],
-				"quote": ""
-			},
-			{
-				"name": "Истребляющий лазер",
-				"row": 3,
-				"prerequisites": ["Темная материя"],
-				"quote": ""
-			},
-			{
-				"name": "Клонирование",
-				"row": 9,
-				"prerequisites": ["Переработка сплавов"],
-				"uniques": ["Double quantity of [Человек] produced"],
-				"quote": ""
-			},
-			{
-				"name": "Производство роботов",
-				"row": 10,
-				"prerequisites": ["Переработка сплавов"],
-				"uniques": ["[+1 Production] [in all cities]"],
-				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 14,
-		"era": "Колосс",
-		"techCost": 440,
-		"buildingCost": 205,
-		"wonderCost": 210,
-		"techs": [
-			{
-				"name": "Сверх пушка",
-				"row": 2,
-				"prerequisites": ["Линкоры"],
-				"quote": ""
-			},
-			{
-				"name": "Каюта",
-				"row": 9,
-				"prerequisites": ["Клонирование"],
-				"quote": ""
-			},
-			{
-				"name": "Броня",
-				"row": 10,
-				"prerequisites": ["Производство роботов"],
-				"quote": ""
-			}
-		]
-	},
-	{
-		"columnNumber": 15,
-		"era": "Колосс",
-		"techCost": 430,
-		"buildingCost": 220,
-		"wonderCost": 220,
-		"techs": [
-			{
-				"name": "Колосс",
-				"row": 6,
-				"prerequisites": ["Броня", "Каюта", "Сверх пушка"],
-				"quote": ""
+				"quote": "",
+				"prerequisites": ["Варп двигатель"]
 			}
 		]
 	}

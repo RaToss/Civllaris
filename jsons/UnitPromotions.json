@@ -1,114 +1,53 @@
 [
+
 	{
-		"name": "Ремонтный набор",
+		"name": "Защитник",
 		"uniques": [
-			"Heal this unit by [30] HP",
-			"Doing so will consume this opportunity to choose a Promotion"
+			"[+20]% Strength <vs [All] units> <when fighting in [Friendly Land] tiles> <when at war>"
 		],
-		"unitTypes": [
-			"Пушка",
-			"Лазер",
-			"Фрегат",
-			"Пехота",
-			"БД"
-		],
-		"row": 0,
-        "column": 0
+		"column": 1,
+        "row": 1
 	},
 	{
-		"name": "Исследовательские телескопы",
+		"name": "ПРО",
 		"uniques": [
-			"[+1] Sight"
+			"[+50]% Strength <vs [Ракетные] units> <when defending>"
 		],
-		"unitTypes": [
-			"Пушка",
-			"Лазер",
-			"Фрегат",
-			"Пехота",
-			"БД"
-		],
-		"row": 2,
-        "column": 0
+		"column": 1,
+        "row": 2
 	},
 	{
-		"name": "Улучшить двигатель",
+		"name": "Улучшение пушек",
+		"uniques": [
+			"[+10]% Strength <vs [All] units>"
+		],
+		"column": 1,
+        "row": 3
+	},
+	{
+		"name": "Отсек для истребителей",
+		"uniques": [
+			"[+20]% Strength <vs [All] units>",
+			"[+20]% Strength <vs cities>"
+		],
+		"column": 1,
+        "row": 4
+	},
+	{
+		"name": "Сверх двигатель",
 		"uniques": [
 			"[+1] Movement"
 		],
-		"unitTypes": [
-			"Фрегат"
-		],
-		"row": 3,
-        "column": 0
+		"column": 1,
+        "row": 5
 	},
 	{
-		"name": "Увороты",
+		"name": "Варп двигатель",
 		"uniques": [
-			"[+10]% Strength <when defending>"
+			"[+2] Movement"
 		],
-		"unitTypes": [
-			"Пушка",
-			"Лазер",
-			"Фрегат",
-			"Пехота",
-			"БД"
-		],
-		"row": 4,
-        "column": 0
+		"column": 1,
+        "row": 6
 	},
-	{
-		"name": "Мастера штурма",
-		"uniques": [
-			"[+10]% Strength <vs cities> <when attacking>"
-		],
-		"unitTypes": [
-			"Пехота"
-		],
-		"row": 5,
-        "column": 0
-	},
-	{
-		"name": "Снарядить пушками",
-		"uniques": [
-			"[+990]% Strength <vs [Пушка] units>", "[+990]% Strength <vs [Лазер] units>"
-		],
-		"unitTypes": [
-			"Пехота"
-		],
-		"row": 6,
-        "column": 0
-	},
-	{
-		"name": "Улучшение ракет",
-		"uniques": [
-			"[+1] Range"
-		],
-		"unitTypes": [
-			"Противо космическая оборона"
-		],
-		"row": 7,
-        "column": 0
-	},
-	{
-		"name": "Новые снаряды",
-		"uniques": [
-			"[+10]% Strength <when attacking> "
-		],
-		"unitTypes": [
-			"Противо космическая оборона"
-		],
-		"row": 8,
-        "column": 0
-	},
-	{
-		"name": "Укрепленность",
-		"uniques": [
-			"[+10]% Strength <when attacking>"
-		],
-		"unitTypes": [
-			"Оборона"
-		],
-		"row": 9,
-        "column": 0
-	}
+
 ]

@@ -3,14 +3,14 @@
 		"name": "Ocean",
 		"type": "Water",
 		"happiness": -1
-		"movementCost": 4,
+		"movementCost": 1,
 		"RGB": [107, 167, 193]
 	},
 	{
 		"name": "Coast",
 		"type": "Water",
 		"happiness": -1
-		"movementCost": 3,
+		"movementCost": 1,
 		"RGB": [45, 108, 145],
 		"uniques": [
 			"[+2] to Fertility for Map Generation",
@@ -44,7 +44,7 @@
 	{
 		"name": "Белая звезда",
 		"type": "Land",
-		"movementCost": 2,
+		"movementCost": 1,
 		"RGB": [168, 185, 102],
 		"uniques": [
 			"Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
@@ -66,7 +66,7 @@
 	{
 		"name": "Красная звезда",
 		"type": "Land",
-		"movementCost": 3,
+		"movementCost": 1,
 		"RGB": [189, 204, 191],
 		"uniques": [
 			"Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
@@ -85,7 +85,7 @@
 	{
 		"name": "Синяя звезда",
 		"type": "Land",
-		"movementCost": 4,
+		"movementCost": 1,
 		"RGB": [230, 230, 113],
 		"uniques": [
 			"Occurs at temperature between [-0.1] and [0.9] and humidity between [0] and [0.2]",
@@ -103,7 +103,7 @@
 	{
 		"name": "Черная дыра",
 		"type": "Land",
-		"movementCost": 6,
+		"movementCost": 1,
 		"RGB": [120, 120, 120],
 		"uniques": [
 			"Occurs at temperature between [-1] and [-0.9] and humidity between [0] and [1]",
@@ -119,10 +119,13 @@
 			"Every [23] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
 	},
+	
+	
+	// Особ. мест.
+	
 	{
 		"name": "Пояс астероидов",
 		"type": "TerrainFeature",
-		"production": 1,
 		"movementCost": 1,
 		"overrideStats": true,
 		"RGB": [105, 125, 72],
@@ -139,7 +142,64 @@
 			"Base Terrain on this tile is not counted for Region determination",
 			"Considered [Desirable] when determining start locations",
 			"Considered [Production] when determining start locations",
-			"Every [22] tiles with this terrain will receive a major deposit of a strategic resource."
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
 		]
-	}
+	},
+	{
+		"name": "Газовый гигант",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"overrideStats": true,
+		"unbuildable": true,
+		"occursOn": [
+			"Желтая звезда",
+			"Белая звезда",
+			"Красная звезда",],
+		"uniques": ["Vegetation",
+			"A Region is formed with at least [30]% [Газовый гигант] tiles, with priority [3]",
+			"Considered [Desirable] when determining start locations",
+			"Every [39] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+	},
+	{
+		"name": "Руины станции",
+		"type": "TerrainFeature",
+		"movementCost": 1,
+		"overrideStats": true,
+		"occursOn": [
+			"Желтая звезда",
+			"Белая звезда",
+			"Красная звезда",
+			"Синяя звезда",
+			"Черная дыра"],
+		"uniques": ["Vegetation",
+			"A Region is formed with at least [60]% [Руины станции] tiles, with priority [1]",
+			"Base Terrain on this tile is not counted for Region determination",
+			"Every [33] tiles with this terrain will receive a major deposit of a strategic resource."
+		],
+	},
+	
+	// Чудеса
+	
+	{
+		"name": "Разрыв пространства",
+		"type": "NaturalWonder",
+		"occursOn": ["Coast"],
+		"uniques": ["Must be adjacent to [1] [Coast] tiles"],
+		"turnsInto": "Coast",
+		"impassable": true,
+		"unbuildable": true,
+		"weight": 10
+	},
+	{
+		"name": "Брошенная библиотека",
+		"type": "NaturalWonder",
+		"science": 5
+		"occursOn": ["Желтая звезда"],
+		"uniques": ["Must be adjacent to [1] [Желтая звезда] tiles"],
+		"turnsInto": "Желтая звезда",
+		"impassable": true,
+		"unbuildable": true,
+		"weight": 5
+	},
 ]

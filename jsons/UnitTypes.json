@@ -4,46 +4,72 @@
 		"movementType": "Land"
 	},
 	{
-		"name": "Фрегат",
-		"movementType": "Land"
-	},
-	{
-		"name": "Пушка",
-		"movementType": "Land"
-	},
-	{
-		"name": "Лазер",
-		"movementType": "Land"
-	},
-	{
-		"name": "Пехота",
-		"movementType": "Land"
-	},
-	{
-		"name": "БД",
-		"movementType": "Land"
-	},
-	{
-		"name": "Оборона",
-		"movementType": "Air"
-	},
-	{
-		"name": "Противо космическая оборона",
-		"movementType": "Air"
-	},
-	{
 		"name": "Civilian Water",
 		"movementType": "Water"
 	},
 	{
-		"name": "Дрон",
-		"movementType": "Water",
+		"name": "Великий",
+		"movementType": "Land"
 	},
 	{
-		"name": "Энергозаряд",
-		"movementType": "Air",
-		"uniques": [
-			"Can see over obstacles"
-		]
+		"name": "Класс зонд",
+		"movementType": "Land"
+	},
+	{
+		"name": "Десантник",
+		"movementType": "Land"
+	},
+	{
+		"name": "ПК оборона",
+		"movementType": "Air"
+	},
+	{
+		"name": "Кризис",
+		"movementType": "Land"
+	},
+	{
+		"name": "Корвет пушка",
+		"movementType": "Land"
+	},
+	{
+		"name": "Корвет лазер",
+		"movementType": "Land"
+	},
+	{
+		"name": "Эсминец пушка",
+		"movementType": "Land"
+	},
+	{
+		"name": "Эсминец лазер",
+		"movementType": "Land"
+	},
+	{
+		"name": "Крейсер пушка",
+		"movementType": "Land"
+	},
+	{
+		"name": "Крейсер лазер",
+		"movementType": "Land"
+	},
+	{
+		"name": "Линкор пушка",
+		"movementType": "Land"
+	},
+	{
+		"name": "Линкор лазер",
+		"movementType": "Land"
+	},
+	{
+		"name": "Дроны звезды",
+		"movementType": "Land"
+	},
+	{
+		"name": "Ракетные",
+		"movementType": "Land"
+	},
+	{
+		"name": "Заряд",
+		"movementType": "Air"
+		"uniques": ["Self-destructs when attacking", "Ranged attacks may be performed over obstacles", "Cannot be intercepted"]
 	}
 ]

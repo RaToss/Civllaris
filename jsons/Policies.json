@@ -1,54 +1,69 @@
 [
 	{
-		"name": "Подготовка",
-		"era": "Выход в космос",
+		"name": "Расширение полномочий",
+		"era": "Смотрим на звезды",
 		"priorities": {
 			"Neutral": 10,
 			"Cultural": 10,
 			"Diplomatic": 10,
 			"Domination": 10,
-			"Scientific": 15
+			"Scientific": 10
 		},
-		"uniques": [
+		"uniques": ["[+1 Happiness] from every [Губернатор]"
 		],
 		"policies": [
 			{
-				"name": "Улучшение телескопов",
+				"name": "Расширить совет",
 				"uniques": [
-					"[+1] Sight <for [Civilian] units>"
+					"[+1 Culture] from every [Губернатор]",
 				],
 				"row": 1,
-				"column": 2
+				"column": 1
 			},
 			{
-				"name": "Улучшить двигатели",
+				"name": "Усиление контроля",
 				"uniques": [
-					"[+1] Movement <for [Civilian] units>"
+					"[+1 Production] from every [Тюрьма]"
 				],
 				"row": 1,
-				"column": 4
+				"column": 3
 			},
 			{
-				"name": "Подготовить запасы",
+				"name": "Сбережение",
 				"uniques": [
-					"[+2 Food] [in capital]"
 				],
-				"requires": ["Улучшение телескопов", "Улучшить двигатели"]
+				"row": 1,
+				"column": 5
+			},
+			{
+				"name": "Организованность",
+				"uniques": [
+					"[+1 Production] from every [Губернатор]"
+				],
+				"requires": ["Усиление контроля"]
 				"row": 2,
 				"column": 3
 			},
+			{
+				"name": "Распредиление",
+				"uniques": [
+					"[+1 Happiness] from every [Бункер с запасами]"
+				],
+				"requires": ["Сбережение"]
+				"row": 2,
+				"column": 5
+			},
 			
 			{
-				"name": "Подготовка Complete",
-				"uniques": [
-					"Free [Колонизатор] appears"
+				"name": "Расширение полномочий Complete",
+				"uniques": ["[+1 Gold] from every [Губернатор]"
 				]
 			}
 		]
 	},
 	{
-		"name": "Меры предосторожности",
-		"era": "Выход в космос",
+		"name": "Процветание",
+		"era": "Смотрим на звезды",
 		"priorities": {
 			"Neutral": 20,
 			"Cultural": 20,
@@ -57,587 +72,340 @@
 			"Scientific": 20
 		},
 		"uniques": [
-			"Notified of new Barbarian encampments"
+			"[+1 Science] [in capital]",
 		],
 		"policies": [
 			{
-				"name": "Улучшение фрегатов",
+				"name": "Административные операции",
 				"uniques": [
-					"[+5]% Strength <for [Фрегат] units> <when attacking>",
-					"[+5]% Strength <for [Фрегат] units> <when defending>"
+					"[-10]% maintenance cost for buildings [in all cities]"
+				],
+				"row": 1,
+				"column": 1
+			},
+			{
+				"name": "Стандартные шаблоны строительства",
+				"uniques": [
+					"[+10]% Production when constructing [All] buildings [in all cities]"
 				],
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Отступление",
+				"name": "Отдел общественных работ",
 				"uniques": [
-					"[+1] Movement <for [{Wounded} {Фрегат}] units>",
-					"[+15]% Strength <for [{Wounded} {Фрегат}] units>  <when defending>"
+					"[+1 Happiness] from every [Жилой район]"
 				],
-				"requires": ["Улучшение фрегатов"],
-				"row": 2,
-				"column": 1
+				"row": 1,
+				"column": 5
 			},
 			{
-				"name": "Борьба с местной фауной",
+				"name": "Предтавительство",
 				"uniques": [
-					"[+10]% Strength <vs [Barbarian] units>",
-					"Earn [65]% of killed [Barbarian] unit's [Strength] as [Gold]"
+					"Each city founded increases culture cost of policies [33]% less than normal"
 				],
-				"requires": ["Улучшение фрегатов"],
+				"requires": ["Административные операции", "Стандартные шаблоны строительства", "Отдел общественных работ"],
 				"row": 2,
 				"column": 3
 			},
 			{
-				"name": "Военные хитрости",
+				"name": "Процветание Complete",
 				"uniques": [
-					"[15]% XP gained from combat <for [Military] units>"
-				],
-				"requires": ["Улучшение фрегатов"],
-				"row": 2,
-				"column": 5
-			},
-			{
-				"name": "Меры предосторожности Complete",
-				"uniques": [
-					"[-25]% maintenance costs <for [All] units>"
+					"[+1 Culture] [in all cities]"
 				]
 			}
 		]
 	},
 	{
-		"name": "Контроль",
-		"era": "Контакт",
+		"name": "Превосходство",
+		"era": "Смотрим на звезды",
 		"priorities": {
-			"Neutral": 0,
-			"Cultural": 25,
-			"Diplomatic": 25,
-			"Domination": 0,
-			"Scientific": 10
+			"Neutral": 20,
+			"Cultural": 20,
+			"Diplomatic": 20,
+			"Domination": 20,
+			"Scientific": 20
 		},
 		"uniques": [
-			"Only available <before adopting [Свобода]>", "Only available <before adopting [Ксенофобия]>"
+			"[+5]% Strength <for [Военный] units>",
 		],
 		"policies": [
 			{
-				"name": "Ксенотерпимость",
+				"name": "Мастера-корабелы",
 				"uniques": [
-					"[+1 Happiness] per [1] population [in all cities]"
+					"[+5]% Production when constructing [Военный] units [in all cities]",
 				],
 				"row": 1,
 				"column": 1
 			},
 			{
-				"name": "Плановая экономика",
+				"name": "Корпус материально-технического обеспечения флота",
 				"uniques": [
-					"[+1 Production] from every specialist [in all cities]"
+					"[-5]% maintenance costs <for [All] units>"
 				],
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Защита идеалов",
+				"name": "Истребление",
 				"uniques": [
-					"[+5]% Strength <for [Military] units> <when defending>",
+					"[+10]% Strength <for [Военный] units> <vs cities>"
 				],
 				"row": 1,
 				"column": 5
 			},
 			{
-				"name": "Товарищество",
+				"name": "Подготовка",
+				"uniques": [
+					"[+5]% Strength <for [Военный] units>"
+				],
+				"requires": ["Мастера-корабелы", "Корпус материально-технического обеспечения флота"],
+				"row": 2,
+				"column": 2
+			},
+			{
+				"name": "Превосходство Complete",
 				"uniques": [
 					"[+1 Culture] [in all cities]"
+				]
+			}
+		]
+	},
+	{
+		"name": "Безопасность",
+		"era": "Смотрим на звезды",
+		"priorities": {
+			"Neutral": 20,
+			"Cultural": 20,
+			"Diplomatic": 20,
+			"Domination": 20,
+			"Scientific": 20
+		},
+		"uniques": [
+			"[+5]% Strength <for [Военный] units>",
+		],
+		"policies": [
+			{
+				"name": "Ввод военного положения",
+				"row": 1,
+				"column": 3
+			},
+			{
+				"name": "Строгий контроль",
+				"uniques": [
+					"[+1 Happiness] [in all cities with a garrison]"
 				],
-				"requires": ["Ксенотерпимость"],
-				"row": 2,
+				"row": 1,
 				"column": 1
 			},
 			{
-				"name": "Знания - Свобода",
+				"name": "Введение талонов",
 				"uniques": [
-					"[+2]% [Science] [in all cities]"
+					"[+1 Food] from every [Военное положение]"
 				],
-				"requires": ["Защита идеалов", "Плановая экономика"],
+				"requires": ["Ввод военного положения"],
+				"row": 2,
+				"column": 2
+			},
+			{
+				"name": "Принудительное производство",
+				"requires": ["Ввод военного положения"],
 				"row": 2,
 				"column": 4
 			},
 			{
-				"name": "Контроль Complete",
-				"uniques": [
-				]
-			}
-		]
-	},
-	{
-		"name": "Ксенофобия",
-		"era": "Контакт",
-		"priorities": {
-			"Neutral": 0,
-			"Cultural": 20,
-			"Diplomatic": 0,
-			"Domination": 40,
-			"Scientific": 0
-		},
-		"uniques": [
-			"Only available <before adopting [Контроль]>", "Only available <before adopting [Свобода]>"
-		],
-		"policies": [
-			{
-				"name": "Обьединение ненавистью",
+				"name": "Безопасность Complete",
 				"uniques": [
 					"[+1 Culture] [in all cities]"
-				],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Подготовка к войне",
-				"uniques": [
-					"[+15]% Production when constructing [Military] units [in all cities]",
-				],
-				"requires": ["Обьединение ненавистью"],
-				"row": 2,
-				"column": 5
-			},
-			{
-				"name": "Презрение",
-				"uniques": [
-					"[+5]% Strength <for [Military] units> <when attacking>",
-				],
-				"requires": ["Обьединение ненавистью"],
-				"row": 2,
-				"column": 3
-			},
-			{
-				"name": "Отряды зачистки",
-				"uniques": [
-					"[+1 Happiness] [in all cities with a garrison]"
-				],
-				"requires": ["Обьединение ненавистью"],
-				"row": 2,
-				"column": 1
-			},
-			{
-				"name": "Ксенофобия Complete",
-				"uniques": [
 				]
 			}
 		]
 	},
 	{
-		"name": "Свобода",
-		"era": "Контакт",
+		"name": "Дипломатичность",
+		"era": "Смотрим на звезды",
 		"priorities": {
 			"Neutral": 20,
-			"Cultural": 10,
+			"Cultural": 20,
 			"Diplomatic": 20,
-			"Domination": 10,
-			"Scientific": 10
+			"Domination": 20,
+			"Scientific": 20
 		},
 		"uniques": [
-			"Only available <before adopting [Ксенофобия]>", "Only available <before adopting [Контроль]>"
 		],
 		"policies": [
+			
 			{
-				"name": "Свобода слова",
+				"name": "Открытие границ",
 				"uniques": [
-					"[+1 Happiness] [in all cities]"
-				],
-				"row": 1,
-				"column": 5
-			},
-			{
-				"name": "Защитники свободы",
-				"uniques": [
-					"[+5]% Strength <for [Оборона] units>",
-					"[+5]% Strength <for [Противо космическая оборона] units>"
+					"Enables Open Borders agreements"
 				],
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Поощрение",
+				"name": "Научное сотрудничество",
 				"uniques": [
-				"[-1 Gold] from every specialist [in all cities]", "[+1 Production] from every specialist [in all cities]"
+					"Enables Research agreements"
 				],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Свободный рынок",
-				"uniques": [
-				"[+1 Gold] from every [Торговая станция]",
-				],
-				"requires": ["Свобода слова"],
+				"requires": ["Открытие границ"],
 				"row": 2,
-				"column": 5
-			},
-			
-			{
-				"name": "Свобода Complete",
-				"uniques": [
-				]
-			}
-		]
-	},
-	{
-		"name": "Массированный штурм",
-		"era": "Контакт II",
-		"priorities": {
-			"Neutral": 0,
-			"Cultural": 15,
-			"Diplomatic": 5,
-			"Domination": 25,
-			"Scientific": 0
-		},
-		"uniques": [
-			"Only available <before adopting [Упорство]>", "Only available <before adopting [Наземный штурм]>", "Only available <before adopting [Осторожность]>", "Only available <before adopting [Гибкая оборона]>"
-		],
-		"policies": [
-			{
-				"name": "Огонь на подавление",
-				"uniques": [
-					"[+10]% Strength <for [Пушка] units> <when attacking>"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Количество",
-				"uniques": [
-					"[+10]% Production when constructing [Пушка] units [in all cities]"
-				],
-				"row": 1,
 				"column": 3
-			},
-			{
-				"name": "Боевое построение",
-				"uniques": [
-				"[+5]% Strength <for [Пушка] units> <when adjacent to a [Пушка] unit>"
-				],
-				"row": 1,
-				"column": 5
-			},
+			}
 			
 			{
-				"name": "Массированный штурм Complete",
+				"name": "Дипломатичность Complete",
 				"uniques": [
 				]
 			}
 		]
 	},
 	{
-		"name": "Наземный штурм",
-		"era": "Контакт II",
+		"name": "Спиритуальное возвышение",
+		"era": "Возвышение",
 		"priorities": {
-			"Neutral": 0,
-			"Cultural": 15,
-			"Diplomatic": 5,
-			"Domination": 25,
-			"Scientific": 0
-		},
-		"uniques": [
-			"Only available <before adopting [Упорство]>", "Only available <before adopting [Массированный штурм]>", "Only available <before adopting [Осторожность]>", "Only available <before adopting [Гибкая оборона]>"
-		],
-		"policies": [
-			{
-				"name": "Штурм",
-				"uniques": [
-					"[+20]% Strength <for [Пехота] units> <vs cities> <when attacking>"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Обучение",
-				"uniques": [
-					"[+10]% Production when constructing [Полигон] buildings [in all cities]"
-				],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Орбитальная бомбардировка",
-				"uniques": [
-				"[+15]% Strength <for [Пушка] units> <vs cities>"
-				],
-				"row": 1,
-				"column": 5
-			},
-			
-			{
-				"name": "Наземный штурм Complete",
-				"uniques": [
-				]
-			}
-		]
-	},
-	{
-		"name": "Осторожность",
-		"era": "Контакт II",
-		"priorities": {
-			"Neutral": 5,
-			"Cultural": 15,
+			"Neutral": 20,
+			"Cultural": 20,
 			"Diplomatic": 20,
-			"Domination": 15,
-			"Scientific": 0
+			"Domination": 20,
+			"Scientific": 20
 		},
-		"uniques": [
-			"Only available <before adopting [Упорство]>", "Only available <before adopting [Массированный штурм]>", "Only available <before adopting [Наземный штурм]>", "Only available <before adopting [Гибкая оборона]>"
+		"uniques": ["Only available <before adopting [Генетическое возвышение]>",
+			"Only available <before adopting [Кибернетическое возвышение]>"
 		],
 		"policies": [
+			
 			{
-				"name": "Улучшить сенсоры",
-				"uniques": [
-					"[+1] Sight <for [All] units>"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Усилить лазер",
-				"uniques": [
-					"[+1] Range <for [Лазер] units>"
-				],
+				"name": "Теория покрова",
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Сверхпрыжок",
+				"name": "Изучение покрова",
 				"uniques": [
-				"[+1] Movement <for [{Wounded} {Military}] units>"
+					"[+1 Faith, +1 Culture] [in all cities]"
 				],
-				"row": 1,
-				"column": 5
+				"requires": ["Теория покрова"],
+				"row": 2,
+				"column": 3
 			},
+			{
+				"name": "Проникнуть в покров",
+				"requires": ["Изучение покрова"],
+				"row": 3,
+				"column": 3
+			}
 			
 			{
-				"name": "Осторожность Complete",
+				"name": "Спиритуальное возвышение Complete",
 				"uniques": [
 				]
 			}
 		]
 	},
 	{
-		"name": "Гибкая оборона",
-		"era": "Контакт II",
+		"name": "Генетическое возвышение",
+		"era": "Возвышение",
 		"priorities": {
-			"Neutral": 15,
-			"Cultural": 15,
-			"Diplomatic": 10,
-			"Domination": 5,
-			"Scientific": 10
+			"Neutral": 20,
+			"Cultural": 20,
+			"Diplomatic": 20,
+			"Domination": 20,
+			"Scientific": 20
 		},
-		"uniques": [
-			"Only available <before adopting [Упорство]>", "Only available <before adopting [Массированный штурм]>", "Only available <before adopting [Наземный штурм]>", "Only available <before adopting [Осторожность]>"
+		"uniques": ["Only available <before adopting [Спиритуальное возвышение]>",
+			"Only available <before adopting [Кибернетическое возвышение]>"
 		],
 		"policies": [
+			
 			{
-				"name": "Изнеможение врага",
-				"uniques": [
-					"[+1] Movement <for [All] units> <when at war>"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Разведка",
-				"uniques": [
-					"[+1] Sight <for [Military] units> <when at war>"
-				],
+				"name": "Генетическая лаборатория",
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Контрудар",
-				"uniques": [
-				"[+10]% Strength <for [Лазер] units> <when at war>"
-				],
-				"row": 1,
-				"column": 5
+				"name": "Изменение генома",
+				"requires": ["Генетическая лаборатория"],
+				"row": 2,
+				"column": 2
 			},
+			{
+				"name": "Модернизация пищи",
+				"requires": ["Генетическая лаборатория"],
+				"row": 2,
+				"column": 4
+			},
+			{
+				"name": "Подавление недостатков",
+				"requires": ["Модернизация пищи", "Изменение генома"],
+				"row": 3,
+				"column": 3
+			}
 			
 			{
-				"name": "Гибкая оборона Complete",
+				"name": "Генетическое возвышение Complete",
 				"uniques": [
 				]
 			}
 		]
 	},
 	{
-		"name": "Упорство",
-		"era": "Контакт II",
+		"name": "Кибернетическое возвышение",
+		"era": "Возвышение",
 		"priorities": {
-			"Neutral": 10,
-			"Cultural": 25,
-			"Diplomatic": 10,
-			"Domination": 10,
-			"Scientific": 10
+			"Neutral": 20,
+			"Cultural": 20,
+			"Diplomatic": 20,
+			"Domination": 20,
+			"Scientific": 20
 		},
-		"uniques": [
-			"Only available <before adopting [Массированный штурм]>", "Only available <before adopting [Наземный штурм]>", "Only available <before adopting [Осторожность]>", "Only available <before adopting [Гибкая оборона]>"
+		"uniques": ["Only available <before adopting [Спиритуальное возвышение]>",
+			"Only available <before adopting [Генетическое возвышение]>"
 		],
 		"policies": [
-			{
-				"name": "Идеологическая пропитка",
-				"uniques": [
-					"[+5]% Strength <for [Military] units> <when fighting in [Friendly Land] tiles>"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-				"name": "Мобилизация",
-				"uniques": [
-					"[+10]% Production when constructing [Military] units [in all cities] <when at war>"
-				],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Ни шагу назад",
-				"uniques": [
-				"[+10]% Strength <for [Military] units> <within [2] tiles of a [Планета]> <when at war>"
-				],
-				"row": 1,
-				"column": 5
-			},
 			
 			{
-				"name": "Упорство Complete",
-				"uniques": [
-				]
-			}
-		]
-	},
-	{
-		"name": "Научное общество",
-		"era": "Колонизация",
-		"priorities": {
-			"Neutral": 10,
-			"Cultural": 10,
-			"Diplomatic": 10,
-			"Domination": 10,
-			"Scientific": 30
-		},
-		"uniques": ["Only available <before adopting [Общество рабочих]>", "Only available <before adopting [Крестьянское общество]>"],
-		"policies": [
-			{
-				"name": "Роль ученого",
-				"uniques": [
-					"[+1 Science] per [3] population [in all cities]"
-				],
+				"name": "Переход на аккамуляторы",
 				"row": 1,
 				"column": 1
 			},
 			{
-    				"name": "Расширить спонсорство",
-				"uniques": [
-					"[+1 Science] from every specialist [in all cities]", "[-1 Gold] from every specialist [in all cities]"
-				],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Заинтересованность общества",
+				"name": "Кибер органы",
 				"uniques": [
 					"[+1 Happiness] [in all cities]"
-				],
-				"row": 1,
-				"column": 5
-			},
-			
-			{
-				"name": "Научное общество Complete",
-				"uniques": [
 				]
-			}
-		]
-	},
-	{
-		"name": "Общество рабочих",
-		"era": "Колонизация",
-		"priorities": {
-			"Neutral": 10,
-			"Cultural": 10,
-			"Diplomatic": 10,
-			"Domination": 10,
-			"Scientific": 10
-		},
-		"uniques": ["Only available <before adopting [Научное общество]>", "Only available <before adopting [Крестьянское общество]>"],
-		"policies": [
-			{
-				"name": "Роль рабочего",
-				"uniques": [
-					"[+1 Production] per [1] population [in all cities]"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-    				"name": "Старания и труд",
-				"uniques": [
-					"[+1 Production] from every [Добывающая станция]"
-				],
 				"row": 1,
 				"column": 3
 			},
 			{
-				"name": "Трудящаяся молодежь",
+				"name": "Модернизация роботов",
 				"uniques": [
-					"[+15]% Production when constructing [Civilian] units [in all cities]"
-				],
-				"row": 1,
-				"column": 5
-			},
-			
-			{
-				"name": "Общество рабочих Complete",
-				"uniques": [
+					"[+1 Production] from every [Завод производства роботов]"
 				]
-			}
-		]
-	},
-	{
-		"name": "Крестьянское общество",
-		"era": "Колонизация",
-		"priorities": {
-			"Neutral": 10,
-			"Cultural": 10,
-			"Diplomatic": 10,
-			"Domination": 10,
-			"Scientific": 10
-		},
-		"uniques": ["Only available <before adopting [Научное общество]>", "Only available <before adopting [Общество рабочих]>"],
-		"policies": [
-			{
-				"name": "Роль крестьянина",
-				"uniques": [
-					"[+1 Food] per [1] population [in all cities]"
-				],
-				"row": 1,
-				"column": 1
-			},
-			{
-    				"name": "Удобрения",
-				"uniques": [
-					"[+2 Food] from every [Плантация]"
-				],
-				"row": 1,
-				"column": 3
-			},
-			{
-				"name": "Качество продукции",
-				"uniques": [
-					"[+1 Happiness] [in all cities]"
-				],
 				"row": 1,
 				"column": 5
 			},
+			{
+				"name": "Модернизация аккамуляторов",
+				"requires": ["Переход на аккамуляторы", "Кибер органы"],
+				"row": 2,
+				"column": 2
+			},
+			{
+				"name": "Роботы-солдаты",
+				"requires": ["Модернизация роботов", "Кибер органы"],
+				"row": 2,
+				"column": 4
+			},
+			{
+				"name": "Перенос разума в машину",
+				"requires": ["Модернизация аккамуляторов", "Роботы-солдаты"],
+				"row": 3,
+				"column": 3
+			}
 			
 			{
-				"name": "Крестьянское общество Complete",
+				"name": "Кибернетическое возвышение Complete",
 				"uniques": [
 				]
 			}

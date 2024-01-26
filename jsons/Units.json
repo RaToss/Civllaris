@@ -1,26 +1,15 @@
 [
+
+	// Зонд и поселенец
+ 	
 	{
 		"name": "Колонизатор",
 		"unitType": "Civilian",
 		"movement": 1,
-		"cost": 106,
-		"uniques": [
+		"cost": 100,
+		"uniques": ["Космос",
 			"Founds a new city",
 			"Excess Food converted to Production when under construction",
-			"Requires at least [2] population"
-		],
-		"hurryCostModifier": 20,
-		"requiredTech": "Колонизаторы"
-	},
-	{
-		"name": "Родильный кристал",
-		"replaces": "Колонизатор",
-		"uniqueTo": "Кристаллы",
-		"unitType": "Civilian",
-		"movement": 2,
-		"cost": 115,
-		"uniques": [
-			"Founds a new city",
 			"Requires at least [2] population"
 		],
 		"hurryCostModifier": 20,
@@ -32,50 +21,91 @@
 		"movement": 1,
 		"cost": 25,
 		"hurryCostModifier": 20,
-		"uniques": [
-			"Unable to capture cities", "Uncapturable", "[-1] Sight"
-		]
+		"uniques": ["Unable to capture cities", "Uncapturable", "[-1] Sight"]
+		"requiredTech": "Зонды"
 	},
+	
+	// Великие
+	
 	{
-		"name": "Глазница кристалла",
-		"replaces": "Зонд",
-		"uniqueTo": "Кристаллы",
-		"unitType": "Civilian",
+		"name": "Спиритуалист",
+		"unitType": "Великий",
+		"uniques": ["Only available <after adopting [Теория покрова]>",
+			"Can instantly construct a [Разрыв] improvement <by consuming this unit> <if it hasn't used other actions yet> <after adopting [Проникнуть в покров]>",
+            "Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>",
+			"Removes other religions when spreading religion",
+            "May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            "May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>", "Great Person - [Faith]",
+			"Unbuildable", "Religious Unit", "Hidden when religion is disabled",
+			"Takes your religion over the one in their birth city"],
 		"movement": 1,
-		"cost": 5,
-		"hurryCostModifier": 20,
-		"uniques": [
-			"Unable to capture cities", "Uncapturable"
-		]
+		"religiousStrength": 100
 	},
+	
+	// строитель и исследователь
+	
 	{
 		"name": "Строительный корабль",
 		"unitType": "Civilian",
 		"movement": 1,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build [Основное] improvements on tiles", "Can build [Remove] improvements on tiles"],
-		"cost": 75
-		"requiredTech": "Строительные корабли"
+		"uniques": ["Космос", "Can build [Оборонительное улучшение] improvements on tiles", "Can build [Промышленное улучшение] improvements on tiles"],
+		"cost": 15
+		"requiredTech": "Строительные судна"
 	},
 	{
-		"name": "Кристал строитель",
-		"replaces": "Строительный корабль",
-		"uniqueTo": "Кристаллы",
+		"name": "Исследовательский корабль",
 		"unitType": "Civilian",
-		"movement": 2,
+		"movement": 1,
 		"hurryCostModifier": 20,
-		"uniques": ["Can build [Основное] improvements on tiles", "Can build [Remove] improvements on tiles"]
-		"cost": 65,
-		"requiredTech": "Строительные корабли"
+		"cost": 15
+		"requiredTech": "Исследовательские судна",
+		"uniques": ["Космос", "Can build [Научное улучшение] improvements on tiles"]
 	},
+	
+	// Выгон
+	
+	{
+		"name": "Наблюдатель за тиянками",
+		"unitType": "Civilian",
+		"movement": 1,
+		"hurryCostModifier": 20,
+		"cost": 15
+		"uniques": ["Космос", "Can build [Выгон] improvements on tiles",  "Only available <in cities with a [Тиянки в промышленности]>"]
+	},
+	
+	// Охотник
+	
+	{
+		"name": "Охотник",
+		"unitType": "Civilian",
+	  "movement": 1,
+		"hurryCostModifier": 20,
+		"cost": 15
+		"uniques": ["Космос", "Can build [Охота] improvements on tiles",  "Only available <in cities with a [Охота на тиянок]>"]
+	},
+	
+	// Археолог
+	
+	{
+		"name": "Корабль археолога",
+		"unitType": "Civilian",
+		"movement": 1,
+		"hurryCostModifier": 20,
+		"cost": 15
+		"uniques": ["Космос", "Can build [Археология] improvements on tiles", "Only available <in cities with a [Заняться археологией]>"]
+	},
+	
+	// Дроны
+	
 	{
 		"name": "Строительный дрон",
 		"unitType": "Civilian Water",
-		"movement":3,
-		"cost": 90,
-		"requiredTech": "Изучение вакуума",
-		"uniques": [
-			"Cannot enter ocean tiles <before discovering [Изучение вакуума]>",
+		"movement": 1,
+		"cost": 50,
+		"requiredTech": "Строительные дроны",
+		"uniques": ["Космос",
+			"Cannot enter ocean tiles <before discovering [Строительные дроны]>",
 			"Uncapturable",
 			"Can build [Water] improvements on tiles",
 			"Automation is a primary action"
@@ -83,437 +113,558 @@
 		"hurryCostModifier": 20
 	},
 	{
-		"name": "Исследовательский корабль",
-		"unitType": "Civilian",
+		"name": "Дрон исследователь",
+		"unitType": "Civilian Water",
 		"movement": 1,
-		"hurryCostModifier": 20,
-		"cost": 75
-		"requiredTech": "Исследовательские судна",
-		"uniques": ["Can build [Особенное] improvements on tiles"]
+		"cost": 40,
+		"requiredTech": "Исследовательские дроны",
+		"uniques": ["Космос",
+			"Cannot enter ocean tiles <before discovering [Исследовательские дроны]>",
+			"Uncapturable",
+			"Automation is a primary action"
+		],
+		"hurryCostModifier": 20
 	},
+	
+	// Боевые юниты
+	
 	{
-		"name": "Кристал исследователь",
-		"replaces": "Исследовательский корабль",
-		"uniqueTo": "Кристаллы",
-		"unitType": "Civilian",
+		"name": "Зверь покрова",
+		"unitType": "Кризис",
 		"movement": 2,
-		"hurryCostModifier": 20,
-		"cost": 65,
-		"requiredTech": "Исследовательские судна",
-		"uniques": ["Can build [Особенное] improvements on tiles"]
+		"strength": 30,
+		"cost": 80,
+		"hurryCostModifier": 50,
+		"uniques": ["Consumes [1] [Энергия покрова]", "Космос", "Военный", "Only available <after adopting [Проникнуть в покров]>"]
 	},
 	{
-		"name": "Фрегат",
-		"unitType": "Фрегат",
+		"name": "Корвет",
+		"unitType": "Корвет пушка",
 		"movement": 1,
-		"range": 1,
-		"rangedStrength": 15,
 		"strength": 15,
-		"cost": 125,
+		"cost": 90,
 		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Малая Пушка]>", "Only available <in cities with a [Обычный двигатель]>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Кораблестроение"
+		"uniques": ["Космос", "Военный", "Unable to capture cities", "Only available <in cities with a [Завод производства корветов]>"]
+		"requiredTech": "Корветы"
+	},
+	{
+		"name": "Лазерный корвет",
+		"unitType": "Корвет лазер",
+		"movement": 1,
+		"strength": 15,
+		"range": 2
+		"rangedStrength": 15
+		"cost": 90,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities", "Only available <in cities with a [Установить лазерную пушку корвет]>"]
+		"requiredTech": "Корветы"
 	},
 	{
 		"name": "Эсминец",
-		"unitType": "Пушка",
-		"movement": 2,
-		"range": 1,
-		"rangedStrength": 35,
-		"strength": 35,
-		"cost": 140,
+		"unitType": "Эсминец пушка",
+		"movement": 1,
+		"strength": 20,
+		"cost": 120,
 		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Малая Пушка]>", "Only available <in cities with a [Сверх двигатель]>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Новые корабли"
+		"uniques": ["Космос", "Военный", "Unable to capture cities", "Only available <in cities with a [Завод производства эсминцев]>"]
+		"requiredTech": "Эсминцы"
 	},
 	{
-		"name": "Сломаный дрон",
-		"uniqueTo": "Barbarians",
-		"replaces": "Боевой дрон",
-		"unitType": "БД",
+		"name": "Лазерный эсминец",
+		"unitType": "Эсминец лазер",
 		"movement": 1,
-		"range": 2,
-		"rangedStrength": 15,
-		"strength": 15,
-		"cost": 140,
+		"strength": 20,
+		"range": 2
+		"rangedStrength": 20
+		"cost": 120,
 		"hurryCostModifier": 20,
-		"requiredTech": "Боевые дроны"
-	},
-	{
-		"name": "Ожившие кристаллы",
-		"uniqueTo": "Barbarians",
-		"replaces": "Крейсер",
-		"unitType": "Пушка",
-		"movement": 3,
-		"range": 2,
-		"rangedStrength": 30,
-		"strength": 30,
-		"cost": 140,
-		"hurryCostModifier": 20,
-		"requiredTech": "Добыча кристаллов"
-	},
-	{
-		"name": "Космический дракон",
-		"uniqueTo": "Barbarians",
-		"replaces": "Линкор",
-		"unitType": "Пушка",
-		"movement": 1,
-		"range": 1,
-		"rangedStrength": 60,
-		"strength": 60,
-		"cost": 140,
-		"hurryCostModifier": 20,
-		"requiredTech": "Линкоры"
-        },
-	{
-		"name": "Древний страж",
-		"uniqueTo": "Barbarians",
-		"replaces": "Лазерный линкор",
-		"unitType": "Пушка",
-		"movement": 1,
-		"range": 1,
-		"rangedStrength": 40,
-		"strength": 40,
-		"cost": 140,
-		"hurryCostModifier": 20,
-		"requiredTech": "Поиски артефактов"
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities", "Only available <in cities with a [Установить лазерную пушку эсминец]>"]
+		"requiredTech": "Эсминцы"
 	},
 	{
 		"name": "Крейсер",
-		"unitType": "Пушка",
-		"movement": 2,
-		"range": 1,
-		"rangedStrength": 45,
-		"strength": 45,
-		"cost": 170,
+		"unitType": "Крейсер пушка",
+		"movement": 1,
+		"strength": 30,
+		"cost": 140,
 		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Средняя Пушка]>", "Only available <in cities with a [Сверх двигатель]>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Наступательная армия"
+		"uniques": ["Космос", "Военный", "Unable to capture cities", "Only available <in cities with a [Завод производства Крейсеров]>"]
+		"requiredTech": "Крейсеры"
+	},
+	{
+		"name": "Лазерный крейсер",
+		"unitType": "Крейсер лазер",
+		"movement": 1,
+		"strength": 30,
+		"range": 2
+		"rangedStrength": 30
+		"cost": 140,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities", "Only available <in cities with a [Установить лазерную пушку крейсер]>"]
+		"requiredTech": "Крейсеры"
 	},
 	{
 		"name": "Линкор",
-		"unitType": "Пушка",
-		"movement": 2,
-		"range": 1,
-		"rangedStrength": 70,
-		"strength": 70,
-		"cost": 200,
+		"unitType": "Линкор пушка",
+		"movement": 1,
+		"strength": 40,
+		"cost": 150,
 		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Большая пушка]>", "Only available <in cities with a [Сверх двигатель]>", "Consumes [2] [Солдат]"]
+		"uniques": ["Космос", "Военный", "Unable to capture cities", "Only available <in cities with a [Завод производства Линкоров]>"]
 		"requiredTech": "Линкоры"
 	},
 	{
 		"name": "Лазерный линкор",
-		"unitType": "Лазер",
-		"movement": 2,
-		"range": 2,
-		"rangedStrength": 80,
-		"strength": 85,
-		"cost": 210,
+		"unitType": "Линкор лазер",
+		"movement": 1,
+		"strength": 40,
+		"range": 2
+		"rangedStrength": 40
+		"cost": 150,
 		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Истребляющий лазер]>", "Only available <in cities with a [Сверх двигатель]>", "Consumes [2] [Солдат]"]
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities", "Only available <in cities with a [Установить лазерную пушку линкор]>"]
 		"requiredTech": "Линкоры"
 	},
 	{
-		"name": "Лазерный эсминец",
-		"unitType": "Лазер",
-		"movement": 2,
-		"range": 2,
-		"rangedStrength": 35,
-		"strength": 40,
-		"cost": 150,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Малый лазер]>", "Only available <in cities with a [Сверх двигатель]>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Новые корабли"
-	},
-	{
-		"name": "Лазерный крейсер",
-		"unitType": "Лазер",
-		"movement": 2,
-		"range": 2,
-		"rangedStrength": 45,
-		"strength": 50,
-		"cost": 180,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Средний лазер]>", "Only available <in cities with a [Сверх двигатель]>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Наступательная армия"
-	},
-	{
-		"name": "Лазерный фрегат",
-		"unitType": "Лазер",
-		"movement": 1,
-		"range": 2,
-		"rangedStrength": 15,
-		"strength": 20,
-		"cost": 135,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Малый лазер]>", "Only available <in cities with a [Обычный двигатель]>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Новые корабли"
-	},
-	{
-		"name": "Боевой кристал",
-		"replaces": "Фрегат",
-		"uniqueTo": "Кристаллы",
-		"unitType": "Фрегат",
-		"movement": 2,
-		"range": 1,
-		"rangedStrength": 15,
-		"strength": 10,
-		"cost": 120,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Кристаллическая пушка]>", "Only available <in cities with a [Кристаллический ускоритель]>", "Consumes [1] [Кристаллы]"]
-		"requiredTech": "Кораблестроение"
-	},
-	{
-		"name": "Космическая амеба",
-		"uniqueTo": "Barbarians",
-		"replaces": "Фрегат",
-		"unitType": "Фрегат",
-		"movement": 2,
-		"range": 1,
-		"rangedStrength": 17,
-		"strength": 17,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Винтовка",
-		"unitType": "Пехота",
-		"movement": 1,
-		"strength": 50,
-		"cost": 125,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Военная подготовка"
-	},
-	{
-		"name": "Автомат",
-		"uniqueTo": "Государство `Земля`",
-		"replaces": "Винтовка",
-		"unitType": "Пехота",
-		"movement": 1,
-		"strength": 50,
-		"cost": 120,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Полигон]>", "[+5]% Strength <vs cities>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Военная подготовка"
-	},
-	{
-		"name": "Автомат пехота",
-		"uniqueTo": "Государство `Земля`",
-		"replaces": "Винтовка пехота",
-		"unitType": "Оборона",
-		"movement": 1,
-		"rangedStrength": 50,
-		"range": 1,
-		"strength": 50,
-		"cost": 45,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Полигон]>", "[+5]% Strength <vs [Пехота] units>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
-		"requiredTech": "Оборонительная армия"
-	},
-	{
-		"name": "Боевой дрон",
-		"unitType": "БД",
-		"movement": 2,
-		"strength": 55,
-		"cost": 125,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Производство дронов]>", "Consumes [1] [Сплавы]"]
-		"requiredTech": "Боевые дроны"
-	},
-	{
-		"name": "Колосс",
-		"unitType": "Пехота",
-		"movement": 5,
-		"strength": 800,
-		"cost": 200,
-		"hurryCostModifier": 20,
-		"uniques": ["Consumes [3] [Солдат]", "Only available <in cities with a [Истребляющий лазер]>", "Only available <in cities with a [Сверх пушка]>", "Only available <in cities with a [Каюта]>", "Only available <in cities with a [Броня]>"]
-		"requiredTech": "Колосс"
-	},
-	{
-		"name": "Лазерная винтовка",
-		"unitType": "Пехота",
-		"movement": 1,
-		"strength": 60,
-		"cost": 145,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]", "Consumes [1] [Кристаллы]"]
-		"requiredTech": "Лазерные винтовки"
-	},
-	{
-		"name": "Пиратское судно",
-		"uniqueTo": "Barbarians",
-		"replaces": "Винтовка",
-		"unitType": "Пехота",
-		"movement": 1,
-		"strength": 15,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Поглащающий кристалл",
-		"replaces": "Винтовка",
-		"uniqueTo": "Кристаллы",
-		"unitType": "Пехота",
-		"movement": 2,
-		"strength": 55,
-		"cost": 120,
-		"hurryCostModifier": 20,
-		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "Consumes [1] [Кристаллы]", "[-999]% Strength <vs [Лазер] units>"]
-		"requiredTech": "Военная подготовка"
-	},
-	{
-		"name": "Энергозаряд",
-		"unitType": "Энергозаряд",
-		"movement": 1,
-		"strength": 500,
-		"rangedStrength": 500,
-		"range": 70,
-		"cost": 800,
-		"requiredTech": "Выработка энергии",
-		"uniques": ["Only available <in cities with a [Дуло пушки]>", "Only available <in cities with a [Ствол пушки]>", "Only available <in cities with a [Фундамент пушки]>"]
-	},
-	{
 		"name": "ПКО",
-		"unitType": "Противо космическая оборона",
+		"unitType": "ПК оборона",
 		"movement": 1,
 		"strength": 20,
 		"rangedStrength": 20,
 		"range": 1,
 		"cost": 70,
-		"requiredTech": "Военная подготовка",
+		"requiredTech": "Противокосмическая оборона",
 		"uniques": ["Consumes [1] [Сплавы]"]
 	},
 	{
-		"name": "Винтовка пехота",
-		"unitType": "Оборона",
+		"name": "Исстребитель",
+		"unitType": "ПК оборона",
+		"movement": 1,
+		"strength": 15,
+		"rangedStrength": 15,
+		"range": 1,
+		"cost": 50,
+		"requiredTech": "Истребители",
+	},
+	{
+		"name": "Фрегат",
+		"unitType": "Ракетные",
+		"movement": 1,
+		"strength": 40,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "[-60]% Strength <vs [All] units> <when defending>", "Unable to capture cities", "Only available <in cities with a [Завод производства фрегатов]>"]
+		"requiredTech": "Фрегаты"
+	},
+	{
+		"name": "Колосс",
+		"unitType": "Кризис",
+		"movement": 1,
+		"strength": 400,
+		"cost": 130,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "[-95]% Strength <vs [All] units> <when defending>", "Unable to capture cities", "Only available <in cities with a [Проект `Колосс`]>"]
+		"requiredTech": "Постройка колосса"
+	},
+	{
+		"name": "Энергетический заряд",
+		"unitType": "Заряд",
+		"movement": 1,
+		"strength": 500,
+		"rangedStrength": 500,
+		"range": 75,
+		"cost": 450,
+		"uniques": ["Only available <in cities with a [Дуло пушки]>"],
+		"requiredTech": "Планетарная пушка",
+	},
+	{
+		"name": "Пехота",
+		"unitType": "Десантник",
+		"movement": 1,
+		"strength": 15,
+		"cost": 90,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Consumes [1] [Солдат]", "[-999]% Strength <vs [All] units>"]
+		"requiredTech": "Десант"
+	},	
+	{
+		"name": "Робот-солдат",
+		"unitType": "Десантник",
+		"movement": 1,
+		"strength": 30,
+		"cost": 110,
+		"hurryCostModifier": 20,
+		"uniques": ["Only available <after adopting [Роботы-солдаты]>", "Космос", "Военный", "[-999]% Strength <vs [All] units>"]
+	},	
+	
+	////// Кристаллы юниты //////
+	
+	// Зонд и поселенец кр
+ 	
+	{
+		"name": "Родительный кристалл",
+		"replaces": "Колонизатор",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Civilian",
+		"movement": 2,
+		"cost": 100,
+		"uniques": ["Космос", "Consumes [1] [Кристаллы]",
+			"Founds a new city",
+			"Excess Food converted to Production when under construction",
+			"Requires at least [1] population"
+		],
+		"hurryCostModifier": 20,
+		"requiredTech": "Колонизаторы"
+	},
+	{
+		"name": "Глаз кристалла",
+		"replaces": "Зонд",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Civilian",
+		"movement": 1,
+		"cost": 25,
+		"hurryCostModifier": 20,
+		"uniques": ["Consumes [1] [Кристаллы]", "Unable to capture cities", "Uncapturable", "[-1] Sight"]
+		"requiredTech": "Зонды"
+	},
+	
+	// строитель и исследователь кр
+	
+	{
+		"name": "Строительный кристалл",
+		"replaces": "Строительный корабль",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Civilian",
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"uniques": ["Consumes [1] [Кристаллы]", "Космос", "Can build [Оборонительное улучшение] improvements on tiles", "Can build [Промышленное улучшение] improvements on tiles"],
+		"cost": 15
+		"requiredTech": "Строительные судна"
+	},
+	{
+		"name": "Исследовательский кристалл",
+		"replaces": "Исследовательский корабль",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Civilian",
+		"movement": 2,
+		"hurryCostModifier": 20,
+		"cost": 15
+		"requiredTech": "Исследовательские судна",
+		"uniques": ["Consumes [1] [Кристаллы]", "Космос", "Can build [Научное улучшение] improvements on tiles"]
+	},
+	
+	// Боевые юниты кр
+	
+	{
+		"name": "Малый кристалл",
+		"replaces": "Корвет",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 20,
+		"cost": 90,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities"]
+		"requiredTech": "Корветы"
+	},
+	{
+		"name": "Малый перенаправляющий кристалл",
+		"replaces": "Лазерный корвет",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 15,
+		"range": 2
+		"rangedStrength": 15
+		"cost": 90,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Корветы"
+	},
+	{
+		"name": "Средний кристалл",
+		"replaces": "Эсминец",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 25,
+		"cost": 120,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities"]
+		"requiredTech": "Эсминцы"
+	},
+	{
+		"name": "Средний перенаправляющий кристалл",
+		"replaces": "Лазерный эсминец",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 20,
+		"range": 2
+		"rangedStrength": 20
+		"cost": 120,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Эсминцы"
+	},
+	{
+		"name": "Большой кристалл",
+		"replaces": "Крейсер",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 30,
+		"cost": 140,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities"]
+		"requiredTech": "Крейсеры"
+	},
+	{
+		"name": "Большой перенаправляющий кристалл",
+		"replaces": "Лазерный крейсер",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 30,
+		"range": 2
+		"rangedStrength": 30
+		"cost": 140,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Крейсеры"
+	},
+	{
+		"name": "Величайший кристалл",
+		"replaces": "Линкор",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 45,
+		"cost": 150,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities"]
+		"requiredTech": "Линкоры"
+	},
+	{
+		"name": "Величайший перенаправляющий кристалл",
+		"replaces": "Лазерный линкор",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 40,
+		"range": 2
+		"rangedStrength": 40
+		"cost": 150,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Линкоры"
+	},
+	{
+		"name": "Кристал исстребитель",
+		"replaces": "Исстребитель",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "ПК оборона",
+		"movement": 1,
+		"strength": 15,
+		"rangedStrength": 15,
+		"range": 1,
+		"cost": 50,
+		"requiredTech": "Истребители",
+	},
+	{
+		"name": "Взрывной кристалл",
+		"replaces": "Фрегат",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 40,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "[-60]% Strength <vs [All] units> <when defending>", "Unable to capture cities"]
+		"requiredTech": "Фрегаты"
+	},
+	{
+		"name": "Поглащающий кристалл",
+		"replaces": "Пехота",
+		"uniqueTo": "Кристаллический мир",
+		"unitType": "Десантник",
+		"movement": 2,
+		"strength": 20,
+		"cost": 90,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Consumes [1] [Солдат]", "[-999]% Strength <vs [All] units>"]
+		"requiredTech": "Десант"
+	},
+	
+	// Варвары
+	
+	// Боевые юниты
+	
+	{
+		"name": "Зверь разрыва",
+		"replaces": "Зверь покрова",
+		"uniqueTo": "Barbarians",
+		"unitType": "Кризис",
+		"movement": 2,
+		"strength": 30,
+		"cost": 80,
+		"hurryCostModifier": 50,
+		"uniques": []
+		"requiredTech": "Добыча артифактов"
+	},
+	{
+		"name": "Малый кристалл",
+		"replaces": "Зверь покрова",
+		"uniqueTo": "Barbarians",
+		"unitType": "Корвет пушка",
+		"movement": 1,
+		"strength": 15,
+		"cost": 90,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities"]
+		"requiredTech": "Корветы"
+	},
+	{
+		"name": "Малый жук",
+		"replaces": "Лазерный корвет",
+		"uniqueTo": "Barbarians",
+		"unitType": "Корвет лазер",
+		"movement": 1,
+		"strength": 15,
+		"cost": 30,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Корветы"
+	},
+	{
+		"name": "Средний обезумевший кристалл",
+		"replaces": "Эсминец",
+		"uniqueTo": "Barbarians",
+		"unitType": "Эсминец пушка",
+		"movement": 1,
+		"strength": 20,
+		"cost": 120,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities", "Only available <in cities with a [Завод производства эсминцев]>"]
+		"requiredTech": "Эсминцы"
+	},
+	{
+		"name": "Средний жук",
+		"replaces": "Лазерный эсминец",
+		"uniqueTo": "Barbarians",
+		"unitType": "Эсминец лазер",
+		"movement": 1,
+		"strength": 20,
+		"cost": 40,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Эсминцы"
+	},
+	{
+		"name": "Большой обезумевшый кристалл",
+		"replaces": "Крейсер",
+		"uniqueTo": "Barbarians",
+		"unitType": "Крейсер пушка",
+		"movement": 1,
+		"strength": 30,
+		"cost": 140,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities", "Only available <in cities with a [Завод производства Крейсеров]>"]
+		"requiredTech": "Крейсеры"
+	},
+	{
+		"name": "Большой жук",
+		"replaces": "Лазерный крейсер",
+		"uniqueTo": "Barbarians",
+		"unitType": "Крейсер лазер",
+		"movement": 1,
+		"strength": 30,
+		"cost": 50,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Крейсеры"
+	},
+	{
+		"name": "Великий безумный кристалл",
+		"replaces": "Линкор",
+		"uniqueTo": "Barbarians",
+		"unitType": "Линкор пушка",
+		"movement": 1,
+		"strength": 30,
+		"cost": 100,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "Unable to capture cities"]
+		"requiredTech": "Линкоры"
+	},
+	{
+		"name": "Королева жук",
+		"replaces": "Лазерный линкор",
+		"uniqueTo": "Barbarians",
+		"unitType": "Линкор лазер",
+		"movement": 1,
+		"strength": 40,
+		"cost": 190,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Лазер", "Военный", "Unable to capture cities"]
+		"requiredTech": "Линкоры"
+	},
+	{
+		"name": "Пиратский фрегат",
+		"replaces": "Фрегат",
+		"uniqueTo": "Barbarians",
+		"unitType": "Ракетные",
+		"movement": 1,
+		"strength": 40,
+		"cost": 70,
+		"hurryCostModifier": 20,
+		"uniques": ["Космос", "Военный", "[-60]% Strength <vs [All] units> <when defending>"]
+		"requiredTech": "Фрегаты"
+	},
+	{
+		"name": "Космический дракон",
+		"replaces": "Колосс",
+		"uniqueTo": "Barbarians",
+		"unitType": "Кризис",
 		"movement": 1,
 		"strength": 50,
-		"rangedStrength": 50,
-		"range": 1,
+		"cost": 100,
+		"hurryCostModifier": 20,
+		"requiredTech": "Постройка колосса"
+	},
+	{
+		"name": "Пираты",
+		"replaces": "Пехота",
+		"uniqueTo": "Barbarians",
+		"unitType": "Десантник",
+		"movement": 1,
+		"strength": 7,
 		"cost": 50,
-		"requiredTech": "Оборонительная армия",
-		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
-	},
+		"hurryCostModifier": 20,
+	},	
 	{
-		"name": "Лазерная винтовка пехота",
-		"unitType": "Оборона",
+		"name": "Обезумивший робот",
+		"replaces": "Робот-солдат",
+		"uniqueTo": "Barbarians",
+		"unitType": "Десантник",
 		"movement": 1,
-		"strength": 55,
-		"rangedStrength": 55,
-		"range": 1,
-		"cost": 50,
-		"requiredTech": "Оборонительная армия",
-		"uniques": ["Only available <in cities with a [Полигон]>", "[-999]% Strength <vs [Пушка] units>", "[-999]% Strength <vs [Лазер] units>", "Consumes [1] [Солдат]"]
+		"strength": 5,
+		"cost": 110,
+		"hurryCostModifier": 20,
+		"uniques": []
+		"requiredTech": "Производство роботов"
 	},
+	
+	// Звезда 
+	
 	{
-		"name": "Орбитальная Артиллерия",
-		"unitType": "Оборона",
+		"name": "Дрон звезды",
+		"uniqueTo": "Железная звезда",
+		"unitType": "Дроны звезды",
 		"movement": 1,
-		"strength": 55,
-		"rangedStrength": 55,
-		"range": 2,
-		"cost": 155,
-		"requiredTech": "Орбитальная артиллерия",
-		"uniques": ["Consumes [1] [Кристаллы]", "Consumes [1] [Сплавы]"]
+		"strength": 40,
+		"cost": 120,
+		"hurryCostModifier": 50,
+		"uniques": []
 	},
-	{
-		"name": "Малый дрон",
-		"replaces": "Фрегат",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Фрегат",
-		"movement": 1,
-		"range": 1,
-		"rangedStrength": 25,
-		"strength": 25,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Дрон",
-		"replaces": "Эсминец",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Пушка",
-		"movement": 2,
-		"range": 2,
-		"rangedStrength": 45,
-		"strength": 45,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Большой дрон",
-		"replaces": "Крейсер",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Пушка",
-		"movement": 2,
-		"range": 2,
-		"rangedStrength": 55,
-		"strength": 55,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Уничтожающий дрон",
-		"replaces": "Линкор",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Пушка",
-		"movement": 2,
-		"range": 3,
-		"rangedStrength": 95,
-		"strength": 95,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Малый лазерный дрон",
-		"replaces": "Лазерный фрегат",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Лазер",
-		"movement": 1,
-		"range": 2,
-		"rangedStrength": 35,
-		"strength": 35,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Дрон лазерный",
-		"replaces": "Лазерный эсминец",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Лазер",
-		"movement": 2,
-		"range": 4,
-		"rangedStrength": 55,
-		"strength": 55,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Большой лазерный дрон",
-		"replaces": "Лазерный крейсер",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Лазер",
-		"movement": 2,
-		"range": 4,
-		"rangedStrength": 65,
-		"strength": 65,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	},
-	{
-		"name": "Уничтожающий лазерный дрон",
-		"replaces": "Лазерный линкор",
-		"uniqueTo": "Железная звезда",
-		"unitType": "Лазер",
-		"movement": 2,
-		"range": 4,
-		"rangedStrength": 105,
-		"strength": 105,
-		"cost": 125,
-		"hurryCostModifier": 20,
-	}
 	
 ]

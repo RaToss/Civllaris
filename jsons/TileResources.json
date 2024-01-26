@@ -1,94 +1,170 @@
 [
 	{
+		"name": "Пригодность", 
+		"resourceType": "Strategic"
+	},
+	{
 		"name": "Сплавы", 
 		"resourceType": "Strategic"
 	},
 	{
 		"name": "Минералы", 
 		"resourceType": "Strategic"
-		"revealedBy": "Добывающие стнации",
-		"terrainsCanBeFoundOn": ["Пояс астероидов"],
+		"revealedBy": "Добывающие станции",
 		"improvedBy": ["Добывающая станция"],
-		"improvementStats": { "production": 1 },
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
 		"uniques": [
-			"Generated on every [40] tiles <in [Пояс астероидов] tiles>"
+			"Generated on every [33] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
 		"name": "Артефакты", 
 		"resourceType": "Luxury",
-		"revealedBy": "Поиски артефактов",
-		"terrainsCanBeFoundOn": ["Пояс астероидов"],
-		"improvedBy": ["Добывающая станция"],
-		"improvementStats": { "culture": 1 },
+		"revealedBy": "Добыча артифактов",
+		"terrainsCanBeFoundOn": ["Руины станции"],
+		"improvedBy": ["Раскопки"],
+		"improvementStats": { "science": 1 },
 		"uniques": [
-			"Generated on every [44] tiles <in [Пояс астероидов] tiles>"
+			"Generated on every [33] tiles <in [Руины станции] tiles>"
 		]
 	},
 	{
 		"name": "Тиянки", 
 		"resourceType": "Luxury"
-		"revealedBy": "Охота на тиянок",
-		"terrainsCanBeFoundOn": ["Пояс астероидов"],
-		"improvedBy": ["Охотничьи станции"],
-		"improvementStats": { "food": 1 },
+		"revealedBy": "Вопрос о тиянках",
+		"improvedBy": ["`Выгон` тиянок", "Охотничьи станции"],
+		"terrainsCanBeFoundOn": ["Газовый гигант"],
 		"uniques": [
-			"Generated on every [44] tiles <in [Пояс астероидов] tiles>"
+			"Generated on every [22] tiles <in [Газовый гигант] tiles>"
+		]
+	},
+	{
+		"name": "Ценный металл", 
+		"resourceType": "Luxury"
+		"revealedBy": "Ценные металлы",
+		"improvedBy": ["Добывающая станция"],
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
+		"uniques": [
+			"Generated on every [11] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
 		"name": "Кристаллы", 
 		"resourceType": "Strategic"
-		"revealedBy": "Добыча кристаллов",
-		"terrainsCanBeFoundOn": ["Пояс астероидов"],
+		"revealedBy": "Лазеры",
 		"improvedBy": ["Добывающая станция"],
-		"improvementStats": { "production": 1 },
+		"terrainsCanBeFoundOn": ["Пояс астероидов"],
 		"uniques": [
 			"Generated on every [27] tiles <in [Пояс астероидов] tiles>"
 		]
 	},
 	{
+		"name": "Пылинки", 
+		"resourceType": "Strategic"
+		"revealedBy": "Добыча пылинок",
+		"improvedBy": ["Добывающая станция"],
+		"terrainsCanBeFoundOn": ["Синяя звезда"],
+		"uniques": [
+			"Generated on every [33] tiles <in [Синяя звезда] tiles>"
+		]
+	},
+	{
 		"name": "Темная материя",
-		"revealedBy": "Темная материя",
+		"revealedBy": "Добыча темной материи",
 		"resourceType": "Strategic",
+		"improvedBy": ["Поглощатель материи"],
 		"terrainsCanBeFoundOn": ["Черная дыра"],
-		"improvedBy": ["Сфера Дайсона"],
 		"uniques": [
 			"Generated on every [37] tiles <in [Черная дыра] tiles>"
 		]
 	},
 	{
 		"name": "Газ", 
-		"revealedBy": "Добыча газов",
+		"revealedBy": "Экзотический газ",
 		"resourceType": "Strategic"
 		"terrainsCanBeFoundOn": ["Coast"],
 		"improvedBy": ["Станция дронов"],
-		"uniques": ["Generated on every [37] tiles <in [Coast] tiles>"
+		"uniques": ["Generated on every [44] tiles <in [Coast] tiles>"
 		]
 	},
 	{
-		"name": "Человек", // Переименновать в `Очки Населения`?
-		"resourceType": "Strategic"
+		"name": "Энергия покрова",
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded"],
+	},
+	{
+		"name": "Ген", 
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded"]
+	},
+	{
+		"name": "Человек",
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"]
 	},
 	{
 		"name": "Учёный", 
-		"resourceType": "Strategic"
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"]
 	},
 	{
 		"name": "Конструктор", 
-		"resourceType": "Strategic"
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
 	},
 	{
 		"name": "Солдат",
-		"resourceType": "Strategic"
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded"],
 	},
 	{
 		"name": "Очки конструкции", 
-		"resourceType": "Strategic"
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
+	},
+	{
+		"name": "Решения",
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded"],
+	},
+	{
+		"name": "Городские решения",
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
+	},
+	{
+		"name": "Слот пропаганды",
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded"],
+	},
+	{
+		"name": "Слот доктрины",
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded"],
+	},
+	{
+		"name": "Доп. ячейка корвет", 
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
+	},
+	{
+		"name": "Доп. ячейка эсминец", 
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
+	},
+	{
+		"name": "Доп. ячейка крейсер", 
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
+	},{
+		"name": "Доп. ячейка линкор", 
+		"resourceType": "Strategic",
+		"uniques": ["Cannot be traded", "City-level resource"],
 	},
 	{
 		"name": "Таинственный код",
-		"resourceType": "Luxury"
+		"resourceType": "Luxury",
 		"uniques": ["Can only be created by Mercantile City-States"]
 	}
 ]
+

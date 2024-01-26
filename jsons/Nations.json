@@ -9,8 +9,8 @@
 		"adjective": ["Совет"],
 		"preferredVictoryType": "Scientific",
 		
-		"startIntroPart1": "Галактический совет - самая древняя цивилизация. Мы застали конец других межзвездных империй и зарождение новых.",
-		"startIntroPart2": "Мы слишком долго были одни, пора выходить на контакт!",
+		//"startIntroPart1": "Галактический совет - самая древняя цивилизация. Мы застали конец других межзвездных империй и зарождение новых.",
+		//"startIntroPart2": "Мы слишком долго были одни, пора выходить на контакт!",
 		
 		"declaringWar": "Вы слишком опасны для Млечного пути!",
 		"attacked": "И как мы раньше не заметили вашего враждебного настроя?",
@@ -32,17 +32,17 @@
 
 		"outerColor": [162,162,162],
 		"innerColor": [50,70,80],
-		"uniques": ["[+5]% [Science] [in all cities]"],
+		"uniques": [],
 		"cities": ["Станция"]
 	},
 	{
 		"name": "Государство `Земля`",
-		"leaderName": "Президент Хосе де Мануэль",
+		"leaderName": "Президент Хосе Мануэль де Гойенече",
 		"adjective": ["Земляне"],
 		"preferredVictoryType": "Cultural",
 		
-		"startIntroPart1": "2200 год, мы наконец-то вышли за пределы нашей системы! Но нам нельзя останавливаться, мы должны продолжать, ведь это только начало...",
-		"startIntroPart2": "Вперёд! К звездам!",
+		//"startIntroPart1": "",
+		//"startIntroPart2": "Вперёд! К звездам!",
 		
 		"declaringWar": "Вы должны быть уничтожены!",
 		"attacked": "Тревога!",
@@ -64,7 +64,7 @@
 
 		"outerColor": [9,84,84],
 		"innerColor": [0,222,222],
-		"uniques": ["[-1 Science]"],
+		"uniques": [],
 		"cities": ["Земля"]
 	},
 	{
@@ -73,8 +73,8 @@
 		"adjective": ["Иперия"],
 		"preferredVictoryType": "Domination",
 		
-		"startIntroPart1": "Война на нашей родной планете наконуц-то завершилась. Император Хроз, наш предводитель, Бог, ведёт нас к светлому будущему!",
-		"startIntroPart2": "Наша раса превыше всего! Каждый чужак, который встанет на пути - умрет!",
+		//"startIntroPart1": "Война на нашей родной планете наконуц-то завершилась. Император Хроз, наш предводитель, Бог, ведёт нас к светлому будущему!",
+		//"startIntroPart2": "Наша раса превыше всего! Каждый чужак, который встанет на пути - умрет!",
 		
 		"declaringWar": "Вы не достойны жизни!",
 		"attacked": "Да как вы смеете?!",
@@ -96,19 +96,19 @@
 
 		"outerColor": [20,19,19],
 		"innerColor": [148,148,148],
-		"uniques": ["[+5]% Production when constructing [Military] units [in all cities]"],
+		"uniques": [],
 		"cities": ["Планета Хроз"]
 	},
 	{
 		"name": "Союз рабочих",
-		"leaderName": "Ген. сек. Ромэ",
+		"leaderName": "Генсек Ромэ",
 		"adjective": ["Эсэры"],
 		"preferredVictoryType": "Scientific",
 		
-		"startIntroPart1": "Успешное обьединение! Избавившись от всех капиталистических и империалистических государств, коммунизм стал возможен! Настала пора отправится к звездам!",
-		"startIntroPart2": "Вперёд, товарищи!",
+		//"startIntroPart1": "Успешное обьединение! Избавившись от всех капиталистических и империалистических государств, коммунизм стал возможен! Настала пора отправится к звездам!",
+		//"startIntroPart2": "Вперёд, товарищи!",
 		
-		"declaringWar": "Мы были вынуждены...",
+		"declaringWar": "Мы были вынуждены",
 		"attacked": "Победа будет за нами!",
 		"defeated": "Наше дело правое...",
 		"introduction": "Здравствуйте, товарищи!",
@@ -126,9 +126,9 @@
 		"afterPeace": "Пора зарыть топор войны...",
 		"tradeRequest": "Хорошое предложение!",
 
-		"outerColor": [218,0,0],
-		"innerColor": [228,228,228],
-		"uniques": ["[+2]% [Production] [in all cities]"],
+		"outerColor": [190,7,7],
+		"innerColor": [250,250,8],
+		"uniques": [],
 		"cities": ["Производственный комплекс"]
 	},
 	{
@@ -137,8 +137,8 @@
 		"adjective": ["Республика"],
 		"preferredVictoryType": "Scientific",
 		
-		"startIntroPart1": "Наша планета - спутник газового гиганта. Эта небольшая планетка не сможет вместить нас всех, и именно поэтому нас начал манить космос своим безкрнечным простором",
-		"startIntroPart2": "Пора искать новый дом!",
+		//"startIntroPart1": "Наша планета - спутник газового гиганта. Эта небольшая планетка не сможет вместить нас всех, и именно поэтому нас начал манить космос своим безкрнечным простором",
+		//"startIntroPart2": "Пора искать новый дом!",
 		
 		"declaringWar": "Вы будете разбиты.",
 		"attacked": "Вы поплатитесь за это!",
@@ -160,17 +160,17 @@
 
 		"outerColor": [15,110,0],
 		"innerColor": [34,255,0],
-		"uniques": ["[-2 Food] [in capital]"],
+		"uniques": [],
 		"cities": ["Планета"]
 	},
 	{
-		"name": "Кристаллы",
+		"name": "Кристаллический мир",
 		"leaderName": "Живой кристал 1",
-		"adjective": ["Кристаллы"],
+		"adjective": ["Кристалл"],
 		"preferredVictoryType": "Cultural",
 		
-		"startIntroPart1": "Пустынный мир. Буквально скаллы, просто камень в космосе без атмосферы. Неужели именно эта среда стала для нас приемлимой?",
-		"startIntroPart2": "Нам нужны ответы.",
+		//"startIntroPart1": "Пустынный мир. Буквально скаллы, просто камень в космосе без атмосферы. Неужели именно эта среда стала для нас приемлимой?",
+		//"startIntroPart2": "Нам нужны ответы.",
 		
 		"declaringWar": "Возможно, вы - путь к решению",
 		"attacked": "Вы стремитесь уничтожить нас?",
@@ -190,8 +190,8 @@
 		"afterPeace": "",
 		"tradeRequest": "",
 
-		"outerColor": [144,67,0],
-		"innerColor": [202,153,81],
+		"outerColor": [104,65,20],
+		"innerColor": [247,140,16],
 		"uniques": [],
 		"cities": ["Камень"]
 	},
@@ -202,7 +202,23 @@
 		"startBias": ["Черная дыра"],
 		"style": "",
 		"uniques": [
-			"Cannot build [Пехота] units"
+			"Cannot build [Civilian] units",
+			"Cannot build [Civilian Water] units",
+			"Cannot build [Великий] units",
+			"Cannot build [Класс зонд] units",
+			"Cannot build [Десантник] units",
+			"Cannot build [Кризис] units",
+			"Cannot build [Корвет пушка] units",
+			"Cannot build [Корвет лазер] units",
+			"Cannot build [Эсминец пушка] units",
+			"Cannot build [Эсминец лазер] units",
+			"Cannot build [Крейсер пушка] units",
+			"Cannot build [Крейсер лазер] units",
+			"Cannot build [Линкор пушка] units",
+			"Cannot build [Линкор лазер] units",
+			"Cannot build [Ракетные] units",
+			"Cannot build [ПК оборона] units",
+			"Cannot build [Заряд] units"
 		],
 		"declaringWar": "--- -... -. .- .-. ..- ...- . -. .-  ..- --. .-. --- --.. .- -.-.--  --.. .- .--. ..- --.- . -.  .--. .-. --- - --- -.- --- .-..  .- - .- -.- .. .-.-.-  .-- ... . --  -... --- . ... .--. --- ... --- -... -. -.-- --  -.. .-. --- -. .- --  --- - -.. .- -.  .--. .-. .. -.- .- --.. ---...  -. . -- . -.. .-.. . -. -. ---  ..- ... - .-. .- -. .. - -..-  .. ... - --- ---. -. .. -.-  ..- --. .-. --- --.. -.-- .-.-.-",
 		"attacked": "--.. .- .--. ..- --.- . -.  .--. .-. --- - --- -.- --- .-..  --- -... --- .-. --- -. -.-- .-.-.-  --- - -.. .- -.  .--. .-. .. -.- .- --..  .-- ... . --  -... --- . ... .--. --- ... --- -... -. -.-- --  -.. .-. --- -. .- --  -. . -- . -.. .-.. . -. -. ---  ..- ... - .-. .- -. .. - -..-  ..- --. .-. --- --.. ..- -.-.--",
@@ -228,13 +244,22 @@
 		"cityStateType": "Примитивная цивилизация",
 		"style": "",
 		"uniques": [
-			"Cannot build [Пушка] units",
-			"Cannot build [Лазер] units",
-			"Cannot build [Энерго заряд] units",
 			"Cannot build [Civilian] units",
 			"Cannot build [Civilian Water] units",
-			"Cannot build [Дрон] units"
-			"Cannot build [Энергозаряд] units"
+			"Cannot build [Великий] units",
+			"Cannot build [Класс зонд] units",
+			"Cannot build [Кризис] units",
+			"Cannot build [Корвет пушка] units",
+			"Cannot build [Корвет лазер] units",
+			"Cannot build [Эсминец пушка] units",
+			"Cannot build [Эсминец лазер] units",
+			"Cannot build [Крейсер пушка] units",
+			"Cannot build [Крейсер лазер] units",
+			"Cannot build [Линкор пушка] units",
+			"Cannot build [Линкор лазер] units",
+			"Cannot build [Ракетные] units",
+			"Cannot build [ПК оборона] units",
+			"Cannot build [Заряд] units"
 		],
 		"declaringWar": "Мы вам покажем!",
 		"attacked": "Высшая сила напала на нас, но мы выстоим!",

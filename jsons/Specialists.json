@@ -1,13 +1,13 @@
 [
 	{
 		"name": "Scientist",
-		"science": 4,
+		"science": 2,
 		"gold": -1,
 		"color": [0, 0, 255]
 	},
 	{
-		"name": "Merchant",
-		"gold": 2,
+		"name": "Торговец",
+		"gold": 3,
 		"color": [255, 215, 0]
 	},
 	{
@@ -18,13 +18,13 @@
 	},
 	{
 		"name": "Engineer",
-		"production": 4,
+		"production": 2,
 		"gold": -1
 		"color": [139, 69, 19]
 	},
 	{
 		"name": "Фермер",
-		"food": 4,
+		"food": 2,
 		"gold": -1,
 		"color": [0, 215, 0],
 	}

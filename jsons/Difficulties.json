@@ -1,7 +1,7 @@
 [
 	{
 		"name": "Settler",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -31,7 +31,7 @@
 	},
 	{
 		"name": "Chieftain",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -61,7 +61,7 @@
 	},
 	{
 		"name": "Warlord",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -91,7 +91,7 @@
 	},
 	{
 		"name": "Prince",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -120,7 +120,7 @@
 	},
 	{
 		"name": "King",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -149,7 +149,7 @@
 	},
 	{
 		"name": "Emperor",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -178,7 +178,7 @@
 	},
 	{
 		"name": "Immortal",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -213,7 +213,7 @@
 	},
 	{
 		"name": "Deity",
-		"baseHappiness": 9,
+		"baseHappiness": 4,
 		"extraHappinessPerLuxury": 0,
 		"researchCostModifier": 1,
 		"unitCostModifier": 1,
@@ -233,7 +233,6 @@
 		"aiMajorCivBonusStartingUnits": [
 			"Колонизатор",
 			"Колонизатор",
-			"Строительный корабль",
 			"Зонд",
 			"Зонд",
 			"Зонд"

@@ -2,30 +2,36 @@
 	{
 		"name": "Планетарная столица",
 		"isNationalWonder": true,
-		"food": 2,
-		"production": 3,
-		"cityStrength": 1,
-		"cityHealth": 30,
-		"science": 3,
-		"gold": 1,
-		"culture": 2,
 		"cost": 1,
-		"uniques": ["Indicates the capital city", "Provides [3] [Учёный]", "Provides [3] [Очки конструкции]", "Provides [3] [Солдат]"]
+		"uniques": [
+			"Indicates the capital city",
+			"Provides [3] [Учёный]",
+			"Provides [3] [Очки конструкции]",
+			"Provides [3] [Солдат]",
+			"Provides [1] [Ген]",
+			"Provides [1] [Решения]",
+			"Provides [1] [Пригодность]"
+			]
 	},
 	{
-		"name": "Станция",
+		"name": "Главный отсек",
 		"replaces": "Планетарная столица",
 		"uniqueTo": "Галактический совет",
 		"isNationalWonder": true,
 		"food": 1,
-		"production": 2,
+		"production": 1,
 		"cityStrength": 1,
 		"cityHealth": 20,
-		"science": 4,
+		"science": 2,
 		"gold": 1,
 		"culture": 1,
 		"cost": 1,
-		"uniques": ["Indicates the capital city", "Provides [4] [Учёный]", "Provides [2] [Очки конструкции]", "Provides [2] [Солдат]"]
+		"uniques": ["Indicates the capital city",
+			"Provides [4] [Учёный]",
+			"Provides [2] [Очки конструкции]",
+			"Provides [2] [Солдат]",
+			"Provides [1] [Ген]",
+			"Provides [1] [Решения]"]
 	},
 	{
 		"name": "Кристалическая долина",
@@ -33,334 +39,1993 @@
 		"uniqueTo": "Кристаллы",
 		"isNationalWonder": true,
 		"food": 2,
-		"production": 3,
+		"production": 1,
 		"cityStrength": 1,
-		"cityHealth": 30,
-		"science": 3,
+		"cityHealth": 25,
+		"science": 2,
 		"gold": 1,
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Indicates the capital city", "Provides [4] [Кристаллы]"]
+		"uniques": ["Indicates the capital city",
+			"Provides [4] [Кристаллы]",
+			"Provides [1] [Ген]",
+			"Provides [1] [Решения]"]
+	},
+	
+	// Кибер. возвыш
+	
+	{
+		"name": "Аккамулятор",
+		"food": 2
+		"cost": 95,
+		"hurryCostModifier": 40,
+		"uniques": [
+			"Only available <after adopting [Переход на аккамуляторы]>",
+			"[+2 Food] <after adopting [Модернизация аккамуляторов]>",
+			]
+	},
+	{
+		"name": "Проект `Перенос разума`",
+		"happiness": 2
+		"science": 2
+		"cost": 195,
+		"hurryCostModifier": 40,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Only available <after adopting [Перенос разума в машину]>"
+			]
+	},
+	
+	// ген. возвыш
+	
+	{
+		"name": "Генетическая лаборатория",
+		"cost": 110,
+		"hurryCostModifier": 40,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Only available <after adopting [Генетическая лаборатория]>", 
+			"Can only be built [in capital]",
+			"Provides [1] [Ген] <after adopting [Изменение генома]>",
+			"[+2 Food] from every [Генетическая лаборатория] <after adopting [Модернизация пищи]>",
+			"[+10]% Strength <for [Военный] units> <after adopting [Подавление недостатков]>",
+			"[+1 Happiness] [in all cities] <after adopting [Подавление недостатков]>"
+			]
+	},
+	
+	// городские решения
+	
+	{
+		"name": "Военное положение",
+		"cityHealth": 10,
+		"cost": 1,
+		"uniques": [
+			"Destroyed when the city is captured",
+			"Only available <after adopting [Ввод военного положения]>",
+			"Consumes [1] [Городские решения]",
+			"[-1 Happiness] [in this city]",
+			"[+5]% Production when constructing [All] buildings [in this city] <after adopting [Принудительное производство]>",
+			"[+5]% Production when constructing [All] units [in this city] <after adopting [Принудительное производство]>"
+			]
+	},
+	
+	// Решения
+	
+	{
+		"name": "Субсидии рабочим",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Production, +1 Happiness, -1 Gold] from every [Производственный район]",
+			"[+1 Production, +1 Happiness, -1 Gold] from every [Шахта]",
+			]
+			"requiredTech": "Добча ресурсов"
+	},
+	{
+		"name": "Субсидии Учёным",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Science, +1 Happiness, -1 Gold] from every [Обсерватория]",
+			"[+1 Science, +1 Happiness, -1 Gold] from every [Телескоп]",
+			]
+	},
+	{
+		"name": "Субсидии Фермерам",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Food, +1 Happiness, -1 Gold] from every [Сельхоз район]",
+			]
+	},
+	{
+		"name": "Поддержка торговцев",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Gold, +1 Happiness] from every [Рынок]"
+			]
+	},
+	{
+		"name": "Продажа тиянок",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Gold] from every [Охотничьи станции]",
+			"Only available <in cities with a [Охота на тиянок]>"
+			]
+	},
+	{
+		"name": "Тиянки в промышленности",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Only available <in cities without a [Охота на тиянок]>"
+			]
+		"requiredTech": "Вопрос о тиянках"
+	},
+	{
+		"name": "Охота на тиянок",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Only available <in cities without a [Тиянки в промышленности]>"
+			]
+		"requiredTech": "Вопрос о тиянках"
+	},
+	{
+		"name": "Заняться археологией",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]"
+			]
+		"requiredTech": "Научные проекты"
+	},
+	{
+		"name": "Изучение амеб",
+		"cost": 70,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+20]% Strength <for [Военный] units> <vs [Амеба] units>",
+			"Consumes [1] [Решения]",
+			"Provides [1] [Решения]"
+			]
+		"requiredTech": "Научные проекты"
+	},
+	{
+		"name": "Новые теории",
+		"cost": 100,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+1 Science] from every [Научная станция]",
+			"Consumes [1] [Решения]",
+			"Provides [1] [Решения]"
+			]
+		"requiredTech": "Научные проекты"
+	},
+	{
+		"name": "Проект `За приделы`",
+		"cost": 500,
+		"uniques": [
+			"Unsellable",
+			"Cannot be purchased",
+			"Destroyed when the city is captured"
+			]
+		"requiredTech": "За приделы галактики"
+	},
+	{
+		"name": "Организовать космические екскурсии",
+		"cost": 80,
+		"uniques": [
+			"[+1 Happiness, +1 Culture] [in all cities]",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			]
+		"requiredTech": "Космические экскурсии"
+	},
+	{
+		"name": "использование пылинок в медицине",
+		"cost": 100,
+		"uniques": [
+			"[+1 Happiness, +2 Food] [in all cities]",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			]
+		"requiredTech": "Пылинки в медицине"
+	},
+	
+	//// Ген
+	
+	{
+		"name": "Путешественники",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Production when constructing [Колонизатор] units [in all cities]"]
+	},
+	{
+		"name": "Выносливые",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Strength <for [ПК оборона] units>"]
+	},
+	{
+		"name": "Учёные",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+1 Science] per [2] population [in all cities]"]
+	},
+	{
+		"name": "Плодовитые",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% growth [in all cities]"]
+	},
+	{
+		"name": "Умелые торговцы",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% [Gold] from Trade Routes"]
+	},
+	{
+		"name": "Великие войны",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Strength <for [Десантник] units> <vs cities>"]
+	},
+	{
+		"name": "Неорганическое дыхание",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "Provides [1] [Газ]"]
+	},
+	{
+		"name": "Трудолюбивые",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+1 Production] per [2] population [in all cities]"]
+	},
+	{
+		"name": "Кристаллические тела",
+		"replaces": "Неорганическое дыхание",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "Provides [1] [Кристаллы]"]
+	},
+	
+	//// Губернатор
+	
+	{
+		"name": "Губернатор",
+		"cost": 1,
+		"uniques": [
+			"Unsellable",
+			"Provides [1] [Городские решения]"]
+		"requiredTech": "Управление"
+	},
+	
+	// Улучшение губернатора
+	
+	{
+		"name": "Улучшение `Судья`",
+		"cost": 120,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"[+1 Happiness] from every [Тюрьма]",
+			"Only available <in cities with a [Губернатор]>"]
+		"requiredTech": "Управление"
+	},
+	{
+		"name": "Улучшение `Защитник`",
+		"cityHealth": 15,
+		"cost": 120,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"All newly-trained [ПК оборона] units [in this city] receive the [Защитник] promotion",
+			"Only available <in cities with a [Губернатор]>"]
+		"requiredTech": "Управление"
+	},
+	{
+		"name": "Улучшение `Свет знаний`",
+		"cost": 120,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"[+1 Science] per [3] population [in all cities]"
+			"Only available <in cities with a [Губернатор]>"]
+		"requiredTech": "Управление"
+	},
+	{
+		"name": "Улучшение `Фермер`",
+		"cost": 120,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"[+1 Food] from every [Сельхоз район]"
+			"Only available <in cities with a [Губернатор]>"]
+		"requiredTech": "Управление"
+	},
+	{
+		"name": "Улучшение `Умелый пропагандст`",
+		"cost": 140,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Provides [1] [Слот пропаганды]",
+			"[+1 Culture] [in this city]",
+			"[+1 Culture, +1 Happiness] from every [Памятники]",
+			"Only available <in cities with a [Губернатор]>"]
+		"requiredTech": "Пропаганда"
+	},
+	
+	// Доктрины
+	
+	{
+		"name": "Упорство",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"[+10]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles> <when at war>",
+			"[+10]% Production when constructing [ПК оборона] units [in all cities] <when at war>",
+			"Consumes [1] [Слот доктрины]"
+			]
+		"requiredTech": "Военная доктрина"
+	},
+	{
+		"name": "Массированность",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"[+5]% Strength <for [Военный] units>",
+			"[+5]% Strength <for [Военный] units> <when adjacent to a [Военный] unit>",
+			"[+10]% Production when constructing [Военный] units [in all cities]",
+			"Consumes [1] [Слот доктрины]"
+			]
+		"requiredTech": "Военная доктрина"
+	},
+	{
+		"name": "Осторожность",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"[+5]% Strength <for [Лазер] units>",
+			"[+1] Range <for [Лазер] units>",
+			"[+1] Sight <for [Лазер] units>",
+			"[+1] Movement <for [{Wounded} {All}] units>",
+			"Consumes [1] [Слот доктрины]"
+			]
+		"requiredTech": "Военная доктрина"
+	},
+	{
+		"name": "Изнеможение",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"[+10]% Production when constructing [Военный] units [in all cities] <when at war>",
+			"[+5]% Strength <for [Военный] units> <when at war>",
+			"[+1] Sight <for [All] units> <when at war>",
+			"Consumes [1] [Слот доктрины]"
+			]
+		"requiredTech": "Военная доктрина"
+	},
+	{
+		"name": "Закидать трупами",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"[+20]% Strength <for [Десантник] units> <vs cities>",
+			"Only available <in cities with a [Неорганическое дыхание]>",
+			"Consumes [1] [Слот доктрины]"
+			]
+		"requiredTech": "Военная доктрина"
+	},
+	
+	//// Общее
+	
+	
+	{
+		"name": "Дом принятия решений",
+		"culture": 1
+		"maintenance": 2,
+		"cost": 100,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Only available <in cities with a [Пригодная планета]>",
+			"Can only be built [in capital]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Provides [3] [Решения]"
+			
+		],
+		"requiredTech": "Управление"
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Тюрьма",
+		"happiness": 1,
+		"maintenance": 1,
+		"cost": 65,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Remove extra unhappiness from annexed cities", "Cannot be purchased",
+			"Destroyed when the city is captured", "Consumes [1] [Солдат]"
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Жилой район",
+		"cost": 100,
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Provides [6] [Человек]"]
+	},
+	{
+		"name": "Обсерватория",
+		"specialistSlots": { "Scientist": 1 }
+		"cost": 50,
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Consumes [1] [Учёный]"]
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Телескоп",
+		"specialistSlots": { "Scientist": 1 }
+		"cost": 50,
+		"maintenance": 1,
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Consumes [1] [Учёный]"]
+		"requiredTech": "Телескопы"
+	},
+	{
+		"name": "Антенны",
+		"science": 1
+		"cost": 40,
+		"maintenance": 1,
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be built [in capital]", "Consumes [1] [Учёный]"]
+		"requiredTech": "Радиосигналы"
 	},
 	{
 		"name": "Памятники",
-		"cost": 55,
+		"cost": 35,
 		"culture": 2,
-		"uniques": ["Destroyed when the city is captured"]
-		"requiredTech": "Изучение космоса"
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Cannot be purchased", "Can only be built [in capital]",]
+		"requiredTech": "Культура"
 	},
 	{
-		"name": "Остатки прошлого",
-		"replaces": "Памятники",
-		"uniqueTo": "Кристаллы",
-		"cost": 55,
+		"name": "Сельхоз район",
+		"specialistSlots": { "Фермер": 2 }
+		"cost": 100,
 		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Кристаллы]", "[+1 Culture]"],
-		"requiredTech": "Изучение космоса"
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Consumes [1] [Человек]", "Cannot be purchased",],
 	},
 	{
-		"name": "Поселение",
-		"cost": 50,
-		"food": 1,
-		"hurryCostModifier": 400,
-		"uniques": ["Provides [3] [Человек]", "Destroyed when the city is captured"],
-		"requiredTech": "Изучение космоса"
+		"name": "Производственный район",
+		"specialistSlots": { "Engineer": 2 }
+		"cost": 100,
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Consumes [1] [Человек]"]
+		"requiredTech": "Строительство"
 	},
 	{
-		"name": "Лаборатория",
-		"specialistSlots": { "Scientist": 2 }
-		"cost": 155,
-		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Учёный]", "Destroyed when the city is captured"],
-		"requiredTech": "Наука"
+		"name": "Шахта",
+		"cost": 85,
+		"uniques": ["Only available <in cities without a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Provides [3] [Минералы]", "Consumes [1] [Человек]"]
+		"requiredTech": "Добча ресурсов"
 	},
 	{
-		"name": "Институт",
-		"cost": 150,
-		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Учёный]", "Consumes [1] [Человек]", "Destroyed when the city is captured"],
-		"requiredTech": "Институты"
+		"name": "Сплавлитейная фабрика 1",
+		"cost": 70,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Only available <in cities with a [Производственный район]>", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]", "Consumes [1] [Человек]"]
+		"requiredTech": "Обработка"
 	},
 	{
-		"name": "Военный институт",
-		"cost": 150,
-		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]", "Destroyed when the city is captured"],
-		"requiredTech": "Институты"
+		"name": "Сплавлитейная фабрика 2",
+		"cost": 70,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Only available <in cities with a [Производственный район]>", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]", "Consumes [1] [Человек]"]
+		"requiredTech": "Обработка"
 	},
 	{
-		"name": "Конструкторский институт",
-		"cost": 150,
-		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Конструктор]", "Consumes [1] [Человек]", "Destroyed when the city is captured"],
-		"requiredTech": "Институты"
+		"name": "Сплавлитейная фабрика 3",
+		"cost": 70,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Only available <in cities with a [Производственный район]>", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]", "Consumes [1] [Человек]"]
+		"requiredTech": "Обработка"
 	},
 	{
 		"name": "Рынок",
-		"specialistSlots": { "Merchant": 1 }
-		"cost": 75,
-		"gold": 2,
-		"hurryCostModifier": 15,
-		"uniques": ["Destroyed when the city is captured"],
+		"specialistSlots": { "Торговец": 1 }
+		"cost": 55,
+		"uniques": ["Only available <in cities without a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased",]
 		"requiredTech": "Торговля"
 	},
 	{
 		"name": "Конструкторское бюро",
-		"cost": 75,
+		"cost": 55,
 		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Очки конструкции]","Consumes [1] [Конструктор]", "Destroyed when the city is captured"],
-		"requiredTech": "Профессионализм"
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Provides [1] [Очки конструкции]", "Cannot be purchased", "Consumes [1] [Конструктор]", "Destroyed when the city is captured"],
+		"requiredTech": "Конструкторы"
 	},
 	{
-		"name": "Строительное бюро",
-		"cost": 85,
-		"specialistSlots": { "Engineer": 2 }
+		"name": "Институт",
+		"cost": 70,
 		"hurryCostModifier": 15,
-		"uniques": ["Destroyed when the city is captured"],
-		"requiredTech": "Строительство"
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Provides [1] [Учёный]", "Consumes [1] [Человек]", "Destroyed when the city is captured"],
+		"requiredTech": "Институты"
 	},
 	{
-		"name": "Шахты",
-		"cost": 105,
+		"name": "Военный институт",
+		"cost": 70,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Provides [3] [Минералы]", "Destroyed when the city is captured"],
-		"requiredTech": "Шахты"
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Consumes [1] [Человек]", "Provides [1] [Солдат]", "Destroyed when the city is captured"],
+		"requiredTech": "Институты"
 	},
 	{
-		"name": "Газ-вырабатывающая фабрика",
-		"cost": 105,
-		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Consumes [1] [Минералы]", "Consumes [1] [Кристаллы]", "Provides [1] [Газ]", "Destroyed when the city is captured"],
-		"requiredTech": "Выработка газов"
+		"name": "Здание пропаганды",
+		"culture": 1,
+		"cost": 80,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Provides [1] [Слот пропаганды]"]
+		"requiredTech": "Пропаганда"
 	},
 	{
-		"name": "Сплавоперерабатывающий завод",
-		"cost": 110,
-		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Consumes [2] [Сплавы]", "Provides [1] [Кристаллы]", "Destroyed when the city is captured"],
-		"requiredTech": "Переработка сплавов"
-	},
-	{
-		"name": "Шахта",
-		"replaces": "Поселение",
-		"uniqueTo": "Кристаллы",
-		"cost": 50,
-		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Кристаллы]", "[+1 Culture]"],
-		"requiredTech": "Изучение космоса"
-	},
-	{
-		"name": "Склад",
+		"name": "Крепость",
+		"cityHealth": 25,
 		"cost": 100,
-		"food": 2
-		"maintenance": 1,
-		"hurryCostModifier": 15,
-		"uniques": ["Destroyed when the city is captured"],
-		"requiredTech": "Строительство"
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Солдат]"]
+		"requiredTech": "Оборонительные сооружения"
 	},
 	{
-		"name": "Тюрьма",
-		"maintenance": 1,
-		"cost": 120,
+		"name": "Академия",
+		"cost": 90,
 		"uniques": [
-			"Remove extra unhappiness from annexed cities",
-			"Can only be built [in annexed cities]",
-			"Destroyed when the city is captured"
-		],
-		"requiredTech": "Военная подготовка",
-		"hurryCostModifier": 20
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"New [Военный] units start with [15] Experience [in all cities]"
+			"Consumes [1] [Человек]",
+			"Provides [1] [Солдат]"]
+		"requiredTech": "Оборонительные сооружения"
 	},
 	{
-		"name": "Производственный район",
-		"cost": 120,
-		"specialistSlots": { "Engineer": 2 }
-		"maintenance": 1,
-		"hurryCostModifier": 15,
-		"uniques": ["Destroyed when the city is captured"],
-		"requiredTech": "Производственный район"
+		"name": "Завод производства роботов",
+		"production": 1,
+		"cost": 90,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"[+1 Production] from every [Производственный район]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",]
+		"requiredTech": "Производство роботов"
+	},
+	{
+		"name": "Переработка пылинок",
+		"cost": 130,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"[+1 Food] from every [Сельхоз район]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Пылинки]"]
+		"requiredTech": "Удобрения"
+	},
+	{
+		"name": "Завод производства кристаллов",
+		"cost": 130,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Consumes [2] [Пылинки]",
+			"Consumes [1] [Минералы]",
+			"Provides [1] [Кристаллы]"]
+		"requiredTech": "Производство кристаллов"
+	},
+	{
+		"name": "Генштаб",
+		"cost": 85,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Can only be built [in capital]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Солдат]",
+			"Provides [1] [Слот доктрины]"]
 	},
 	{
 		"name": "Музей артефактов",
 		"cost": 100,
 		"specialistSlots": { "Артефакт": 2 }
 		"maintenance": 1,
+		"requiredNearbyImprovedResources": ["Артефакты"],
 		"hurryCostModifier": 15,
-		"uniques": ["Destroyed when the city is captured"],
-		"requiredTech": "Музеи"
+		"uniques": ["Only available <in cities without a [Главный отсек]>", "Destroyed when the city is captured"],
+		"requiredTech": "Музеи артефактов"
 	},
 	{
-		"name": "Сплаволитейный завод",
-		"cost": 100,
-		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Consumes [3] [Минералы]", "Provides [3] [Сплавы]", "Destroyed when the city is captured"],
-		"requiredTech": "Славолитейные заводы"
+		"name": "Бункер с запасами",
+		"food": 2
+		"cost": 110,
+		"hurryCostModifier": 40,
+		"uniques": ["Only available <in cities without a [Главный отсек]>", "Only available <after adopting [Сбережение]>"]
+	},
+	
+	// двигатели
+	
+	{
+		"name": "Установка сверх двигателей",
+		"cost": 1,
+		"uniques": ["Consumes [1] [Газ]", "All newly-trained [Космос] units [in this city] receive the [Сверх двигатель] promotion"]
+		"requiredTech": "Сверх двигатели"
 	},
 	{
-		"name": "Плантация",
-		"specialistSlots": { "Фермер": 2 }
-		"cost": 70,
-		"hurryCostModifier": 15,
-		"uniques": [],
-		"requiredTech": "Обустройство"
+		"name": "Установка Варп двигателей",
+		"cost": 1,
+		"uniques": ["Consumes [1] [Темная материя]", "All newly-trained [Космос] units [in this city] receive the [Варп двигатель] promotion"]
+		"requiredTech": "Варп двигатель"
 	},
-	{
-		"name": "Полигон",
-		"cost": 90,
-		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Человек]", "Provides [1] [Солдат]", "Destroyed when the city is captured"],
-		"requiredTech": "Военная подготовка"
-	},
-	{
-		"name": "Добыча поглощающих кристаллов",
-		"replaces": "Полигон",
-		"uniqueTo": "Кристаллы",
-		"cost": 95,
-		"hurryCostModifier": 15,
-		"uniques": ["Provides [1] [Кристаллы]", "[+1 Culture]"],
-		"requiredTech": "Военная подготовка"
-	},
+	
+	// планет. Пушка
+	
 	{
 		"name": "Дуло пушки",
 		"cost": 190,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [1] [Сплавы]", "Destroyed when the city is captured"],
-		"requiredTech": "Дуло пушки"
+		"uniques": ["Only available <in cities with a [Ствол пушки]>", "Consumes [1] [Сплавы]", "Destroyed when the city is captured"],
+		"requiredTech": "Планетарная пушка"
 	},
 	{
 		"name": "Ствол пушки",
 		"cost": 250,
 		"hurryCostModifier": 15,
-		"uniques": ["Consumes [2] [Сплавы]", "Consumes [3] [Газ]", "Destroyed when the city is captured"],
-		"requiredTech": "Ствол пушки"
+		"uniques": ["Only available <in cities with a [Фундамент пушки]>", "Consumes [2] [Сплавы]", "Consumes [3] [Газ]", "Destroyed when the city is captured"],
+		"requiredTech": "Планетарная пушка"
 	},
 	{
 		"name": "Фундамент пушки",
 		"cost": 100,
 		"hurryCostModifier": 15,
 		"uniques": ["Consumes [3] [Сплавы]", "Consumes [1] [Кристаллы]", "Destroyed when the city is captured"],
-		"requiredTech": "Фундамент пушки"
+		"requiredTech": "Планетарная пушка"
+	},
+	
+	
+	// Тер.
+	
+	{
+		"name": "Процесс терраформирования",
+		"cost": 150,
+		"uniques": [
+			"Only available <in cities without a [Планетарная столица]>",
+			"Only available <in cities without a [Главный отсек]>",
+			"Only available <in cities without a [Кристалическая долина]>",
+			"Unsellable",
+			"Cannot be purchased",
+			"Provides [1] [Пригодность]"]
+		"requiredTech": "Терраформирование"
 	},
 	{
-		"name": "Крепость",
+		"name": "Пригодная планета",
+		"food": 2,
+		"production": 1,
+		"cityStrength": 1,
 		"cityHealth": 25,
-		"cost": 150,
+		"gold": 1,
+		"culture": 1,
+		"cost": 1,
+		"uniques": [
+			"Automatically built in all cities where it is buildable",
+			"Unsellable",
+			"Cannot be purchased",
+			"Consumes [1] [Пригодность]"]
+	},
+	
+	// Корвет
+	
+	{
+		"name": "Завод производства корветов",
+		"cost": 80,
+		"uniques": ["Cannot be hurried", "Cannot be purchased", "Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]", "Provides [1] [Доп. ячейка корвет]"]
+		"requiredTech": "Корветы"
+	},
+	{
+		"name": "ПРО Корвета",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства корветов]>", "Consumes [1] [Доп. ячейка корвет]", "Consumes [1] [Сплавы]", "Consumes [1] [Очки конструкции]", "All newly-trained [Корвет пушка] units [in this city] receive the [ПРО] promotion"]
+	},
+	{
+		"name": "Улучшить пушки Корвета",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства корветов]>", "Consumes [1] [Доп. ячейка корвет]", "Consumes [1] [Сплавы]", "Consumes [1] [Пылинки]", "Consumes [1] [Очки конструкции]", "All newly-trained [Корвет пушка] units [in this city] receive the [Улучшение пушек] promotion"],
+		"requiredTech": "Современное вооружение"
+	},
+	{
+		"name": "Установить лазерную пушку корвет",
+		"cost": 40,
+		"uniques": ["Only available <in cities with a [Завод производства корветов]>", "Consumes [1] [Сплавы]", "Consumes [1] [Кристаллы]"]
+		"requiredTech": "Лазеры"
+	},
+	
+	// Эсминец
+	
+	{
+		"name": "Завод производства эсминцев",
+		"cost": 90,
+		"uniques": ["Cannot be hurried", "Cannot be purchased", "Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]", "Provides [1] [Доп. ячейка эсминец]"]
+		"requiredTech": "Эсминцы"
+	},
+	{
+		"name": "ПРО эсминца",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства эсминцев]>", "Consumes [1] [Доп. ячейка эсминец]", "Consumes [1] [Сплавы]", "Consumes [1] [Очки конструкции]", "All newly-trained [Эсминец пушка] units [in this city] receive the [ПРО] promotion"]
+	},
+	{
+		"name": "Улучшить пушки эсминца",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства эсминцев]>", "Consumes [1] [Доп. ячейка эсминец]", "Consumes [1] [Сплавы]", "Consumes [1] [Пылинки]", "Consumes [1] [Очки конструкции]", "All newly-trained [Эсминец пушка] units [in this city] receive the [Улучшение пушек] promotion"],
+		"requiredTech": "Современное вооружение"
+	},
+	{
+		"name": "Установить лазерную пушку эсминец",
+		"cost": 40,
+		"uniques": ["Only available <in cities with a [Завод производства эсминцев]>", "Consumes [2] [Сплавы]", "Consumes [1] [Кристаллы]"]
+		"requiredTech": "Лазеры"
+	},
+	
+	// Крейсер
+	
+	{
+		"name": "Завод производства Крейсеров",
+		"cost": 110,
+		"uniques": ["Cannot be hurried", "Cannot be purchased", "Consumes [1] [Очки конструкции]", "Consumes [4] [Сплавы]", "Consumes [1] [Пылинки]", "Provides [1] [Доп. ячейка крейсер]"]
+		"requiredTech": "Крейсеры"
+	},
+	{
+		"name": "ПРО Крейсера",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства Крейсеров]>", "Consumes [1] [Доп. ячейка крейсер]", "Consumes [1] [Сплавы]", "Consumes [1] [Очки конструкции]", "All newly-trained [Крейсер пушка] units [in this city] receive the [ПРО] promotion"]
+	},
+	{
+		"name": "Отсек для истребителей Крейсера",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства Крейсеров]>", "Consumes [1] [Солдат]", "Consumes [1] [Доп. ячейка крейсер]", "Consumes [1] [Сплавы]", "Consumes [1] [Очки конструкции]", "All newly-trained [Крейсер пушка] units [in this city] receive the [Отсек для истребителей] promotion"]
+		"requiredTech": "Истребители"
+	},
+	{
+		"name": "Установить лазерную пушку крейсер",
+		"cost": 40,
+		"uniques": ["Only available <in cities with a [Завод производства Крейсеров]>", "Consumes [2] [Сплавы]", "Consumes [2] [Кристаллы]"]
+		"requiredTech": "Крейсеры"
+	},
+	
+	// Линкор
+	
+	{
+		"name": "Завод производства Линкоров",
+		"cost": 110,
+		"uniques": ["Cannot be hurried", "Cannot be purchased", "Consumes [1] [Очки конструкции]", "Consumes [5] [Сплавы]", "Consumes [2] [Пылинки]", "Provides [1] [Доп. ячейка линкор]"]
+		"requiredTech": "Линкоры"
+	},
+	{
+		"name": "ПРО Линкора",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства Линкоров]>", "Consumes [1] [Доп. ячейка линкор]", "Consumes [1] [Сплавы]", "Consumes [1] [Очки конструкции]", "All newly-trained [Линкор пушка] units [in this city] receive the [ПРО] promotion"]
+	},
+	{
+		"name": "Отсек для истребителей Линкора",
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Завод производства Линкоров]>", "Consumes [1] [Солдат]", "Consumes [1] [Доп. ячейка линкор]", "Consumes [1] [Сплавы]", "Consumes [1] [Очки конструкции]", "All newly-trained [Линкор пушка] units [in this city] receive the [Отсек для истребителей] promotion"]
+		"requiredTech": "Истребители"
+	},
+	{
+		"name": "Установить лазерную пушку линкор",
+		"cost": 40,
+		"uniques": ["Only available <in cities with a [Завод производства Линкоров]>", "Consumes [2] [Сплавы]", "Consumes [3] [Кристаллы]"]
+		"requiredTech": "Линкоры"
+	},
+	
+	// Фрегат
+	
+	{
+		"name": "Завод производства фрегатов",
+		"cost": 70,
+		"uniques": ["Cannot be hurried", "Cannot be purchased", "Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]"]
+		"requiredTech": "Фрегаты"
+	},
+	
+	// Колосс
+	
+	{
+		"name": "Проект `Колосс`",
+		"cost": 200,
+		"uniques": ["Cannot be hurried", "Cannot be purchased", "Consumes [2] [Очки конструкции]", "Consumes [5] [Сплавы]", "Consumes [4] [Кристаллы]", "Consumes [1] [Темная материя]"]
+		"requiredTech": "Постройка колосса"
+	},
+	
+	//// СР
+	
+	// Здания ср
+	
+	{
+		"name": "Информбюро",
+		"replaces": "Здание пропаганды",
+		"uniqueTo": "Союз рабочих",
+		"culture": 1,
+		"cost": 95,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Provides [2] [Слот пропаганды]"]
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Артель",
+		"replaces": "Рынок",
+		"uniqueTo": "Союз рабочих",
+		"gold": 1,
+		"production": 1,
+		"happiness": 1,
+		"cost": 50,
+		"uniques": [
+			"Cannot be purchased",
+			"Destroyed when the city is captured"]
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Милиция",
+		"replaces": "Тюрьма",
+		"uniqueTo": "Союз рабочих",
+		"cost": 50,
+		"uniques": [
+			"Remove extra unhappiness from annexed cities", "Cannot be purchased",
+			"Destroyed when the city is captured",]
+	},
+	{
+		"name": "Совет",
+		"replaces": "Губернатор",
+		"uniqueTo": "Союз рабочих",
+		"production": 1
+		"happiness": 1
+		"culture": 1
+		"cost": 40,
+		"uniques": [
+			"Unsellable",
+			"Provides [1] [Городские решения]"]
+		"requiredTech": "Управление"
+	},
+	
+	// История ср
+	
+	{
+		"name": "Либерализация",
+		"uniqueTo": "Союз рабочих",
+		"cost": 60,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"[+1 Gold] from every [Артель]",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Социализм]>"]
+		"requiredTech": "История"
+	},
+	{
+		"name": "Социализм",
+		"uniqueTo": "Союз рабочих",
+		"happiness": 3,
+		"production": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[-100]% maintenance costs <for [All] units>",
+			"[+2 Production, +1 Science, +1 Culture] [in all cities]",
+			"[+1 Happiness] per [1] population [in all cities]",
+			"Only available <in cities without a [Либерализация]>"]
+		"requiredTech": "История"
+	},
+	
+	// Политика ср
+	
+	{
+		"name": "Путь к коммунизму",
+		"uniqueTo": "Союз рабочих",
+		"culture": 2
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+10]% Strength <for [Военный] units> <when fighting in [Enemy land] tiles>",
+			"[+1 Production] from every specialist [in all cities]",
+			"Only available <in cities without a [Социализм в одной стране]>",
+			"Only available <in cities without a [Возвращение буржуазии]>",
+			"Only available <in cities with a [Социализм]>"]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Социализм в одной стране",
+		"uniqueTo": "Союз рабочих",
+		"culture": 2
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+10]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles> <when at war>",
+			"[+1 Production] from every specialist [in all cities]",
+			"Only available <in cities without a [Путь к коммунизму]>",
+			"Only available <in cities without a [Возвращение буржуазии]>",
+			"Only available <in cities with a [Социализм]>"]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Возвращение буржуазии",
+		"uniqueTo": "Союз рабочих",
+		"culture": -2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+1 Production, +1 Science, -1 Gold] from every specialist [in all cities]",
+			"[+10]% [Gold] from Trade Routes",
+			"Only available <in cities without a [Путь к коммунизму]>",
+			"Only available <in cities without a [Социализм в одной стране]>",
+			"Only available <in cities with a [Либерализация]>"]
+		"requiredTech": "Политика"
+	},
+	
+	// Пропаганда ср
+	
+	{
+		"name": "Ксенотерпимость",
+		"uniqueTo": "Союз рабочих",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+1 Happiness] per [1] population [in all cities]"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Работа и труд всё перетрут!",
+		"uniqueTo": "Союз рабочих",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+1 Production] from every [Производственный район]"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Обеспечим высокий урожай",
+		"uniqueTo": "Союз рабочих",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+1 Food] from every [Сельхоз район]"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Знания - свет",
+		"uniqueTo": "Союз рабочих",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+1 Science] from every [Обсерватория]"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	
+	// Особые решения ср
+	
+	{
+		"name": "Новое перевоспитание",
+		"uniqueTo": "Союз рабочих",
+		"culture": 2,
+		"cost": 550,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Provides [1] [Решения]",
+			"[+1 Happiness] from every specialist [in all cities]",
+			"Only available <in cities with a [Возвращение буржуазии]>"
+			]
+	},
+	
+	// Особые доктрины ср
+	
+	{
+		"name": "Войны Революции",
+		"uniqueTo": "Союз рабочих",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+10]% Strength <for [Военный] units>",
+			"Earn [10]% of killed [All] unit's [Strength] as [Culture]",
+			"Consumes [1] [Слот доктрины]",
+			"Only available <in cities with a [Путь к коммунизму]>"
+			]
+	},
+	
+	//// ИХ
+	
+	// Постройки их
+	
+	
+	
+	// история их
+	
+	{
+		"name": "Объединение под егидой ненависти",
+		"uniqueTo": "Империя Хроз",
+		"happiness": 3,
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Вооруженное объединение]>"]
+		"requiredTech": "История"
+	},
+	{
+		"name": "Вооруженное объединение",
+		"uniqueTo": "Империя Хроз",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+10]% Production when constructing [Военный] units [in all cities]",
+			"[+2 Happiness, +2 Culture] from every [Крепость]",
+			"Only available <in cities without a [Объединение под егидой ненависти]>"]
+		"requiredTech": "История"
+	},
+	
+	// политика их
+	
+	{
+		"name": "Уничтожить всех!",
+		"uniqueTo": "Империя Хроз",
+		"happiness": 3,
+		"culture": 3,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Мирная изоляция]>",
+			"Only available <in cities without a [Агрессивная политика]>"
+			"Only available <in cities with a [Объединение под егидой ненависти]>",
+			"[+1 Production] per [1] population [in annexed cities]",
+			"[-3 Food] per [1] population [in annexed cities]",
+			"[-100]% growth [in annexed cities]"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Мирная изоляция",
+		"uniqueTo": "Империя Хроз",
+		"happiness": 2,
+		"culture": 2,
+		"science": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities with a [Вооруженное объединение]>",
+			"Only available <in cities without a [Уничтожить всех!]>",
+			"Only available <in cities without a [Агрессивная политика]>"]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Агрессивная политика",
+		"uniqueTo": "Империя Хроз",
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+10]% Strength <for [Военный] units>",
+			"Only available <in cities with a [Вооруженное объединение]>",
+			"Only available <in cities without a [Уничтожить всех!]>",
+			"Only available <in cities without a [Мирная изоляция]>"]
+		"requiredTech": "Политика"
+	},
+	
+	// Пропаганда их
+	
+	{
+		"name": "Ксенофобия",
+		"uniqueTo": "Империя Хроз",
+		"happiness": 1
+		"culture": 2,
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Культ личности Хроза",
+		"uniqueTo": "Империя Хроз",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+2 Happiness, +1 Culture] [in all cities]"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Отстоим право на существование!",
+		"uniqueTo": "Империя Хроз",
+		"culture": 1
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+15]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles>",
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Мы высшая раса!",
+		"uniqueTo": "Империя Хроз",
+		"culture": 1,
+		"happiness": 2,
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+15]% Strength <for [Военный] units>",
+			"Only available <in cities with a [Вооруженное объединение]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	
+	// Решения их
+	
+	{
+		"name": "Борьба с разнообразием",
+		"uniqueTo": "Империя Хроз",
+		"culture": 2,
+		"happiness": -1,
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]"
+			]
+	},
+	
+	//// Гс
+	
+	// История гс
+	
+	{
+		"name": "Верность предкам",
+		"uniqueTo": "Галактический совет",
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Власть потомков]>",
+			"[+1 Science] from every [Обсерватория]",]
+		"requiredTech": "История"
+	},
+	{
+		"name": "Власть потомков",
+		"uniqueTo": "Галактический совет",
+		"happiness": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Верность предкам]>",
+			"[+1 Production] from every specialist [in all cities]"]
+		"requiredTech": "История"
+	},
+	
+	// политика гс
+	
+	{
+		"name": "Сильный совет",
+		"uniqueTo": "Галактический совет",
+		"culture": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Дипломатичный совет]>",
+			"[+5]% Strength <for [Военный] units>",
+			"[+5]% Production when constructing [Военный] units [in all cities]"
+			"Only available <in cities with a [Власть потомков]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Дипломатичный совет",
+		"uniqueTo": "Галактический совет",
+		"science": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Сильный совет]>",
+			"[+5]% [Gold] from Trade Routes",
+			"[+5]% [Happiness] from Trade Routes",
+			"Only available <in cities with a [Власть потомков]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Старая политика",
+		"uniqueTo": "Галактический совет",
+		"science": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Остаться в изоляции]>",
+			"[+10]% [Science] from Trade Routes",
+			"Only available <in cities with a [Верность предкам]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Остаться в изоляции",
+		"uniqueTo": "Галактический совет",
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Старая политика]>",
+			"[+2 Science] from every [Телескоп]"
+			"Only available <in cities with a [Верность предкам]>"
+			]
+		"requiredTech": "Политика"
+	},
+	
+	// Пропаганда гс
+	
+	{
+		"name": "Защитники галактики",
+		"uniqueTo": "Галактический совет",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+15]% Strength <for [Военный] units> <vs [Кризис] units>",
+			"Only available <in cities with a [Власть потомков]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Изучение новой жизни",
+		"uniqueTo": "Галактический совет",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+2 Science] from every [Антенны]",
+			"Only available <in cities with a [Старая политика]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Мы в одиночестве, и нам хорошо!",
+		"uniqueTo": "Галактический совет",
+		"culture": 2,
+		"happiness": 2,
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+2 Happiness] from every [Жилой район]",
+			"Only available <in cities with a [Остаться в изоляции]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	
+	// Решения гс
+	
+	{
+		"name": "Вскрыть великий архив",
+		"uniqueTo": "Галактический совет",
+		"science": 5,
+		"happiness": -3,
+		"cost": 100,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Provides [1] [Решения]",
+			"Only available <in cities with a [Власть потомков]>"
+			]
+	},
+	{
+		"name": "Уничтожить великий архив",
+		"uniqueTo": "Галактический совет",
+		"culture": 2,
+		"happiness": 3,
+		"cost": 100,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Provides [1] [Решения]",
+			"Only available <in cities with a [Верность предкам]>"
+			]
+	},
+	
+	// постройки гс
+	
+	{
+		"name": "Ассамблея",
+		"uniqueTo": "Галактический совет",
+		"culture": 1
+		"maintenance": 2,
+		"cost": 1,
+		"uniques": ["Automatically built in all cities where it is buildable",
+			"Only available <in cities with a [Главный отсек]>",
+			"Can only be built [in capital]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Provides [3] [Решения]"
+			
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Тюремный блок",
+		"uniqueTo": "Галактический совет",
+		"happiness": 1,
+		"maintenance": 1,
+		"cost": 1,
+		"uniques": ["Cannot be purchased", "Only available <in cities with a [Главный отсек]>",
+			"Destroyed when the city is captured", "Automatically built in all cities where it is buildable"
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Жилой блок",
+		"uniqueTo": "Галактический совет",
+		"cost": 1,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Provides [6] [Человек]"]
+	},
+	{
+		"name": "Обсерватория станции",
+		"uniqueTo": "Галактический совет",
+		"specialistSlots": { "Scientist": 1 }
+		"cost": 1,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Consumes [1] [Учёный]"]
+	},
+	{
+		"name": "Телескоп станции",
+		"uniqueTo": "Галактический совет",
+		"specialistSlots": { "Scientist": 1 }
+		"cost": 1,
+		"maintenance": 1,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Consumes [1] [Учёный]"]
+	},
+	{
+		"name": "Антенны станции",
+		"uniqueTo": "Галактический совет",
+		"science": 1
+		"cost": 1,
+		"maintenance": 1,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be built [in capital]", "Consumes [1] [Учёный]"]
+		"requiredTech": "Радиосигналы"
+	},
+	{
+		"name": "Пищеблок",
+		"uniqueTo": "Галактический совет",
+		"specialistSlots": { "Фермер": 2 }
+		"cost": 1,
 		"hurryCostModifier": 15,
-		"uniques": ["Destroyed when the city is captured"]
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Consumes [1] [Человек]", "Cannot be purchased",],
+	},
+	{
+		"name": "Производственный блок",
+		"uniqueTo": "Галактический совет",
+		"specialistSlots": { "Engineer": 2 }
+		"cost": 1,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be built [in capital]", "Consumes [1] [Человек]"]
+		"requiredTech": "Строительство"
+	},
+	{
+		"name": "Конструкторский блок",
+		"uniqueTo": "Галактический совет",
+		"cost": 1,
+		"hurryCostModifier": 15,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Provides [1] [Очки конструкции]", "Cannot be purchased", "Consumes [1] [Конструктор]", "Destroyed when the city is captured"],
+		"requiredTech": "Конструкторы"
+	},
+	{
+		"name": "Научный блок",
+		"uniqueTo": "Галактический совет",
+		"cost": 1,
+		"hurryCostModifier": 15,
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Provides [1] [Учёный]", "Consumes [1] [Человек]", "Destroyed when the city is captured"],
+		"requiredTech": "Институты"
+	},
+	{
+		"name": "Завод производства роботов станции",
+		"uniqueTo": "Галактический совет",
+		"production": 1,
+		"cost": 1,
+		"uniques": ["Only available <in cities with a [Главный отсек]>", 
+			"[+1 Production] from every [Производственный район]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",]
+		"requiredTech": "Производство роботов"
+	},
+	
+	//// зем   /\0х|/|
+	
+	// История зем
+	
+	{
+		"name": "Научное объединение",
+		"uniqueTo": "Государство `Земля`",
+		"science": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [После ядерной войны...]>",
+			"[+1 Science] from every specialist [in all cities]"]
+		"requiredTech": "История"
+	},
+	{
+		"name": "После ядерной войны...",
+		"uniqueTo": "Государство `Земля`",
+		"happiness": -2,
+		"science": -1
+		"culture": 2
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Научное объединение]>",
+			"[+10]% Strength <for [Десантник] units> <vs cities>"]
+		"requiredTech": "История"
+	},
+	
+	// политика зем
+	
+	{
+		"name": "Безудержная тяга к знаниям",
+		"uniqueTo": "Государство `Земля`",
+		"science": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+1 Science] from every [Телескоп]",
+			"[+1 Science] from every [Антенны]",
+			"[+2]% [Science] from Trade Routes",
+			"Only available <in cities with a [Научное объединение]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Выживание в просторах косомса",
+		"uniqueTo": "Государство `Земля`",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Выживание на чужих планетах]>",
+			"[+2 Happiness] from every [Станция землян]",
+			"[+1 Production] from every [Добывающая станция]",
+			"Only available <in cities with a [После ядерной войны...]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Выживание на чужих планетах",
+		"uniqueTo": "Государство `Земля`",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Only available <in cities without a [Выживание в просторах косомса]>",
+			"[+1 Production] [in annexed cities]",
+			"[+1 Food] [in annexed cities]",
+			"Only available <in cities with a [После ядерной войны...]>"
+			]
+		"requiredTech": "Политика"
+	},
+	
+	// пропаганда зем
+	
+	{
+		"name": "Нам нужен новый дом!",
+		"uniqueTo": "Государство `Земля`",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+2 Happiness] [in annexed cities]",
+			"[+15]% Strength <for [Военный] units> <vs cities>",
+			"Only available <in cities with a [Выживание на чужих планетах]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Космос, родной дом",
+		"uniqueTo": "Государство `Земля`",
+		"culture": 2,
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+1 Culture] from every [Станция землян]",
+			"Only available <in cities with a [Выживание в просторах косомса]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Всё ради науки",
+		"uniqueTo": "Государство `Земля`",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+1 Science] from every [Раскопки]",
+			"[+3]% [Science] from Trade Routes",
+			"Only available <in cities with a [Выживание в просторах косомса]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	
+	// решения зем
+	
+	{
+		"name": "Сбор ценных данных",
+		"uniqueTo": "Государство `Земля`",
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Earn [20]% of killed [All] unit's [Strength] as [Science]",
+			"Only available <in cities with a [Безудержная тяга к знаниям]>"
+			],
+	},
+	
+	//// Респ
+	
+	// История респ
+	
+	{
+		"name": "Глобальный голод",
+		"uniqueTo": "Республика Лиц",
+		"food": -2,
+		"happiness": -1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",]
+		"requiredTech": "История"
+	},
+	
+	// политика респ
+	
+	{
+		"name": "Борьба за еду",
+		"uniqueTo": "Республика Лиц",
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+3 Happiness] [in annexed cities]",
+			"[+10]% Strength <for [Военный] units>",
+			"Only available <in cities without a [Переселение]>",
+			"Only available <in cities with a [Глобальный голод]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Переселение",
+		"uniqueTo": "Республика Лиц",
+		"culture": 2,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+1 Food] [in all cities]",
+			"[+1 Culture] [in all cities]",
+			"[+10]% Production when constructing [Колонизатор] units [in all cities]",
+			"Only available <in cities without a [Борьба за еду]>",
+			"Only available <in cities with a [Глобальный голод]>"
+			]
+		"requiredTech": "Политика"
+	},
+	
+	// Пропагнда респ
+	
+	{
+		"name": "Космос как спасение",
+		"uniqueTo": "Республика Лиц",
+		"happiness": 2,
+		"culture": 1
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+10]% Production when constructing [Колонизатор] units [in all cities]",
+			"Only available <in cities with a [Глобальный голод]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Нам НУЖНА еда!",
+		"uniqueTo": "Республика Лиц",
+		"happiness": 2,
+		"culture": 2,
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот пропаганды]",
+			"[+10]% Production when constructing [Военный] units [in all cities]",
+			"[+10]% Strength <for [Военный] units> <vs cities>",
+			"Only available <in cities with a [Борьба за еду]>"
+			],
+		"requiredTech": "Пропаганда"
+	},
+	
+	// Решения респ
+	
+	{
+		"name": "Выжимать последние соки из земли",
+		"uniqueTo": "Республика Лиц",
+		"food": 2
+		"cost": 1,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Food] from every [Сельхоз район]",
+			"[+1 Food] from every specialist [in all cities]",
+			"Only available <in cities with a [Глобальный голод]>"
+			],
+	},
+	
+	//// Кр
+	
+	// здания кр
+	
+	{
+		"name": "Переработка в пищу",
+		"replaces": "Тюрьма",
+		"uniqueTo": "Кристаллический мир",
+		"food": 1,
+		"maintenance": 1,
+		"cost": 65,
+		"uniques": ["Only available <in cities without a [Главный отсек]>",
+			"Can only be built [in annexed cities]",
+			"Remove extra unhappiness from annexed cities", "Cannot be purchased",
+			"Destroyed when the city is captured"
+		],
+		"hurryCostModifier": 20
+	},
+	{
+		"name": "Кристаллическая долина",
+		"replaces": "Жилой район",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 100,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Provides [3] [Кристаллы]"]
+	},
+	{
+		"name": "Местный центр сознания",
+		"replaces": "Губернатор",
+		"uniqueTo": "Кристаллический мир",
+		"happiness": 1
+		"culture": 1
+		"science": 1
+		"cost": 1,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Provides [3] [Кристаллы]"]
+	},
+	{
+		"name": "Кристаллическая обсерватория",
+		"replaces": "Обсерватория",
+		"uniqueTo": "Кристаллический мир",
+		"specialistSlots": { "Scientist": 1 }
+		"cost": 50,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased"]
+		"requiredTech": "Изучение космоса"
+	},
+	{
+		"name": "Кристаллический телескоп",
+		"replaces": "Телескоп",
+		"uniqueTo": "Кристаллический мир",
+		"specialistSlots": { "Scientist": 1 }
+		"cost": 50,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased"]
+		"requiredTech": "Телескопы"
+	},
+	{
+		"name": "Кристаллические антенны",
+		"replaces": "Антенны",
+		"uniqueTo": "Кристаллический мир",
+		"science": 1
+		"cost": 40,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Can only be built [in capital]"]
+		"requiredTech": "Радиосигналы"
+	},
+	{
+		"name": "остатки прошлого",
+		"replaces": "Памятники",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 35,
+		"culture": 2,
+		"uniques": ["Cannot be purchased", "Can only be built [in capital]"]
+		"requiredTech": "Культура"
+	},
+	{
+		"name": "Пустыня",
+		"replaces": "Сельхоз район",
+		"uniqueTo": "Кристаллический мир",
+		"food": 2,
+		"cost": 100,
+		"hurryCostModifier": 15,
+		"uniques": ["Cannot be purchased"],
+	},
+	{
+		"name": "Кристаллы-работники",
+		"replaces": "Производственный район",
+		"uniqueTo": "Кристаллический мир",
+		"specialistSlots": { "Engineer": 2 }
+		"cost": 100,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased"]
+		"requiredTech": "Строительство"
+	},
+	{
+		"name": "Кристаллическая шахта",
+		"replaces": "Шахта",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 85,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Provides [1] [Кристаллы]"]
+		"requiredTech": "Добча ресурсов"
+	},
+	{
+		"name": "Золотые кристаллы",
+		"replaces": "Рынок",
+		"uniqueTo": "Кристаллический мир",
+		"specialistSlots": { "Торговец": 1 }
+		"cost": 55,
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased"]
+		"requiredTech": "Торговля"
+	},
+	{
+		"name": "Мать кристаллов",
+		"replaces": "Конструкторское бюро",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 55,
+		"hurryCostModifier": 15,
+		"uniques": ["Provides [1] [Очки конструкции]", "Cannot be purchased", "Destroyed when the city is captured"],
+		"requiredTech": "Конструкторы"
+	},
+	{
+		"name": "Кристаллы-ученый",
+		"replaces": "Институт",
+		"uniqueTo": "Кристаллический мир",
+		"specialistSlots": { "Scientist": 2 }
+		"cost": 70,
+		"hurryCostModifier": 15,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Институты"
+	},
+	{
+		"name": "Военные кристаллы",
+		"replaces": "Военный институт",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 70,
+		"hurryCostModifier": 15,
+		"uniques":  ["Destroyed when the city is captured"],
+		"requiredTech": "Институты"
+	},
+	{
+		"name": "Единый разум",
+		"replaces": "Здание пропаганды",
+		"uniqueTo": "Кристаллический мир",
+		"culture": 2,
+		"cost": 1,
+		"uniques": [
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"Provides [1] [Слот пропаганды]"]
+		"requiredTech": "Пропаганда"
+	},
+	{
+		"name": "Кристаллическая крепость",
+		"replaces": "Крепость",
+		"uniqueTo": "Кристаллический мир",
+		"cityHealth": 30,
+		"cost": 100,
+		"uniques": [
+			"Unsellable",
+			"Cannot be hurried",
+			"Cannot be purchased",
+			"Destroyed when the city is captured"]
 		"requiredTech": "Оборонительные сооружения"
 	},
 	{
-		"name": "Малая Пушка",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]"],
-		"requiredTech": "Малые пушки"
+		"name": "Кристаллы-командиры",
+		"replaces": "Генштаб",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 85,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Cannot be purchased",
+			"Destroyed when the city is captured",
+			"Provides [1] [Слот доктрины]"]
 	},
-	{
-		"name": "Средняя Пушка",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]"],
-		"requiredTech": "Наступательная армия"
-	},
-	{
-		"name": "Большая пушка",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]"],
-		"requiredTech": "Большая пушка"
-	},
-	{
-		"name": "Средний лазер",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]", "Consumes [2] [Кристаллы]"],
-		"requiredTech": "Наступательная армия"
-	},
-	{
-		"name": "Истребляющий лазер",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]", "Consumes [1] [Темная материя]"],
-		"requiredTech": "Истребляющий лазер"
-	},
-	{
-		"name": "Варпдвигатель",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]", "Consumes [1] [Темная материя]"],
-		"requiredTech": "Варпдвигатель"
-	},
-	{
-		"name": "Малый лазер",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]", "Consumes [2] [Кристаллы]"],
-		"requiredTech": "Малые лазеры"
-	},
-	{
-		"name": "Сверх двигатель",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]", "Consumes [2] [Газ]"],
-		"requiredTech": "Сверх двигатели"
-	},
-	{
-		"name": "Сверх пушка",
-		"cost": 200,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [4] [Сплавы]", "Consumes [1] [Газ]"],
-		"requiredTech": "Сверх пушка"
-	},
-	{
-		"name": "Каюта",
-		"cost": 100,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [2] [Сплавы]"],
-		"requiredTech": "Каюта"
-	},
-	{
-		"name": "Броня",
-		"cost": 150,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [3] [Сплавы]"],
-		"requiredTech": "Броня"
-	},
-	{
-		"name": "Обычный двигатель",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]", "Consumes [1] [Сплавы]"],
-		"requiredTech": "Изучение космоса"
-	},
-	{
-		"name": "Артиллерия",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]"],
-		"requiredTech": "Орбитальная артиллерия"
-	},
-	{
-		"name": "Производство дронов",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Очки конструкции]"],
-		"requiredTech": "Боевые дроны"
-	},
-	{
-		"name": "Кристаллическая пушка",
-		"uniqueTo": "Кристаллы",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Кристаллы]"],
-		"requiredTech": "Малые пушки"
-	},
-	{
-		"name": "Кристаллический ускоритель",
-		"uniqueTo": "Кристаллы",
-		"cost": 1,
-		"hurryCostModifier": 1,
-		"uniques": ["Consumes [1] [Кристаллы]"],
-		"requiredTech": "Изучение космоса"
-	}
 	
+	// история кр
+	
+	{
+		"name": "Рождение на мертвой планете",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",]
+		"requiredTech": "История"
+	},
+	
+	// политика кр
+	
+	{
+		"name": "Нацелиться на планеты",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+1 Culture] [in annexed cities]",
+			"[+1 Happiness] [in annexed cities]",
+			"[+15]% Strength <for [All] units> <vs cities>",
+			"Only available <in cities without a [Нацелиться на армию]>",
+			"Only available <in cities with a [Затуманивание разума]>"
+			]
+		"requiredTech": "Политика"
+	},
+	{
+		"name": "Нацелиться на армию",
+		"uniqueTo": "Кристаллический мир",
+		"happiness": 1,
+		"cost": 1,
+		"uniques": ["Can only be built [in capital]",
+			"Unsellable",
+			"Destroyed when the city is captured",
+			"[+15]% Strength <for [Кризис] units> <vs [All] units>",
+			"Earn [20]% of killed [All] unit's [Strength] as [Culture]",
+			"Only available <in cities without a [Нацелиться на планеты]>",
+			"Only available <in cities with a [Затуманивание разума]>"
+			]
+		"requiredTech": "Политика"
+	},
+	
+	// Решения кр
+	
+	{
+		"name": "Затуманивание разума",
+		"uniqueTo": "Кристаллический мир",
+		"culture": 2
+		"happiness": 1
+		"cost": 50,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"Provides [1] [Решения]",
+			"[+15]% Production when constructing [Кризис] units [in all cities]",
+			"[+15]% Strength <for [Кризис] units>",
+			"Earn [20]% of killed [All] unit's [Strength] as [Culture]",
+			"Only available <in cities with a [Рождение на мертвой планете]>"
+			],
+	},
+	{
+		"name": "Питаться светом",
+		"replaces": "Субсидии Фермерам",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 50,
+		"uniques": [
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+2 Food] [in all cities]",
+			"Only available <in cities with a [Рождение на мертвой планете]>"
+			],
+	},
+	{
+		"name": "Эволюция добывающих кристаллов",
+		"replaces": "Субсидии рабочим",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 50,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+2 Production] [in all cities]",
+			"Only available <in cities with a [Рождение на мертвой планете]>"
+			],
+	},
+	{
+		"name": "Впитывать чужие знания",
+		"replaces": "Субсидии Учёным",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 50,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+2 Science] [in annexed cities]",
+			"Earn [20]% of killed [All] unit's [Strength] as [Science]",
+			"Only available <in cities with a [Рождение на мертвой планете]>"
+			],
+	},
+	{
+		"name": "Золотые наросты",
+		"replaces": "Поддержка торговцев",
+		"uniqueTo": "Кристаллический мир",
+		"cost": 50,
+		"uniques": [
+			"Unsellable",
+			"Can only be built [in capital]",
+			"Destroyed when the city is captured",
+			"[+1 Gold] per [1] population [in all cities]"
+			"Only available <in cities with a [Рождение на мертвой планете]>"
+			],
+	},
 ]
