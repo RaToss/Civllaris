@@ -949,7 +949,7 @@
 		"uniques": ["Can only be built [in capital]",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+10]% Strength <for [Военный] units> <when fighting in [Enemy land] tiles>",
+			"[+10]% Strength <for [Военный] units> <when fighting in [Enemy Land] tiles>",
 			"[+1 Production] from every specialist [in all cities]",
 			"Only available <in cities without a [Социализм в одной стране]>",
 			"Only available <in cities without a [Возвращение буржуазии]>",
