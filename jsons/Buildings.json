@@ -89,7 +89,7 @@
 			"Cannot be hurried",
 			"Cannot be purchased",
 			"Only available <after adopting [Генетическая лаборатория]>", 
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Provides [1] [Ген] <after adopting [Изменение генома]>",
 			"[+2 Food] from every [Генетическая лаборатория] <after adopting [Модернизация пищи]>",
 			"[+10]% Strength <for [Военный] units> <after adopting [Подавление недостатков]>",
@@ -119,7 +119,7 @@
 		"name": "Субсидии рабочим",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"[+1 Production, +1 Happiness, -1 Gold] from every [Производственный район]",
@@ -131,7 +131,7 @@
 		"name": "Субсидии Учёным",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"[+1 Science, +1 Happiness, -1 Gold] from every [Обсерватория]",
@@ -142,7 +142,7 @@
 		"name": "Субсидии Фермерам",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"[+1 Food, +1 Happiness, -1 Gold] from every [Сельхоз район]",
@@ -152,7 +152,7 @@
 		"name": "Поддержка торговцев",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"[+1 Gold, +1 Happiness] from every [Рынок]"
@@ -162,7 +162,7 @@
 		"name": "Продажа тиянок",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"[+1 Gold] from every [Охотничьи станции]",
@@ -173,7 +173,7 @@
 		"name": "Тиянки в промышленности",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Only available <in cities without a [Охота на тиянок]>"
@@ -184,7 +184,7 @@
 		"name": "Охота на тиянок",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Only available <in cities without a [Тиянки в промышленности]>"
@@ -195,7 +195,7 @@
 		"name": "Заняться археологией",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]"
 			]
@@ -206,7 +206,7 @@
 		"cost": 70,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+20]% Strength <for [Военный] units> <vs [Амеба] units>",
 			"Consumes [1] [Решения]",
@@ -219,7 +219,7 @@
 		"cost": 100,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+1 Science] from every [Научная станция]",
 			"Consumes [1] [Решения]",
@@ -242,7 +242,7 @@
 		"cost": 80,
 		"uniques": [
 			"[+1 Happiness, +1 Culture] [in all cities]",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			]
@@ -253,7 +253,7 @@
 		"cost": 100,
 		"uniques": [
 			"[+1 Happiness, +2 Food] [in all cities]",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			]
@@ -265,49 +265,49 @@
 	{
 		"name": "Путешественники",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Production when constructing [Колонизатор] units [in all cities]"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Production when constructing [Колонизатор] units [in all cities]"]
 	},
 	{
 		"name": "Выносливые",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Strength <for [ПК оборона] units>"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Strength <for [ПК оборона] units>"]
 	},
 	{
 		"name": "Учёные",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+1 Science] per [2] population [in all cities]"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+1 Science] per [2] population [in all cities]"]
 	},
 	{
 		"name": "Плодовитые",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% growth [in all cities]"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% growth [in all cities]"]
 	},
 	{
 		"name": "Умелые торговцы",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% [Gold] from Trade Routes"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% [Gold] from Trade Routes"]
 	},
 	{
 		"name": "Великие войны",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Strength <for [Десантник] units> <vs cities>"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+20]% Strength <for [Десантник] units> <vs cities>"]
 	},
 	{
 		"name": "Неорганическое дыхание",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "Provides [1] [Газ]"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "Provides [1] [Газ]"]
 	},
 	{
 		"name": "Трудолюбивые",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+1 Production] per [2] population [in all cities]"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "[+1 Production] per [2] population [in all cities]"]
 	},
 	{
 		"name": "Кристаллические тела",
 		"replaces": "Неорганическое дыхание",
 		"uniqueTo": "Кристаллический мир",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "Provides [1] [Кристаллы]"]
+		"uniques": ["Can only be built <in [in capital] cities>", "Unsellable", "Destroyed when the city is captured", "Consumes [1] [Ген]", "Provides [1] [Кристаллы]"]
 	},
 	
 	//// Губернатор
@@ -387,7 +387,7 @@
 	{
 		"name": "Упорство",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"[+10]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles> <when at war>",
 			"[+10]% Production when constructing [ПК оборона] units [in all cities] <when at war>",
 			"Consumes [1] [Слот доктрины]"
@@ -397,7 +397,7 @@
 	{
 		"name": "Массированность",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"[+5]% Strength <for [Военный] units>",
 			"[+5]% Strength <for [Военный] units> <when adjacent to a [Военный] unit>",
 			"[+10]% Production when constructing [Военный] units [in all cities]",
@@ -408,7 +408,7 @@
 	{
 		"name": "Осторожность",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"[+5]% Strength <for [Лазер] units>",
 			"[+1] Range <for [Лазер] units>",
 			"[+1] Sight <for [Лазер] units>",
@@ -420,7 +420,7 @@
 	{
 		"name": "Изнеможение",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"[+10]% Production when constructing [Военный] units [in all cities] <when at war>",
 			"[+5]% Strength <for [Военный] units> <when at war>",
 			"[+1] Sight <for [All] units> <when at war>",
@@ -431,7 +431,7 @@
 	{
 		"name": "Закидать трупами",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"[+20]% Strength <for [Десантник] units> <vs cities>",
 			"Only available <in cities with a [Неорганическое дыхание]>",
 			"Consumes [1] [Слот доктрины]"
@@ -449,7 +449,7 @@
 		"cost": 100,
 		"uniques": ["Only available <in cities without a [Главный отсек]>",
 			"Only available <in cities with a [Пригодная планета]>",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Cannot be purchased",
 			"Destroyed when the city is captured",
 			"Provides [3] [Решения]"
@@ -494,14 +494,14 @@
 		"science": 1
 		"cost": 40,
 		"maintenance": 1,
-		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be build <in [in capital] cities>", "Consumes [1] [Учёный]"]
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be built <in [in capital] cities>", "Consumes [1] [Учёный]"]
 		"requiredTech": "Радиосигналы"
 	},
 	{
 		"name": "Памятники",
 		"cost": 35,
 		"culture": 2,
-		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Cannot be purchased", "Can only be build <in [in capital] cities>",]
+		"uniques": ["Only available <in cities with a [Пригодная планета]>", "Cannot be purchased", "Can only be built <in [in capital] cities>",]
 		"requiredTech": "Культура"
 	},
 	{
@@ -640,7 +640,7 @@
 		"name": "Генштаб",
 		"cost": 85,
 		"uniques": ["Only available <in cities without a [Главный отсек]>",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Cannot be purchased",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Солдат]",
@@ -916,7 +916,7 @@
 		"name": "Либерализация",
 		"uniqueTo": "Союз рабочих",
 		"cost": 60,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"[+1 Gold] from every [Артель]",
 			"Destroyed when the city is captured",
@@ -929,7 +929,7 @@
 		"happiness": 3,
 		"production": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[-100]% maintenance costs <for [All] units>",
@@ -946,7 +946,7 @@
 		"uniqueTo": "Союз рабочих",
 		"culture": 2
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+10]% Strength <for [Военный] units> <when fighting in [Enemy Land] tiles>",
@@ -961,7 +961,7 @@
 		"uniqueTo": "Союз рабочих",
 		"culture": 2
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+10]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles> <when at war>",
@@ -976,7 +976,7 @@
 		"uniqueTo": "Союз рабочих",
 		"culture": -2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+1 Production, +1 Science, -1 Gold] from every specialist [in all cities]",
@@ -994,7 +994,7 @@
 		"uniqueTo": "Союз рабочих",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+1 Happiness] per [1] population [in all cities]"
@@ -1006,7 +1006,7 @@
 		"uniqueTo": "Союз рабочих",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+1 Production] from every [Производственный район]"
@@ -1018,7 +1018,7 @@
 		"uniqueTo": "Союз рабочих",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+1 Food] from every [Сельхоз район]"
@@ -1030,7 +1030,7 @@
 		"uniqueTo": "Союз рабочих",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+1 Science] from every [Обсерватория]"
@@ -1047,7 +1047,7 @@
 		"cost": 550,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Provides [1] [Решения]",
@@ -1063,7 +1063,7 @@
 		"uniqueTo": "Союз рабочих",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+10]% Strength <for [Военный] units>",
 			"Earn [10]% of killed [All] unit's [Strength] as [Culture]",
@@ -1086,7 +1086,7 @@
 		"happiness": 3,
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Вооруженное объединение]>"]
@@ -1096,7 +1096,7 @@
 		"name": "Вооруженное объединение",
 		"uniqueTo": "Империя Хроз",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+10]% Production when constructing [Военный] units [in all cities]",
@@ -1113,7 +1113,7 @@
 		"happiness": 3,
 		"culture": 3,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Мирная изоляция]>",
@@ -1132,7 +1132,7 @@
 		"culture": 2,
 		"science": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities with a [Вооруженное объединение]>",
@@ -1145,7 +1145,7 @@
 		"uniqueTo": "Империя Хроз",
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+10]% Strength <for [Военный] units>",
@@ -1164,7 +1164,7 @@
 		"culture": 2,
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]"
 			],
@@ -1175,7 +1175,7 @@
 		"uniqueTo": "Империя Хроз",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+2 Happiness, +1 Culture] [in all cities]"
@@ -1188,7 +1188,7 @@
 		"culture": 1
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+15]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles>",
@@ -1202,7 +1202,7 @@
 		"happiness": 2,
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+15]% Strength <for [Военный] units>",
@@ -1220,7 +1220,7 @@
 		"happiness": -1,
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]"
 			]
@@ -1235,7 +1235,7 @@
 		"uniqueTo": "Галактический совет",
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Власть потомков]>",
@@ -1247,7 +1247,7 @@
 		"uniqueTo": "Галактический совет",
 		"happiness": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Верность предкам]>",
@@ -1262,7 +1262,7 @@
 		"uniqueTo": "Галактический совет",
 		"culture": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Дипломатичный совет]>",
@@ -1277,7 +1277,7 @@
 		"uniqueTo": "Галактический совет",
 		"science": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Сильный совет]>",
@@ -1292,7 +1292,7 @@
 		"uniqueTo": "Галактический совет",
 		"science": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Остаться в изоляции]>",
@@ -1306,7 +1306,7 @@
 		"uniqueTo": "Галактический совет",
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Старая политика]>",
@@ -1323,7 +1323,7 @@
 		"uniqueTo": "Галактический совет",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+15]% Strength <for [Военный] units> <vs [Кризис] units>",
@@ -1336,7 +1336,7 @@
 		"uniqueTo": "Галактический совет",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+2 Science] from every [Антенны]",
@@ -1351,7 +1351,7 @@
 		"happiness": 2,
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+2 Happiness] from every [Жилой район]",
@@ -1372,7 +1372,7 @@
 			"Unsellable",
 			"Cannot be hurried",
 			"Cannot be purchased",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Provides [1] [Решения]",
@@ -1389,7 +1389,7 @@
 			"Unsellable",
 			"Cannot be hurried",
 			"Cannot be purchased",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Provides [1] [Решения]",
@@ -1407,7 +1407,7 @@
 		"cost": 1,
 		"uniques": ["Automatically built in all cities where it is buildable",
 			"Only available <in cities with a [Главный отсек]>",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Cannot be purchased",
 			"Destroyed when the city is captured",
 			"Provides [3] [Решения]"
@@ -1453,7 +1453,7 @@
 		"science": 1
 		"cost": 1,
 		"maintenance": 1,
-		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be build <in [in capital] cities>", "Consumes [1] [Учёный]"]
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be built <in [in capital] cities>", "Consumes [1] [Учёный]"]
 		"requiredTech": "Радиосигналы"
 	},
 	{
@@ -1469,7 +1469,7 @@
 		"uniqueTo": "Галактический совет",
 		"specialistSlots": { "Engineer": 2 }
 		"cost": 1,
-		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be build <in [in capital] cities>", "Consumes [1] [Человек]"]
+		"uniques": ["Automatically built in all cities where it is buildable", "Only available <in cities with a [Главный отсек]>", "Destroyed when the city is captured", "Cannot be purchased", "Can only be built <in [in capital] cities>", "Consumes [1] [Человек]"]
 		"requiredTech": "Строительство"
 	},
 	{
@@ -1509,7 +1509,7 @@
 		"uniqueTo": "Государство `Земля`",
 		"science": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [После ядерной войны...]>",
@@ -1523,7 +1523,7 @@
 		"science": -1
 		"culture": 2
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Научное объединение]>",
@@ -1538,7 +1538,7 @@
 		"uniqueTo": "Государство `Земля`",
 		"science": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+1 Science] from every [Телескоп]",
@@ -1552,7 +1552,7 @@
 		"name": "Выживание в просторах косомса",
 		"uniqueTo": "Государство `Земля`",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Выживание на чужих планетах]>",
@@ -1566,7 +1566,7 @@
 		"name": "Выживание на чужих планетах",
 		"uniqueTo": "Государство `Земля`",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Выживание в просторах косомса]>",
@@ -1584,7 +1584,7 @@
 		"uniqueTo": "Государство `Земля`",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+2 Happiness] [in annexed cities]",
@@ -1599,7 +1599,7 @@
 		"culture": 2,
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+1 Culture] from every [Станция землян]",
@@ -1612,7 +1612,7 @@
 		"uniqueTo": "Государство `Земля`",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+1 Science] from every [Раскопки]",
@@ -1629,7 +1629,7 @@
 		"uniqueTo": "Государство `Земля`",
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Earn [20]% of killed [All] unit's [Strength] as [Science]",
@@ -1647,7 +1647,7 @@
 		"food": -2,
 		"happiness": -1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",]
 		"requiredTech": "История"
@@ -1660,7 +1660,7 @@
 		"uniqueTo": "Республика Лиц",
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+3 Happiness] [in annexed cities]",
@@ -1675,7 +1675,7 @@
 		"uniqueTo": "Республика Лиц",
 		"culture": 2,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+1 Food] [in all cities]",
@@ -1696,7 +1696,7 @@
 		"culture": 1
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+10]% Production when constructing [Колонизатор] units [in all cities]",
@@ -1711,7 +1711,7 @@
 		"culture": 2,
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
 			"[+10]% Production when constructing [Военный] units [in all cities]",
@@ -1729,7 +1729,7 @@
 		"food": 2
 		"cost": 1,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"[+1 Food] from every [Сельхоз район]",
@@ -1905,7 +1905,7 @@
 		"uniqueTo": "Кристаллический мир",
 		"cost": 85,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Cannot be purchased",
 			"Destroyed when the city is captured",
 			"Provides [1] [Слот доктрины]"]
@@ -1917,7 +1917,7 @@
 		"name": "Рождение на мертвой планете",
 		"uniqueTo": "Кристаллический мир",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",]
 		"requiredTech": "История"
@@ -1929,7 +1929,7 @@
 		"name": "Нацелиться на планеты",
 		"uniqueTo": "Кристаллический мир",
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+1 Culture] [in annexed cities]",
@@ -1945,7 +1945,7 @@
 		"uniqueTo": "Кристаллический мир",
 		"happiness": 1,
 		"cost": 1,
-		"uniques": ["Can only be build <in [in capital] cities>",
+		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+15]% Strength <for [Кризис] units> <vs [All] units>",
@@ -1966,7 +1966,7 @@
 		"cost": 50,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
 			"Provides [1] [Решения]",
@@ -1982,7 +1982,7 @@
 		"uniqueTo": "Кристаллический мир",
 		"cost": 50,
 		"uniques": [
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+2 Food] [in all cities]",
 			"Only available <in cities with a [Рождение на мертвой планете]>"
@@ -1995,7 +1995,7 @@
 		"cost": 50,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+2 Production] [in all cities]",
 			"Only available <in cities with a [Рождение на мертвой планете]>"
@@ -2008,7 +2008,7 @@
 		"cost": 50,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+2 Science] [in annexed cities]",
 			"Earn [20]% of killed [All] unit's [Strength] as [Science]",
@@ -2022,7 +2022,7 @@
 		"cost": 50,
 		"uniques": [
 			"Unsellable",
-			"Can only be build <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"[+1 Gold] per [1] population [in all cities]"
 			"Only available <in cities with a [Рождение на мертвой планете]>"
