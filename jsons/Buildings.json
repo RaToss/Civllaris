@@ -1799,7 +1799,7 @@
 		"science": 1
 		"cost": 40,
 		"maintenance": 1,
-		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Can only be build <in [in capital] cities>"]
+		"uniques": ["Destroyed when the city is captured", "Cannot be purchased", "Can only be built <in [in capital] cities>"]
 		"requiredTech": "Радиосигналы"
 	},
 	{
@@ -1808,7 +1808,7 @@
 		"uniqueTo": "Кристаллический мир",
 		"cost": 35,
 		"culture": 2,
-		"uniques": ["Cannot be purchased", "Can only be build <in [in capital] cities>"]
+		"uniques": ["Cannot be purchased", "Can only be built <in [in capital] cities>"]
 		"requiredTech": "Культура"
 	},
 	{
