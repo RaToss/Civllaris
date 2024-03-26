@@ -1117,8 +1117,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Мирная изоляция]>",
-			"Only available <in cities without a [Агрессивная политика]>"
-			"Only available <in cities with a [Объединение под егидой ненависти]>",
+			"Only available <in cities without a [Агрессивная политика]>",
 			"[+1 Production] per [1] population [in annexed cities]",
 			"[-3 Food] per [1] population [in annexed cities]",
 			"[-100]% growth [in annexed cities]"
@@ -1750,7 +1749,7 @@
 		"maintenance": 1,
 		"cost": 65,
 		"uniques": ["Only available <in cities without a [Главный отсек]>",
-			"Can only be built [in annexed cities]",
+			"Can only be built <in [in annexed cities] cities>",
 			"Remove extra unhappiness from annexed cities", "Cannot be purchased",
 			"Destroyed when the city is captured"
 		],
@@ -2024,7 +2023,7 @@
 			"Unsellable",
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
-			"[+1 Gold] per [1] population [in all cities]"
+			"[+1 Gold] per [1] population [in all cities]",
 			"Only available <in cities with a [Рождение на мертвой планете]>"
 			],
 	},
