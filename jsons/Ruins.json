@@ -1,2 +1,32 @@
 [
+    {
+        "name": "Был найден артефакт, оставленный прошлыми цивилизациями...",
+        "notification": "В этих руинах был найден по истене интересный предмет (+20 culture)",
+        "uniques": ["Gain [20] [Culture]"],
+        "color": "#cf8ff7"
+    },
+    {
+        "name": "Был найден биогенный материал, который способствует увелечению населения",
+        "notification": "В этих руинах был найден артефакт, дающий плодородие в [cityName].",
+        "uniques": ["[+1] population in a random city"], // This can't be easily added to cityFilter, as it is non-deterministic
+		"color": "#81c784"
+    },
+    {
+        "name": "Был найден драгоценный артефаек, который способен обагатить любого!",
+        "notification": "Артефакт отныне является самым дорогим предметом",
+        "uniques": ["Gain [100]-[300] [Gold]"],
+        "color": "#ffeb7f"
+    },
+    {
+        "name": "Кажеться, мы нашликакойто исследование!",
+        "notification": "В руинах был обнаружен чертеж и записи ученого о [techName]",
+        "uniques": ["[1] free random researchable Tech(s) from the [Контакт]"],
+		"color": "#7f7fff"
+    },
+    {
+        "name": "Обнаружена система-улей",
+        "notification": "В руинах, на одном из работающих компьютеров остались записи об изучении одной системе, которя являеться домом для космической фауны",
+        "uniques": ["Reveal up to [1] [Barbarian encampment] within a [50] tile radius"]
+    }
 ]
+
