@@ -131,9 +131,10 @@
 		"name": "Субсидии Учёным",
 		"cost": 1,
 		"uniques": [
-			"Can only be built <in [in capital] cities>",
+			"Can only be built <in [in capital] cities>",Scientist
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
+			"[+1 Science, +1 Happiness, -1 Gold] from every [Scientist]",
 			"[+1 Science, +1 Happiness, -1 Gold] from every [Обсерватория]",
 			"[+1 Science, +1 Happiness, -1 Gold] from every [Телескоп]",
 			]
