@@ -949,7 +949,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+10]% Strength <for [Военный] units> <when fighting in [Enemy Land] tiles>",
-			"[+1 Production] from every specialist [in all cities]",
+			"[+1 Production] from every [Engineer]",
 			"Only available <in cities without a [Социализм в одной стране]>",
 			"Only available <in cities without a [Возвращение буржуазии]>",
 			"Only available <in cities with a [Социализм]>"]
@@ -964,7 +964,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"[+10]% Strength <for [Военный] units> <when fighting in [Friendly Land] tiles> <when at war>",
-			"[+1 Production] from every specialist [in all cities]",
+			"[+1 Production] from every [Engineer]",
 			"Only available <in cities without a [Путь к коммунизму]>",
 			"Only available <in cities without a [Возвращение буржуазии]>",
 			"Only available <in cities with a [Социализм]>"]
@@ -978,7 +978,7 @@
 		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+1 Production, +1 Science, -1 Gold] from every specialist [in all cities]",
+			"[-1 Production, +2 Gold] from every [Engineer]",
 			"[+10]% [Gold] from Trade Routes",
 			"Only available <in cities without a [Путь к коммунизму]>",
 			"Only available <in cities without a [Социализм в одной стране]>",
@@ -1008,7 +1008,7 @@
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
-			"[+1 Production] from every [Производственный район]"
+			"[+1 Production] from every [Engineer]"
 			],
 		"requiredTech": "Пропаганда"
 	},
@@ -1020,7 +1020,7 @@
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
-			"[+1 Food] from every [Сельхоз район]"
+			"[+1 Food] from every [Фермер]"
 			],
 		"requiredTech": "Пропаганда"
 	},
@@ -1032,7 +1032,7 @@
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
-			"[+1 Science] from every [Обсерватория]"
+			"[+1 Science] from every [Scientist]"
 			],
 		"requiredTech": "Пропаганда"
 	},
@@ -1237,7 +1237,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Власть потомков]>",
-			"[+1 Science] from every [Обсерватория]",]
+			"[+1 Science] from every [Scientist]",]
 		"requiredTech": "История"
 	},
 	{
@@ -1249,7 +1249,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Верность предкам]>",
-			"[+1 Production] from every specialist [in all cities]"]
+			"[+1 Production] from every [Engineer]"]
 		"requiredTech": "История"
 	},
 	
@@ -1265,7 +1265,7 @@
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Дипломатичный совет]>",
 			"[+5]% Strength <for [Военный] units>",
-			"[+5]% Production when constructing [Военный] units [in all cities]"
+			"[+5]% Production when constructing [Военный] units [in all cities]",
 			"Only available <in cities with a [Власть потомков]>"
 			]
 		"requiredTech": "Политика"
@@ -1308,7 +1308,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [Старая политика]>",
-			"[+2 Science] from every [Телескоп]"
+			"[+2 Science] from every [Телескоп]",
 			"Only available <in cities with a [Верность предкам]>"
 			]
 		"requiredTech": "Политика"
@@ -1337,7 +1337,7 @@
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Слот пропаганды]",
-			"[+2 Science] from every [Антенны]",
+			"[+2 Science] from every [Scientist]",
 			"Only available <in cities with a [Старая политика]>"
 			],
 		"requiredTech": "Пропаганда"
@@ -1498,7 +1498,7 @@
 		"requiredTech": "Производство роботов"
 	},
 	
-	//// зем   /\0х|/|
+	//// зем   /\oх|/|
 	
 	// История зем
 	
@@ -1511,7 +1511,7 @@
 			"Unsellable",
 			"Destroyed when the city is captured",
 			"Only available <in cities without a [После ядерной войны...]>",
-			"[+1 Science] from every specialist [in all cities]"]
+			"[+1 Science] from every [Scientist]"]
 		"requiredTech": "История"
 	},
 	{
@@ -1539,8 +1539,7 @@
 		"uniques": ["Can only be built <in [in capital] cities>",
 			"Unsellable",
 			"Destroyed when the city is captured",
-			"[+1 Science] from every [Телескоп]",
-			"[+1 Science] from every [Антенны]",
+			"[+1 Science] from every [Scientist]",
 			"[+2]% [Science] from Trade Routes",
 			"Only available <in cities with a [Научное объединение]>"
 			]
@@ -1632,6 +1631,22 @@
 			"Consumes [1] [Решения]",
 			"Earn [20]% of killed [All] unit's [Strength] as [Science]",
 			"Only available <in cities with a [Безудержная тяга к знаниям]>"
+			],
+	},
+
+	// доктрина зем
+
+	{
+		"name": "Тактика пиратов",
+		"uniqueTo": "Государство `Земля`",
+		"cost": 1,
+		"uniques": [
+			"Can only be built <in [in capital] cities>",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Слот доктрины]",
+			"[+10]% Strength <for [Военный] units> <vs [{Военный} {Wounded}] units>"",
+			"Earn [50]% of killed [All] unit's [Strength] as [Gold]",
+			"Only available <in cities with a [Выживание в просторах косомса]>"
 			],
 	},
 	
@@ -1730,8 +1745,7 @@
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
 			"Consumes [1] [Решения]",
-			"[+1 Food] from every [Сельхоз район]",
-			"[+1 Food] from every specialist [in all cities]",
+			"[+2 Food] from every [Фермер]",
 			"Only available <in cities with a [Глобальный голод]>"
 			],
 	},
@@ -1995,7 +2009,7 @@
 			"Unsellable",
 			"Can only be built <in [in capital] cities>",
 			"Destroyed when the city is captured",
-			"[+2 Production] [in all cities]",
+			"[+2 Production] [Engineer]",
 			"Only available <in cities with a [Рождение на мертвой планете]>"
 			],
 	},
