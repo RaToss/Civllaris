@@ -114,7 +114,18 @@
 	},
 	
 	// Решения
-	
+
+	{
+		"name": "Повышение налогов",
+		"happiness": -1,
+		"cost": 1,
+		"uniques": [
+			"Can only be built <in [in capital] cities>",
+			"Destroyed when the city is captured",
+			"Consumes [1] [Решения]",
+			"[+1 Gold] <in [All] cities>"
+			]
+	},
 	{
 		"name": "Субсидии рабочим",
 		"cost": 1,
